@@ -65,5 +65,5 @@ L'intégralité du contenu de ce site respecte la loi française et le Code de l
 <p float="left">
   <a href="https://discord.gg/sighya-454099185416011776"><img src="https://homebrew-france.fr/style/assets/partner/sighya_partner.png" width="120" /></a>
   <a href="https://fixurphone.fr/"><img src="https://homebrew-france.fr/style/assets/partner/fixurphone_partner.png" width="120" /></a>
-  <a href="https://neochronix.fr/"><img src="https://homebrew-france.fr/style/assets/partner/neochronix.png" width="120" /></a>
+  <a href="https://neochronix.com/"><img src="https://homebrew-france.fr/style/assets/partner/neochronix.png" width="120" /></a>
 </p>
