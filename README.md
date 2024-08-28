@@ -3,7 +3,7 @@
 ![HBF-Web](https://cdn.homebrew-france.site/github/hbf-web.png)
 
 # Homebrew France - Web Service
-Un site internet pour la communauté francophone "Le Homebrew France".
+Un site internet pour la communauté francophone "Homebrew France".
 
 ## Présentation
 Il s'agit d'un site minimaliste pour la communauté francophone "Homebrew France" spécialisée dans le domaine du jailbreak et de la modification de console.
@@ -58,13 +58,16 @@ Il s'agit d'un site minimaliste pour la communauté francophone "Homebrew France
 ### Multi-Checker : 
 - [Dhalian](https://github.com/Dhalian) : Développement du Multi-Checker.
 
+# Règles de confidentialité 
+Elles sont trouvables sur [cette page](https://homebrew-france.fr/confidentialite)
+
 # Contenu de la boutique FIXurPHONE
 L'intégralité du contenu de la boutique est proposé par l'entreprise FIXurPHONE, au même titre que les prestations de réparation de consoles.\
-Le Homebrew France n'est pas responsable des transactions et ne perçoit aucun revenu à la vente de ces consoles et à la vente de ces services.
+Homebrew France n'est pas responsable des transactions et ne perçoit aucun revenu à la vente de ces consoles et à la vente de ces services.
 
 # Copyrights
 Le contenu de ce site est soumis à des droits d'auteur.\
-© 2021 - 2024 - Le Homebrew France\
+© 2021 - 2024 - Homebrew France\
 © 2024 - FIXurPHONE
 
 # Légal
