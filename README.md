@@ -1,12 +1,12 @@
 [![Discord](https://img.shields.io/discord/883623179979984896?logo=discord&label=Le%20Homebrew%20France)](https://discord.gg/le-homebrew-france-883623179979984896) ![GitHub Repo stars](https://img.shields.io/github/stars/homebrewfrance/homebrew-france.fr)
 
-![HBF-Web](https://cdn.homebrew-france.site/hbf-web.png)
+![HBF-Web](https://cdn.homebrew-france.site/github/hbf-web.png)
 
 # Le Homebrew France - Web Service
 Un site internet pour la communauté francophone "Le Homebrew France".
 
 ## Présentation
-Il s'agit d'un site minimaliste pour la communauté francophone "Le Homebrew France" spécialisée dans le domaine du jailbreak et de la modification de console.
+Il s'agit d'un site minimaliste pour la communauté francophone "Homebrew France" spécialisée dans le domaine du jailbreak et de la modification de console.
 
 ## Navigation
 - [Accueil](https://homebrew-france.fr)
@@ -45,6 +45,9 @@ Il s'agit d'un site minimaliste pour la communauté francophone "Le Homebrew Fra
 #### DSi :
 - [Dhalian](https://github.com/Dhalian) : Rédaction de la documentation, images d'illustration.
 
+#### 3DS : 
+- [Dhalian](https://github.com/Dhalian) : Rédaction de la documentation.
+
 #### PlayStation 2 : 
 - [Dhalian](https://github.com/Dhalian) : Rédaction de la documentation.
 
@@ -71,5 +74,5 @@ L'intégralité du contenu de ce site respecte la loi française et le Code de l
 <p float="left">
   <a href="https://discord.gg/sighya-454099185416011776"><img src="https://homebrew-france.fr/style/assets/partner/sighya_partner.png" width="120" /></a>
   <a href="https://fixurphone.fr/"><img src="https://homebrew-france.fr/style/assets/partner/fixurphone_partner.png" width="120" /></a>
-  <a href="https://neochronix.com/"><img src="https://homebrew-france.fr/style/assets/partner/neochronix.png" width="120" /></a>
+  <a href="https://guardian-app.com/"><img src="https://cdn.homebrew-france.site/partner/guardian.png" width="120" /></a>
 </p>
