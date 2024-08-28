@@ -1,6 +1,6 @@
 [![Discord](https://img.shields.io/discord/883623179979984896?logo=discord&label=Le%20Homebrew%20France)](https://discord.gg/le-homebrew-france-883623179979984896) ![GitHub Repo stars](https://img.shields.io/github/stars/homebrewfrance/homebrew-france.fr)
 
-![HBF-Web](https://homebrewfrance.github.io/IMAGES/hbf-web.png)
+![HBF-Web](https://cdn.homebrew-france.site/hbf-web.png)
 
 # Le Homebrew France - Web Service
 Un site internet pour la communauté francophone "Le Homebrew France".
@@ -10,18 +10,24 @@ Il s'agit d'un site minimaliste pour la communauté francophone "Le Homebrew Fra
 
 ## Navigation
 - [Accueil](https://homebrew-france.fr)
-- [Téléchargements](https://homebrewfrance.github.io/telechargements/)
+- [Téléchargements](https://homebrew-france.fr/telechargements/)
   
 *Docs*
 > - [Nintendo Switch](https://docs.homebrew-france.fr/switch/)
 > - [Nintendo DSi](https://docs.homebrew-france.fr/dsi/)
+> - [Nintendo 3DS](https://homebrew-france.fr/3ds/)
 > - [PlayStation Vita](https://docs.homebrew-france.fr/psvita)
 > - [PlayStation 2](https://docs.homebrew-france.fr/ps2/)
+> - [PlayStation 4](https://homebrew-france.fr/docs/ps4/)
+> - [YouTube ReVanced](https://homebrew-france.fr/docs/revanced/)
+> - [Sideloading iOS](https://homebrew-france.fr/docs/sideloading-ios/)
+> - [Xbox](https://homebrew-france.fr/docs/xbox/)
   
 *Multi-Checker*
 > - [Nintendo Switch](https://homebrew-france.fr/multi-checker/switch/)
 > - [PlayStation 3](https://homebrew-france.fr/multi-checker/ps3/)
 
+- [Recrutements](https://homebrew-france.fr/devenir-helper/)
 - [A propos](https://homebrew-france.fr/a-propos/)
 
 # Crédits 
