@@ -2,7 +2,7 @@
 
 ![HBF-Web](https://cdn.homebrew-france.site/github/hbf-web.png)
 
-# Le Homebrew France - Web Service
+# Homebrew France - Web Service
 Un site internet pour la communauté francophone "Le Homebrew France".
 
 ## Présentation
