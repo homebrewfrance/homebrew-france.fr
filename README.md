@@ -1,6 +1,6 @@
 [![Discord](https://img.shields.io/discord/883623179979984896?logo=discord&label=Le%20Homebrew%20France)](https://discord.gg/le-homebrew-france-883623179979984896) ![GitHub Repo stars](https://img.shields.io/github/stars/homebrewfrance/homebrew-france.fr)
-[![Badge License]] 
-[![Badge Likes]]
+[!Badge License] 
+[!Badge Likes]
 
 ![HBF-Web](https://cdn.homebrew-france.site/github/hbf-web.png)
 
