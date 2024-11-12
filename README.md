@@ -79,5 +79,6 @@ L'intégralité du contenu de ce site respecte la loi française et le Code de l
   <a href="https://discord.gg/sighya-454099185416011776"><img src="https://cdn.homebrew-france.site/partner/sighya.png" width="120" /></a>
   <a href="https://fixurphone.fr/"><img src="https://cdn.homebrew-france.site/partner/fixurphone.png" width="120" /></a>
   <a href="https://guardian-app.com/"><img src="https://cdn.homebrew-france.site/partner/vibes.png" width="120" /></a>
+  <a href="https://neochronix.fr/"><img src="https://cdn.homebrew-france.site/partner/neochronix.png" width="120" /></a>
 </p>
 
