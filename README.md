@@ -35,6 +35,8 @@ Il s'agit d'un site minimaliste pour la communauté francophone "Homebrew France
 ### Général : 
 - [Dhalian](https://github.com/Dhalian) : Dévéloppement et maintenance du site.
 - [FIXurPHONE](https://fixurphone.fr/) : Logo FIXurPHONE.
+- [Syntraxx](https://github.com/Synntraxx) : Logo NeoChronix.
+- [Zoria](https://github.com/THZoria) : Logo SigHya et flux d'articles Hacktuality.
 
 ### Documentation :
 #### Switch :
