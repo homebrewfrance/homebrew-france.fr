@@ -26,9 +26,9 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [redirect=301,L]
 </IfModule>
 
 # Activer la gestion des erreurs personnalisées
-ErrorDocument 404 /404.html
-ErrorDocument 403 /403.html
-ErrorDocument 503 /503.html
+ErrorDocument 404 /error/404.html
+ErrorDocument 403 /error/403.html
+ErrorDocument 503 /error/503.html
 
 
 <IfModule mod_headers.c>
