@@ -1,4 +1,4 @@
-[![Discord](https://img.shields.io/discord/883623179979984896?logo=discord&label=Le%20Homebrew%20France)](https://discord.gg/le-homebrew-france-883623179979984896) ![GitHub Repo stars](https://img.shields.io/github/stars/homebrewfrance/homebrew-france.fr) ![License](https://img.shields.io/github/license/homebrewfrance/homebrew-france.fr)
+[![Discord](https://img.shields.io/discord/883623179979984896?logo=discord&label=Homebrew%20France)](https://discord.gg/le-homebrew-france-883623179979984896) ![GitHub Repo stars](https://img.shields.io/github/stars/homebrewfrance/homebrew-france.fr) ![License](https://img.shields.io/github/license/homebrewfrance/homebrew-france.fr)
 
 
 ![HBF-Web](https://cdn.homebrew-france.site/github/hbf-web.png)
