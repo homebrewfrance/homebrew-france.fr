@@ -1,0 +1,157 @@
+<!--    
+	Homebrew France Web V3
+    Copyright (C) 2025  Homebrew France
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+<!DOCTYPE html>
+<html lang="fr" data-website-id="HBFWEB-V3-LWS">
+	<head>
+        <title>Nintendo DSi | Docs</title>
+
+        <!-- Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charset="utf-8" />
+		<meta content="Nintendo DSi | Docs" property="og:title"/>
+		<meta content="Documentation complète sur la Nintendo DSi." property="og:description"/>
+		<meta content="https://docs.homebrew-france.fr/dsi" property="og:url"/>
+		<meta content="https://cdn.homebrew-france.site/docs/dsi_docs.png" property="og:image"/>
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="apple-mobile-web-app-capable" content="YES"/>
+        <meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@HomebrewFrance" />
+		<meta name="twitter:title" content="Homebrew France - La communauté n°1 pour le jailbreak de consoles" />
+		<meta name="twitter:description" content="Rejoignez Homebrew France, la communauté dédiée au jailbreak de consoles avec support et guides en ligne." />
+		<meta name="twitter:image" content="https://cdn.homebrew-france.site/generic/website-icon.png" />
+        
+        <!-- Link -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="../../style/stylesheets/guide.css" />
+        <link rel="stylesheet" href="../../style/stylesheets/navbar__f.css" />
+        <link rel="icon" type="image/png" href="https://cdn.homebrew-france.site/generic/lumia-guides.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+                
+        <!-- Scripts -->
+        <script async src="../../scripts/analyticsServices_manager.js"></script>
+	</head>
+    <body data-page-id="DOC-DSi">
+        <a class="top-page-button" href="#"><div href="#" class="top-page-button" title="Remonter en haut de la page">
+            <center>&#9650;</center>
+        </div></a>
+        <div id="navSpace"></div>
+        <div class="docu-container">
+			<div class="nav-menu-horiz" style="overflow: scroll;">
+				<h class="subtitles">Navigation :</h><br>
+                <div class="nav-elements-horiz"></div>
+                <div class="nav-bottom">
+                    <h4 style="font-family: 'Sora', sans-serif; font-size: 18px;"><span style="font-weight: 300;">Homebrew</span><strong>France</strong> Docs</h4>
+                    <p style="font-size: 15px; color: rgb(210, 210, 210);">&copy; 2025 - Homebrew France</p>
+                </div>
+			</div>
+			<div class="nav-menu-vert">
+				<h class="subtitles">Navigation :</h><br>
+                <div class="nav-elements-vert"></div>
+			</div>
+            <div class="page-docu">
+                <h1 class="top">Nintendo DSi - <span style="font-family: 'Sora'"><span style="font-weight: 300;">Homebrew</span><strong>France Docs</strong></span></h1>
+                <div class="indic" id="indic-discord">
+                    <p class="indic-text">Rejoignez <a href="https://discord.homebrew-france.fr/">Homebrew France</a> pour obtenir de l'assistance ou nous aider à développer le guide.</p>
+                </div>
+                <p>Ce guide vous permettra le jailbreak permanent de votre Nintendo DSi via TWiLightMenu++ et Unlaunch (optionnel).</br>
+                Ce guide est uniquement applicable sur Windows et macOS.</p>
+                <h2 class="titles" id="formatage-sd">I. Formatage de la carte SD</h2>
+                <div class="disclaimer">
+                    <p class="indic-text"><strong>Attention :</strong>&nbsp;le formatage va supprimer toutes les données de votre carte SD, pensez à les copier avant de procéder.</p>
+                </div>
+                <div class="prerequis">
+                    <h3>PRÉREQUIS :</h3>
+                    <ul>
+                        <li>Une carte SD ou une carte micro SD avec adaptateur.</br>
+                        <i>La taille recommandée pour une Nintendo DSi est de 16Go, mais cela fonctionne avec une carte de capacité inférieure ou égale à 2Go.</i></li>
+                        <li><a href="https://rufus.ie/fr/">La dernière version de Rufus</a> (Windows uniquement)&nbsp;<i class="fa fa-download" aria-hidden="true"></i></li>
+                        <li>Un ordinateur avec un lecteur de carte SD ou de carte micro SD selon ce que vous possédez.</li>
+                    </ul>
+                </div>
+                <ul>
+                    <li style="list-style-type: decimal;">Insérez votre carte SD dans votre ordinateur.</li>
+                    <li style="list-style-type: decimal;">Ouvrez le fichier <code>rufus-X.X.exe</code></li>
+                    <li style="list-style-type: decimal;">Sélectionnez si vous souhaitez recevoir les mises à jour de Rufus automatiquement.</li>
+                    <p><img src="https://cdn.homebrew-france.site/docs/dsi/rufus-maj.png" class="img-border" /></li>
+                    <li style="list-style-type: decimal;">Sélectionnez votre carte SD et sélectionnez le options comme indiqué :</li>
+                    <p><img src="https://cdn.homebrew-france.site/docs/dsi/rufus-fat32.png" class="img-border" /></li>
+                </ul>
+                <p>Sur macOS, le formatage peut être directement effectué depuis le gestionnaire de périphériques. Sélectionnez simplement "MS-DOS (FAT)" au moment du formatage.</p>
+                <h2 class="titles" id="memory-pit">II. Lancement de l'exploit</h2>
+                <div class="prerequis">
+                    <h3>PRÉREQUIS :</h3>
+                    <ul>
+                        <li><a href="https://homebrew-france.fr/telechargements/index.html#DSIMPIT">Le dernier pack Memory Pit de Homebrew France</a>&nbsp;<i class="fa fa-download" aria-hidden="true"></i></li>
+                    </ul>
+                </div>
+                <ul>
+                    <li style="list-style-type: decimal;">Insérez la carte SD dans votre console.</li>
+                    <li style="list-style-type: decimal;">Lancez l'appareil photo et cliquez sur "Carte SD".</li>
+                    <li style="list-style-type: decimal;">Prenez une photo (une photo complétement aléatoire fera l'affaire, elle sert simplement à créer le dossier de gestion des photos).</li>
+                    <li style="list-style-type: decimal;">Eteignez la console et remettez la carte SD dans votre ordinateur.</li>
+                    <li style="list-style-type: decimal;">Rendez-vous dans le dossier <code>sd:/private/ds/app/484E494A</code> et renommez le fichier <code>pit.bin</code> en <code>tip.bin</code>.</li>
+                    <li style="list-style-type: decimal;">Dans le pack téléchargé précédemment, rendez-vous dans le dossier <code>Memory Pit</code>, allez dans le dossier correspondant à votre région et votre version de console, copiez le fichier <code>pit.bin</code> dans le dossier <code>sd:/private/ds/app/484E494A</code> de la carte SD de votre console.</li>
+                    <li style="list-style-type: decimal;">Dans le pack téléchargé précédemment, rendez-vous dans le dossier <code>DSI</code>, copiez tout son contenu à la <a href="https://homebrew-france.fr/sdroot">racine</a> de la carte SD de votre console.</li>
+                    <li style="list-style-type: decimal;">Dans le pack téléchargé précédemment, rendez-vous dans le dossier <code>PC</code> et ouvrez <code>LazyDSiFileDownloader</code> (macOS ou Windows selon votre système d'exploitation), puis cliquez sur "Next".</li>
+                    <p><img src="https://cdn.homebrew-france.site/docs/dsi/lazy-dsi-1.png" class="img-border" /></p>
+                    <li style="list-style-type: decimal;">Cliquez à nouveau sur "Next".</li>
+                    <p><img src="https://cdn.homebrew-france.site/docs/dsi/lazy-dsi-2.png" class="img-border" /></p>
+                    <li style="list-style-type: decimal;">Décochez "Download latest dumpTool version ?" et "Download latest Unlaunch version ?" puis cliquez sur "Next".</li>
+                    <p><img src="https://cdn.homebrew-france.site/docs/dsi/lazy-dsi-3.png" class="img-border" /></p>
+                    <li style="list-style-type: decimal;">Sélectionnez votre carte SD puis cliquez sur "Start".</li>
+                    <p><img src="https://cdn.homebrew-france.site/docs/dsi/lazy-dsi-4.png" class="img-border" /></p>
+                </ul>
+                <p>A présent pour accéder au TWiLightMenu++, il vous suffit de lancer l'Album Photo. Pour qu'il se lance au démarrage, continuez vers la section <a href="#install-unlaunch">III.</a></p>
+                <h2 class="titles" id="install-unlaunch">III. Installation d'Unlaunch (Optionnel)</h2>
+                <p><i>Dans cette section, nous partons du principe que les étapes précédentes ont toutes été réalisées comme il se doit. Les étapes suivantes ne sont pas obligatoires, elles peuvent être faites si vous préférez que le TWiLightMenu++ se lance au démarrage.</i></p>
+                <div class="disclaimer">
+                    <p class="indic-text"><strong>Attention :</strong>&nbsp;en installant Unlaunch il y a un léger risque de brick (le risque est extrêmement faible si les étapes sont réalisées comme indiqué).</p>
+                </div>
+                <h class="subtitles" id="backup-nand">Création d'une "backup" NAND (Obligatoire)</h>
+                <ul>
+                    <li style="list-style-type: decimal;">Ouvrez l'application "Appareil Photo", cliquez sur "Carte SD" puis sur "Album Photo". Le TWiLightMenu++ devrait se lancer.</li>
+                    <li style="list-style-type: decimal;">Appuyez sur<img src="https://cdn.homebrew-france.site/docs/buttons/switch_b_button.png" class="console-buttons"/>jusqu'à ce que vous ne pouvez plus, vous arriverez à la racine.</li>
+                    <li style="list-style-type: decimal;">Vous trouverez un logiciel nommé "dumpTool", lancez-le.</li>
+                    <li style="list-style-type: decimal;">Une fois le logiciel lancé, appuyez sur<img src="https://cdn.homebrew-france.site/docs/buttons/switch_a_button.png" class="console-buttons"/>pour lancer la "backup". Cela lancera la copie de votre NAND.</br>
+                    <i>La création d'une "backup" NAND nécessite environ 400Mb d'espace disponible sur votre carte SD.</i></li>
+                    <li style="list-style-type: decimal;">La "backup" se trouve à <code>DT010203040A0B0C0D/nand.bin</code></li>
+                </ul>
+                <h class="subtitles" id="unlaunch-install">Installation du bootloader Unlaunch</h>
+                <ul>
+                    <li style="list-style-type: decimal;">Ouvrez l'application "Appareil Photo", cliquez sur "Carte SD" puis sur "Album Photo". Le TWiLightMenu++ devrait se lancer.</li>
+                    <li style="list-style-type: decimal;">Appuyez sur<img src="https://cdn.homebrew-france.site/docs/buttons/switch_b_button.png" class="console-buttons"/>jusqu'à ce que vous ne pouvez plus, vous arriverez à la racine.</li>
+                    <li style="list-style-type: decimal;">Vous trouverez un logiciel nommé "Unlaunch DSi Installer", lancez-le.</li>
+                    <li style="list-style-type: decimal;">Appuyez sur "Install Now". Une fois l'installation est terminée vous pouvez éteindre la console.</li>
+                    <li style="list-style-type: decimal;">Allumez la console, un menu apparaîtra, cliquez sur "Boot Options", descendez jusqu'à trouver "TWiLightMenu++", appuyez sur<img src="https://cdn.homebrew-france.site/docs/buttons/switch_a_button.png" class="console-buttons"/>puis sur "Save and exit".</li>
+                </ul>
+                <p>Vous avez terminé le jailbreak de votre Nintendo DSi.</p>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="../../scripts/navItemsHighlights_docs.js"></script>
+        <script src="../../scripts/maintenance_Toggler.js"></script>
+        <script src="../../scripts/navigationBar_creation.js"></script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9864634157908409" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
+    

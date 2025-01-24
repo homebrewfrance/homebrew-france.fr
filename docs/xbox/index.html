@@ -1,0 +1,171 @@
+<!--    
+	Homebrew France Web V3
+    Copyright (C) 2025  Homebrew France
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html lang="fr" data-website-id="HBFWEB-V3-LWS">
+	<head>
+        <title>Xbox (2001) | Docs</title>
+
+        <!-- Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta charset="utf-8"/>
+		<meta content="Xbox (2001) | Docs" property="og:title"/>
+		<meta content="Documentation complète sur la Xbox OG." property="og:description"/>
+		<meta content="https://docs.homebrew-france.fr/xbox" property="og:url"/>
+		<meta content="https://cdn.homebrew-france.site/docs/dsi_docs.png" property="og:image"/>
+        <meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@HomebrewFrance" />
+		<meta name="twitter:title" content="Homebrew France - La communauté n°1 pour le jailbreak de consoles" />
+		<meta name="twitter:description" content="Rejoignez Homebrew France, la communauté dédiée au jailbreak de consoles avec support et guides en ligne." />
+		<meta name="twitter:image" content="https://cdn.homebrew-france.site/generic/website-icon.png" />
+        
+        <!-- Link -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="../../style/stylesheets/guide.css"/>
+        <link rel="stylesheet" href="../../style/stylesheets/navbar__f.css"/>
+        <link rel="icon" type="image/png" href="https://cdn.homebrew-france.site/generic/lumia-guides.png"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com"/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+                                                
+        <!-- Scripts -->
+        <script async src="../../scripts/analyticsServices_manager.js"></script>
+	</head>
+    <body data-page-id="DOC-Xbox">
+        <a class="top-page-button" href="#"><div href="#" class="top-page-button" title="Remonter en haut de la page">
+            <center>&#9650;</center>
+        </div></a>
+        <div id="navSpace"></div>
+        <div class="docu-container">
+			<div class="nav-menu-horiz" style="overflow: scroll;">
+				<h class="subtitles">Navigation :</h><br>
+                <div class="nav-elements-horiz"></div>
+                <div class="nav-bottom">
+                    <h4 style="font-family: 'Sora', sans-serif; font-size: 18px;"><span style="font-weight: 300;">Homebrew</span><strong>France</strong> Docs</h4>
+                    <p style="font-size: 15px; color: rgb(210, 210, 210);">&copy; 2025 - Homebrew France</p>
+                </div>
+			</div>
+			<div class="nav-menu-vert">
+				<h class="subtitles">Navigation :</h><br>
+                <div class="nav-elements-vert"></div>
+			</div>
+            <div class="page-docu">
+                <h1 class="top">Microsoft Xbox (2001) - <span style="font-family: 'Sora'"><span style="font-weight: 300;">Homebrew</span><strong>France Docs</strong></span></h1>
+                <div class="indic">
+                    <p class="indic-text">Rejoignez <a href="https://discord.homebrew-france.fr/">Homebrew France</a> pour obtenir de l'assistance ou nous aider à développer le guide.</p>
+                </div>
+                <p>Ce guide vous permettra le softmod de votre console Xbox (OG)</p>
+                <h2 class="titles" id="prepa-usb">I. Préparation de la clé USB</h2>
+                <div class="prerequis">
+                    <h3>PRÉREQUIS :</h3>
+                    <ul>
+                        <li>Un jeu compatible avec le softmod.</li>
+                            <i>Note: le jeu recommandé est Splinter Cell, c'est d'ailleurs sur ce dernier que va se baser le guide.</i>
+                        <li>Un ordinateur.</li>
+                        <li>Une clé USB <strong>2.0</strong> d'une capacité de 2Go ou moins.</li>
+                        <li>Un <a href="https://www.amazon.fr/gp/product/B076KL1YGF/">adaptateur USB femelle vers connectique de manette Xbox.</a> <i class="fa-solid fa-cart-shopping"></i></li>
+                        <li>La dernière version du <a href="https://homebrew-france.fr/download/Xbox%20Softmodding%20Tool.zip">Xbox Softmodding Tool</a> <i class="fa fa-download" aria-hidden="true"></i></li>
+                        <li>La dernière version de <a href="https://archive.org/details/Xplorer360Beta6.7z">Xplorer360</a> <i class="fa fa-download" aria-hidden="true"></i></li>
+                    </ul>
+                </div>
+                <ul style="list-style-type: decimal;">
+                    <li>Branchez la clé USB sur l'adaptateur puis branchez l'adaptateur sur la console dans le port manette n°4.</li>
+                    <i>Note: N'importe lequel des ports de la console fera théoriquement l'affaire, mais pour une question de pratique on utilisera le 4<sup>e</sup>. Si le port n°4 est endommagé, utilisez-en un autre.</i>
+                    <li>Ouvrez le gestionnaire de stockage/cartes mémoire de la console, un message devrait appraître vous indiquant que la carte mémoire ne fonctionne pas correctement et vient d'être formatée. Il s'agit là de la clé USB que vous venez d'insérer dans la console.</li>
+                    <div class="indic">
+                        <p class="indic-text">A présent votre clé USB est formatée en FATX, un format propriétaire dérivé du FAT utilisé spécifiquement pour la Xbox.</p>
+                    </div>
+                    <li>Eteignez votre console, retirez la clé USB de la console et branchez-là sur votre ordinateur.</li>
+                    <div class="disclaimer">
+                        <p class="indic-text"><strong>Attention :</strong> si votre PC vous demander de formater la clé USB avant de l'utiliser, ne le faîtes pas, fermez simplement la fenêtre.</p>
+                    </div>
+                    <li>Extrayez l'archive de "Xbox Softmodding Tool" téléchargée précédemment. Une fois l'archive décompréssée, allez dans le dossier <code>Softmod Package</code> puis <code>Legacy</code>.</li>
+                    <li>Vous trouverez les sauvegardes modifiées qui vont servir à installer le softmod. On utilisera celle de "Splinter Cell" en version PAL (Europe/Australie) dans nôtre cas.</li>
+                    <div class="disclaimer">
+                        <p class="indic-text"><strong>Attention :</strong> il s'agit là du premier jeu <i>Splinter Cell</i>, celui qui se nomme simplement <i>Tom Clancy's Splinter Cell</i></p>
+                    </div>
+                    <li>Ouvrez l'archive <code>SC_PAL</code>, à l'intérieur se trouvera un dossier <code>UDATA</code> puis un dossier nommé <code>5553000C</code>. Mettez le dossier <code>5553000C</code> de côté.</li>
+                    <li>Revenez dans le dossier <code>Legacy</code>, ouvrez l'archive <code>Softmod Save</code> à l'intérieur de laquelle se trouve un dossier <code>UDATA</code> puis, un dossier nommé <code>21585554</code>. Mettez le dossier <code>21585554</code> de côté.</li>
+                    <li>Décompressez "Xplorer360" téléchargé précédemment. Ouvrez ensuite le logiciel.</li>
+                    <li>Pour ouvrir nôtre "carte mémoire", rendez-vous dans "Drive" puis "Open" puis dans "Harddrive or memcard". votre "carte mémoire" est normalement ouverte à présent avec un stockage "Partition 0" qui s'affiche sur la gauche, cliquez dessus pour être sûr qu'il soit bien sélectionné.</li>
+                    <li>Glissez et déposez les deux dossiers que vous avez mis de côté durant les étapes 6 et 7. Une fois la copie terminée, fermez le logiciel et retirez la clé USB de votre ordinateur.</li>
+                    <i>Note: il est recommandé de ne rien faire sur l'ordinateur durant le processus de copie. Ces manipulations peuvent s'avérer instables et "capricieuses".</i>
+                </ul>
+                <h2 class="titles" id="install-softmod">II. Installation du softmod</h2>
+                <ul style="list-style-type: decimal;">
+                    <p>Le softmod est bien présent sur nôtre clé USB si tout s'est bien déroulé. Comme dit précédemment, les manipulations effectuées peuvent être instables et "capricieuses". Voici une liste de ce qui peut mal se dérouler dans les étapes précédentes :<p>
+                    <ul>
+                        <li>La "carte mémoire" n'est plus reconnue par la console bien que la clé USB a été formatée et reconnue avec succès.</li>
+                        <li>La copie des sauvegardes s'est mal passée, sur la console, la "carte mémoire" apparaît comme vide ou avec une des sauvegardes manquante (sauvegarde Splinter Cell - "sauvegarde" Softmod).</li>
+    
+                    </ul>
+                    <p>Si dans votre carte mémoire vous avez les deux sauvegardes, vous pouvez maintenant les déplacer dans la console. Pour cela, il suffit de se rendre sur chaque sauvegarde une par une puis cliquer dessus et sélectionner "Copîer". Une fois les sauvegardes copiées, assurez-vous qu'elles soient bien présentes dans le disque dur de la console.</p>
+                    <p>Si toutes les étapes précédentes se sont déroulées avec succès, vous allez pouvoir effectuer l'étape finale de l'installation du softmod.</p>
+                    <li>Insérez le disque de <i>Tom Clancy's Splinter Cell</i> dans le lecteur de votre console et lancez le jeu.</li>
+                    <li>Une fois dans le jeu, deux cas de figure :</li>
+                    <ul>
+                        <li>Vous avez déjà une ou plusieurs sauvegardes du jeu, dans ce cas vous en aurez une de plus.</li>
+                        <li>Vous n'aviez pas de sauvegarde créée pour ce jeu, à présent vous en avez une.</li>
+                    </ul>
+                    <li>Chargez la sauvegarde qui correspond au softmod, elle porte le nom "Linux".</li>
+                    <li>Vous arriverez sur la page d'installation du softmod. Si vous obtenez un écran noir et que rien ne se passe après une longue période, éteignez la console et recommencez les deux étapes précédentes.</li>
+                    <li>Une fois sur la page du softmod, vous aurez à valider plusieurs choses en appuyant sur des boutons et de confirmer "I understand" et d'autres choses de ce type.</li>
+                    <li>Une fois que l'installation est en cours, ne faîtes rien et soyez dans des conditions optimales ne risquant pas de faire éteindre la console subitement (évitez de réaliser cette manipulation lors d'un gros orage par exemple).</li>
+                    <li>Lorsque le processus d'installation est terminé, vous serez ammené sur le menu de la console (autrement appellé "Dashboard") qui sera très différent de ce qui se trouvait à l'origine. Si vous le souhaitez, vous pouvez modifier l'apparence de ce dashboard afin qu'il soit le plus fidèle possible à celui d'origine dans les étapes suivantes. Notez aussi que les sons systèmes sont absents, nous allons également les restaurer.</li>
+                </ul>
+                <h2 class="titles" id="adjusts">III. Ajustements et installations post-softmod (optionnel mais recommandé)</h2>
+                <h class="subtitles">1. Connecter sa console</h>
+                <p>Connecter sa console est une étape très pratique pour permettre le transfert de fichiers d'une console à un PC sans devoir toujours passer par le support USB.</p>
+                <p>La Xbox doit obligatoirement être connectée en <strong>Ethernet</strong> à votre réseau Internet. Vous avez plusieurs cas de figure :</p>
+                <ul>
+                    <li>Votre logement dispose de prises Ethernet (logements récents) : si celles-ci sont reliées à votre box, vous pouvez brancher la console sur l'une de ces prises.</li>
+                    <li>Votre console se trouve à proximité de votre box : branchez la console directement en Ethernet sur l'une des prises RJ45 de votre box Internet.</li>
+                    <li>Votre box n'est pas à disposition : utilisez un répéteur Wi-Fi que vous possédez déjà et branchez la console dessus ou achetez un répéteur Wi-Fi : nous vous recommandons ce répéteur pour une quinzaine d'euros qui fera amplement l'affaire pour la Xbox. <a href="https://www.amazon.fr/MERCUSYS-ME10-Wireless-Compatible-Multicolour/dp/B09N9QP82Q/">Répéteur Wi-FI</a> <i class="fa-solid fa-cart-shopping"></i></li>
+                </ul>
+                <p>Si votre console ainsi que votre ordinateur sont tous deux connectés à votre réseau par n'importe quelle manière, vous pouvez continuer.</p>
+                <ul style="list-style-type: decimal;">
+                    <li>Ouvrez le client FTP de votre choix.</li>
+                    <i>Note: nous recommandons l'utilisation de FileZilla.</i>
+                    <li>Une fois dans le logiciel, vous devrez simplement entrer les informations suivantes :</li>
+                    <ul>
+                        <li>Host (Hôte) : [Correspond à l'adresse IP de la Xbox, elle est affichée sur le dashboard une fois la console connectée correctement. Elle est généralement de la forme suivante : <code>192.168.XX.XXX</code>]</li>
+                        <li>Username (Nom d'utilisateur) : <code>xbox</code></li>
+                        <li>Password (Mot de passe) : <code>xbox</code></li>
+                        <li>Port : <code>21</code></li>
+                    </ul>
+                </ul>
+                <p>Sur le disque dur d'origine, vous n'aurez que très peu d'espace de stockage. Sur ce dernier, vous installerez votre contenu sur la partition <code>:E</code> (sauf exception), les disques durs modifiés seront coupés en plusieurs partitions : <code>E</code>, <code>F</code>, <code>G</code>, <code>H</code>... selon la taille du disque dur et de la façon dont l'espace de stockage est réparti.</p>
+                <h class="subtitles">2. Rétablir les sons d'origine du dashboard</h>
+                <p>Après avoir installé le softmod, vous avez peut être remarqué que les sons dans le dashboard n'existent plus. Nous allons les réinstaller dans cette section.</p>
+                <ul style="list-style-type: decimal;">
+                    <li>Téléchargez l'archive audio disponible <a href="https://github.com/Rocky5/Xbox-Softmodding-Tool/blob/master/Extras%20Disc/Softmod/dashboards/msdash/other/Audio.zip">ici</a>.</li>
+                    <li>Une fois l'archive téléchargée, extrayez-là. Vous aurez un dossier <code>Audi</code> dans lequel vous trouverez plusieurs dossiers : <code>AmbientAudio</code>, <code>MainAudio</code>, <code>MemoryAudio</code>... il s'agit des différents sons utilisés par le dashboard d'origine.</li>
+                    <li>Connectez-vous à votre console via FTP. Copiez le dossier <code>Audio</code> à la racine de la partition <code>:C</code>.</li>
+                    <li>Redémarrez la console, le son devrait être rétabli dans le dashboard.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Scripts -->
+        <script src="../../scripts/navItemsHighlights_docs.js"></script>
+        <script src="../../scripts/maintenance_Toggler.js"></script>
+        <script src="../../scripts/navigationBar_creation.js"></script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9864634157908409" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    </body>
+</html>

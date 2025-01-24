@@ -1,0 +1,44 @@
+{
+    "navigationItems": [
+        {
+            "name": "Accueil",
+            "url": "https://homebrew-france.fr/",
+            "id": "accueilLink",
+            "category": "nav-link"
+        },
+        {
+            "name": "Téléchargements",
+            "url": "https://homebrew-france.fr/telechargements/",
+            "id": "telechargementsLink",
+            "category": "nav-link"
+        },
+        {
+            "name": "Docs",
+            "id": "docsDrop",
+            "category": "dropdown-item"
+        },
+        {
+            "name": "Multi-Checker",
+            "id": "multicheckerDrop",
+            "category": "dropdown-item"
+        },
+        {
+            "name": "Recrutements",
+            "url": "https://homebrew-france.fr/devenir-helper/",
+            "id": "recrutementsLink",
+            "category": "nav-link"
+        },
+        {
+            "name": "Boutique",
+            "url": "https://homebrew-france.fr/boutique/",
+            "id": "boutiqueLink",
+            "category": "nav-link"
+        },
+        {
+            "name": "A propos",
+            "url": "https://homebrew-france.fr/a-propos/",
+            "id": "aproposLink",
+            "category": "nav-link"
+        }
+    ]
+}

@@ -1,0 +1,324 @@
+{
+    "staff" :[
+        {
+            "name": "cooolgamer",
+            "description": "Administrateur et Helper (3DS, DS(i), Wii U)",
+            "avatarFormat": "png",
+            "musicName": "",
+            "musicLink": "",
+            "musicPlatform": "",
+            "socials": [
+                {
+                    "name": "youtube",
+                    "link": "https://www.youtube.com/channel/UCy3-B2xuspxYOKrw6x_icBQ",
+                    "username": "cooolboy"
+                },
+                {
+                    "name": "github",
+                    "link": "https://github.com/cooolgamer",
+                    "username": "cooolgamer"
+                }
+            ]
+        },
+        {
+            "name": "Dhalian",
+            "description": "Administrateur et Helper (3DS, DS(i), PS2)",
+            "avatarFormat": "jpeg",
+            "musicName": "Exit Music (For A Film) - Radiohead",
+            "musicLink": "https://open.spotify.com/intl-fr/track/0s0lnAIcclHVjQ4fITlOoU?si=64e9a9ec37384fe3",
+            "musicPlatform": "spotify",
+            "socials": [
+                {
+                    "name": "github",
+                    "link": "https://github.com/dhalian",
+                    "username": "Dhalian"
+                },
+                {
+                    "name": "x",
+                    "link": "https://x.com/dhalian_/",
+                    "username": "@dhalian_"
+                }
+            ]
+        },
+        {
+            "name": "SBK",
+            "description": "Administrateur et Helper (PS3, PSP, PSVita)",
+            "avatarFormat": "png",
+            "musicName": "",
+            "musicLink": "",
+            "musicPlatform": "",
+            "socials": [
+                {
+                    "name": "x",
+                    "link": "https://x.com/sb_kraken",
+                    "username": "@sb_kraken"
+                }
+            ]
+        },
+		        {
+            "name": "Horiz",
+            "description": "Administrateur et Helper (PC : Hardware, Logiciel)",
+            "avatarFormat": "png",
+            "musicName": "",
+            "musicLink": "",
+            "musicPlatform": "",
+            "socials": [
+                {
+                    "name": "youtube",
+                    "link": "https://youtube.com/@h0riizzz?si=I9OG15PHHLFaUqHI",
+                    "username": "Lil Horizz"
+                }
+            ]
+        },
+        {
+            "name": "Aëlys",
+            "description": "Modératrice",
+            "avatarFormat": "jpg",
+            "musicName": "Beyond the Sky (feat. Sarah Àlainn) - Yasunori Mitsuda",
+            "musicLink": "https://www.youtube.com/watch?v=P70hcop3lJY",
+            "musicPlatform": "youtube",
+            "socials": [
+                {
+                    "name": "twitch",
+                    "link": "https://www.twitch.tv/aelys_2b",
+                    "username": "@aelys_2b"
+                }
+            ]
+        },
+        {
+            "name": "Evoes",
+            "description": "Modérateur",
+            "avatarFormat": "png",
+            "musicName": "",
+            "musicLink": "",
+            "musicPlatform": "",
+            "socials": [
+                {
+                    "name": "x",
+                    "link": "https://x.com/Evoes_?t=Vsys45aYD1Ilmo6LP2EU9A&s=09",
+                    "username": "@Evoes_"
+                }
+            ]
+        },
+        {
+            "name": "The_Yann62",
+            "description": "Modérateur",
+            "avatarFormat": "png",
+            "musicName": "",
+            "musicLink": "",
+            "musicPlatform": "",
+            "socials": [
+                {
+                    "name": "x",
+                    "link": "https://x.com/TheYann62",
+                    "username": "@TheYann62"
+                }
+            ]
+        },
+        {
+            "name": "Akira",
+            "description": "Helper (Wii U)",
+            "avatarFormat": "png",
+            "musicName": "",
+            "musicLink": "",
+            "musicPlatform": "",
+            "socials": [
+                {
+                    "name": "discord",
+                    "link": "https://discord.com/invite/C94T8DR2sx",
+                    "username": "Nintendo [FR]"
+                },
+                {
+                    "name": "x",
+                    "link": "https://x.com/akirancr?s=21",
+                    "username": "Akira Œ"
+                }
+            ]
+        },
+        {
+            "name": "Ayhanblackflag",
+            "description": "Helper (PS4)",
+            "avatarFormat": "png",
+            "musicName": "",
+            "musicLink": "",
+            "musicPlatform": "",
+            "socials": [
+                {
+                    "name": "discord",
+                    "link": "https://discord.gg/affmal",
+                    "username": "affmal"
+                }
+            ]
+        },
+        {
+            "name": "Benji",
+            "description": "Helper (Wii, Wii U)",
+            "avatarFormat": "png",
+            "musicName": "",
+            "musicLink": "",
+            "musicPlatform": "",
+            "socials": [
+                {
+                    "name": "youtube",
+                    "link": "https://www.youtube.com/channel/UCcoyEQuAbJ7FRz1y_bU0QXg",
+                    "username": "Benjididas"
+                },
+                {
+                    "name": "x",
+                    "link": "https://x.com/benji_didas",
+                    "username": "@benji_didas"
+                }
+            ]
+        },
+        {
+            "name": "ElghisJoestar",
+            "description": "Helper (3DS, DS(i), Wii, Wii U)",
+            "avatarFormat": "jpg",
+            "musicName": "",
+            "musicLink": "",
+            "musicPlatform": "",
+            "socials": [
+                {
+                    "name": "github",
+                    "link": "https://github.com/Elghis",
+                    "username": "Elghis"
+                }
+            ]
+        },
+        {
+            "name": "Hades Bar",
+            "description": "Helper (3DS)",
+            "avatarFormat": "png",
+            "musicName": "",
+            "musicLink": "",
+            "musicPlatform": "",
+            "socials": [
+            ]
+        },
+        {
+            "name": "im.phil",
+            "description": "Helper (Wii, Wii U)",
+            "avatarFormat": "jpg",
+            "musicName": "",
+            "musicLink": "",
+            "musicPlatform": "",
+            "socials": [
+            ]
+        },
+        {
+            "name": "JéremKO",
+            "description": "Helper (3DS, Wii, Wii U, Switch)",
+            "avatarFormat": "jpg",
+            "musicName": "",
+            "musicLink": "",
+            "musicPlatform": "",
+            "socials": [
+                {
+                    "name": "x",
+                    "link": "https://x.com/JeremKOYTB",
+                    "username": "@JeremKOYTB"
+                }
+            ]
+        },
+        {
+            "name": "Luigi31",
+            "description": "Helper (3DS, PC : Hardware, Logiciel)",
+            "avatarFormat": "png",
+            "musicName": "",
+            "musicLink": "",
+            "musicPlatform": "",
+            "socials": [
+            ]
+        },
+        {
+            "name": "Jones",
+            "description": "Helper (Switch)",
+            "avatarFormat": "gif",
+            "musicLink": "https://open.spotify.com/intl-fr/track/6Sy9BUbgFse0n0LPA5lwy5?si=d08c25a16a14404d",
+            "musicName": "Sandstorm - Darude",
+            "musicPlatform": "spotify",
+            "socials": [
+            ]
+        },
+        {
+            "name": "Julia",
+            "description": "Helper (3DS, DS(i), PS2, PS3, Wii)",
+            "avatarFormat": "png",
+            "musicName": "",
+            "musicLink": "",
+            "musicPlatform": "",
+            "socials": [
+            ]
+        },
+        {
+            "name": "ndjembe",
+            "description": "Helper (Switch)",
+            "avatarFormat": "png",
+            "musicName": "",
+            "musicLink": "",
+            "musicPlatform": "",
+            "socials": [
+            ]
+        },
+        {
+            "name": "Orusu",
+            "description": "Helper (Wii U)",
+            "avatarFormat": "png",
+            "musicName": "Color Your Night - Lotus Juice",
+            "musicLink": "https://open.spotify.com/intl-fr/track/4pjFNyjGaoKgLTnndISP6V?si=2693a349bf8b4f5d",
+            "musicPlatform": "spotify",
+            "socials": [
+            ]
+        },
+        {
+            "name": "Samilop \"Cimmerian\" Iter",
+            "description": "Helper (PSVita)",
+            "avatarFormat": "png",
+            "musicName": "",
+            "musicLink": "",
+            "musicPlatform": "",
+            "socials": [
+                {
+                    "name": "x",
+                    "link": "https://x.com/Cimmerian_Iter",
+                    "username": "@Cimmerian_Iter"
+                }
+            ]
+        },
+        {
+            "name": "Vizir",
+            "description": "Helper (Switch)",
+            "avatarFormat": "png",
+            "musicName": "",
+            "musicLink": "",
+            "musicPlatform": "",
+            "socials": [
+                {
+                    "name": "tiktok",
+                    "link": "https://www.tiktok.com/@fixurphone",
+                    "username": "@fixurphone"
+                }
+            ]
+        },
+        {
+            "name": "Zoria",
+            "description": "Helper (3DS, Switch)",
+            "avatarFormat": "png",
+            "musicName": "Désolé pour hier soir - Tryo",
+            "musicLink": "https://open.spotify.com/intl-fr/track/1OPUGXvJXEWZu6qqBr0VTF?si=ab319fa50d8542d6",
+            "musicPlatform": "spotify",
+            "socials": [
+                {
+                    "name": "x",
+                    "link": "https://x.com/SwitchTools",
+                    "username": "@SwitchTools"
+                },
+                {
+                    "name": "website",
+                    "link": "https://hacktuality.com/",
+                    "username": "Hacktuality"
+                }
+            ]
+        }
+    ]
+}

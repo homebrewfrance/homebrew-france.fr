@@ -1,0 +1,90 @@
+.time {
+    background: rgba(84, 91, 102, 0.26);
+    border-radius: 30px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    padding: 7px;
+    font-size: 16px;
+    font-weight: 200;
+    color: white;
+    margin: 3px;
+}
+.time:focus {
+    box-shadow: 0px 2px 5px #000000;			
+}
+#pseudo, #autres-rep, #autres-rep2, #date-naissance, #date-bannissement, #email, #djmoderes, #membership-duration {
+    background: rgba(84, 91, 102, 0.26);
+    border-radius: 50px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    padding: 7px;
+    font-size: 16px;
+    font-weight: 200;
+    color: white;
+    margin: 3px;
+}
+
+.required-fields {
+    color: rgb(255, 133, 133);
+}
+
+#motivation {
+    background: rgba(84, 91, 102, 0.26);
+    border-radius: 25px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 200;
+    color: white;
+    margin: 3px;
+}
+
+#pseudo:focus, #autres-rep:focus, #autres-rep2:focus, #motivation:focus, #date-naissance:focus, #time:focus, #time2:focus, #djmoderes:focus, #membership-duration:focus {
+    box-shadow: 0px 2px 5px #000000;
+}
+.checkbox-container {
+    margin-left: 3%;
+}
+.formulaire-helper {
+    width: 450px;
+    height: auto;
+    padding: 5px;
+    margin: 9px;
+}
+
+
+input[type="checkbox"] {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    font-weight: 200;
+}
+input[type="radio"] {
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    margin: 0;
+}
+
+form {
+	background-color: #1f2023d2;
+	border-radius: 25px;
+	border: 1px solid #333;
+    margin: 5px;
+    padding: 13px;
+}
+
+.formHelper h4 {
+    font-size: 19px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+input {
+    font-weight: 200;
+}

@@ -1,0 +1,230 @@
+<!--    
+	Homebrew France Web V3
+    Copyright (C) 2025  Homebrew France
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" data-website-id="HBFWEB-V3-LWS">
+	<head>
+        <title>Sideloading iOS | Docs</title>
+
+        <!-- Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charset="utf-8" />
+		<meta content="Sideloading iOS | Docs" property="og:title"/>
+		<meta content="Guide pas à pas pour installer des applications de sources externes sur un appareil iOS." property="og:description"/>
+		<meta content="https://docs.homebrew-france.fr/3ds/sideloading-ios" property="og:url"/>
+		<meta content="https://cdn.homebrew-france.site/docs/sideloading_docs.png" property="og:image"/>
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="apple-mobile-web-app-capable" content="YES"/>
+        <meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@HomebrewFrance" />
+		<meta name="twitter:title" content="Homebrew France - La communauté n°1 pour le jailbreak de consoles" />
+		<meta name="twitter:description" content="Rejoignez Homebrew France, la communauté dédiée au jailbreak de consoles avec support et guides en ligne." />
+		<meta name="twitter:image" content="https://cdn.homebrew-france.site/generic/website-icon.png" />
+        
+        <!-- Link -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="../../style/stylesheets/guide.css" />
+        <link rel="stylesheet" href="../../style/stylesheets/navbar__f.css" />
+        <link rel="icon" type="image/png" href="https://cdn.homebrew-france.site/generic/lumia-guides.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        
+        <!-- Scripts -->
+        <script async src="../../scripts/analyticsServices_manager.js"></script>
+	</head>
+    <body data-page-id="DOC-Sideloading">
+        <a class="top-page-button" href="#"><div href="#" class="top-page-button" title="Remonter en haut de la page">
+            <center>&#9650;</center>
+        </div></a>
+        <div id="navSpace"></div>
+        <div class="docu-container">
+			<div class="nav-menu-horiz" style="overflow: scroll;">
+				<h class="subtitles">Navigation :</h><br>
+                <div class="nav-elements-horiz"></div>
+                <div class="nav-bottom">
+                    <h4 style="font-family: 'Sora', sans-serif; font-size: 18px;"><span style="font-weight: 300;">Homebrew</span><strong>France</strong> Docs</h4>
+                    <p style="font-size: 15px; color: rgb(210, 210, 210);">&copy; 2025 - Homebrew France</p>
+                </div>
+			</div>
+			<div class="nav-menu-vert">
+				<h class="subtitles">Navigation :</h><br>
+                <div class="nav-elements-vert"></div>
+			</div>
+            <div class="page-docu">
+                <h1 class="top">Sideloading iOS - <span style="font-family: 'Sora'"><span style="font-weight: 300;">Homebrew</span><strong>France Docs</strong></span></h1>
+                <div class="indic">
+                    <p class="indic-text">Rejoignez <a href="https://discord.homebrew-france.fr/">Homebrew France</a> pour obtenir de l'assistance ou nous aider à développer le guide.</p>
+                </div>
+                <p>Ce guide vous permettra d'installer des applications de sources externes au format <code>.ipa</code> sur un appareil exécutant iOS.<br />
+                Ce guide n'est applicable que pour les appareils éxecutant iOS ou iPad OS 14 ou supérieur. </p>
+                <h class="subtitles">Liste des appareils compatibles :</h>
+                <ul>
+                    <li><strong style="font-weight: 650;">Gamme iPod Touch</strong> : iPod Touch (7ème gen.)</li>
+                    <li><strong style="font-weight: 650;">Gamme iPhone 7</strong> : iPhone 7, iPhone 7 Plus</li>
+                    <li><strong style="font-weight: 650;">Gamme iPhone 8</strong> : iPhone 8, iPhone 8 Plus</li>
+                    <li><strong style="font-weight: 650;">Gamme iPhone X</strong> : iPhone X, iPhone XS, iPhone XR, iPhone XS Max</li>
+                    <li><strong style="font-weight: 650;">Gamme iPhone SE</strong> : iPhone SE (1ère gen.), iPhone SE (2ème gen.), iPhone SE (3ème gen.)</li>
+                    <li><strong style="font-weight: 650;">Gamme iPhone 11</strong> : iPhone 11, iPhone 11 Pro, iPhone 11 Pro Max</li>
+                    <li><strong style="font-weight: 650;">Gamme iPhone 12</strong> : iPhone 12, iPhone 12 Mini, iPhone 12 Pro, iPhone 12 Pro Max</li>
+                    <li><strong style="font-weight: 650;">Gamme iPhone 13</strong> : iPhone 13, iPhone 13 Mini, iPhone 13 Pro, iPhone 13 Pro Max</li>
+                    <li><strong style="font-weight: 650;">Gamme iPhone 14</strong> : iPhone 14, iPhone 14 Plus, iPhone 14 Pro, iPhone 14 Pro Max</li>
+                    <li><strong style="font-weight: 650;">Gamme iPhone 15</strong> : iPhone 15, iPhone 15 Plus, iPhone 15 Pro, iPhone 15 Pro Max</li>
+                    <li><strong style="font-weight: 650;">Gamme iPhone 16</strong> : iPhone 16, iPhone 16 Plus, iPhone 16 Pro, iPhone 16 Pro Max</li>
+                </ul>
+                <h2 class="titles" id="altserver-install" style="margin-bottom: 15px;">I. Installation de AltServer</h2>
+                <div class="prerequis">
+                    <h3>PRÉREQUIS :</h3>
+                    <ul>
+                        <li><a href="https://www.apple.com/itunes/download/win64">La dernière version de iTunes</a> <i class="fa fa-download" aria-hidden="true"></i></li>
+                        <li><a href="https://updates.cdn-apple.com/2020/windows/001-39935-20200911-1A70AA56-F448-11EA-8CC0-99D41965005E/iCloudSetup.exe">La dernière version de iCloud</a> <i class="fa fa-download" aria-hidden="true"></i></li>
+                        <li><a href="https://cdn.altstore.io/file/altstore/altinstaller.zip">La dernière version de AltServer</a> <i class="fa fa-download" aria-hidden="true"></i></li>
+                        <li>Un iPhone ou iPad sous iOS/iPad OS 14 ou supérieur.</li>
+                        <li>Un ordinateur sous Windows 7 ou supérieur.</li>
+                        <li>Ne pas avoir les versions Microsoft Store de iTunes et iCloud.</li>
+                    </ul>
+                </div>
+                <ul>
+                    <li style="list-style-type: decimal;">Exécutez le fichier d'installation de iTunes et installez l'application.</li>
+                    <li style="list-style-type: decimal;">Exécutez le fichier d'installation de iTunes et installez l'application.</li>
+                    <li style="list-style-type: decimal;">Exécutez l'archive <code>.zip</code> de AltServer et exécutez <code>setup.exe</code>.</li>
+                </ul>
+                <h2 class="titles" style="margin-bottom: 15px;" id="sidestore-install">II. Installation de AltStore</h2><br />
+                <h class="subtitles">1) Activation du mode développeur sur l'iPhone (iOS 16 et supérieur) :</h>
+                <ul>
+                    <li style="list-style-type: decimal;">Allez dans "Paramètres" puis "Confidentialité et sécurité".</li>
+                    <img src="https://cdn.homebrew-france.site/docs/sideloading/iphone-1.png" width="230px" class="img-revanced" />
+                    <li style="list-style-type: decimal;">Descendez jusqu'à trouver le mode développeur et activez-le.</li>
+                    <img src="https://cdn.homebrew-france.site/docs/sideloading/iphone-2.png" width="230px" class="img-revanced" />
+                </ul>
+                <h class="subtitles">2) Utilisation de AltServer sur Windows :</h>
+                <ul>
+                    <li style="list-style-type: decimal;">Allez dans la barre de recherche Windows et cherchez « AltServer » lorsque vous l’avez
+                        trouvé faites clic-droit puis « Exécuter en tant qu’administrateur ». Si l’application vous
+                        demande l’accès au réseau, acceptez.</li>
+                    <img src="https://cdn.homebrew-france.site/docs/sideloading/altserver-1.png" width="230px" class="img-revanced" /><br />
+                    <li style="list-style-type: decimal;">Branchez votre iPhone à votre ordinateur via un câble.</li>
+                    <li style="list-style-type: decimal;">Allez sur iTunes. Il vous sera sûrement demandé de vous connecter. Vous devez vous connecter
+                    avec votre identiﬁant Apple.</li>
+                    <li style="list-style-type: decimal;">Une fois connecté vous devriez voir votre iPhone apparaître en haut à gauche.</li>
+                    <li style="list-style-type: decimal;">Allez dans votre barre des tâches, trouvez l’icône AltServer. Maintenez la touche Maj de votre clavier puis cliquez dessus, cliquez ensuite sur « Sideload .ipa »</li>
+                    <div style="@media only screen and (min-width: 1041px) { display: flex; flex-direction: row; } @media only screen and (max-width: 1041px) { display: flex; flex-direction: row; }">
+                        <img src="https://cdn.homebrew-france.site/docs/sideloading/altserver-2.png" width="230px" class="img-revanced" />
+                        <img src="https://cdn.homebrew-france.site/docs/sideloading/altserver-3.png" width="230px" class="img-revanced" />
+                    </div>
+                    <li style="list-style-type: decimal;">Entrez vos identifiants Apple.</li>
+                    <li style="list-style-type: decimal;">Une notification apparaîtra pour dire que SideStore s’est correctement installé.</li>
+                </ul>
+                <h class="subtitles">3) Autoriser SideStore sur l'iPhone :</h>
+                <ul>
+                    <li style="list-style-type: decimal;">Allez dans "Paramètres" ➜ "Général" ➜ "VPN et Gestion de l’appareil". Appuyez sur votre adresse mail.</li>
+                    <div style="@media only screen and (min-width: 1041px) { display: flex; flex-direction: row; } @media only screen and (max-width: 1041px) { display: flex; flex-direction: row; }">
+                        <img src="https://cdn.homebrew-france.site/docs/sideloading/altstore-1.png" width="230px" class="img-revanced" />
+                        <img src="https://cdn.homebrew-france.site/docs/sideloading/altstore-2.png" width="230px" class="img-revanced" />
+                        <img src="https://cdn.homebrew-france.site/docs/sideloading/altstore-3.png" width="230px" class="img-revanced" />
+                    </div>
+                    <li style="list-style-type: decimal;">Appuyez sur faire confiance à SideStore.</li>
+                    <li style="list-style-type: decimal;">AltStore est désormais opérationnel.</li>
+                    <li style="list-style-type: decimal;">Allez dans le menu de votre iPhone et vérifiez que SideStore est bien présent et que vous pouvez le
+                    lancer sans problème.</li>
+                </ul>
+                <h2 class="titles" id="jitterbug-pairing" style="margin-bottom: 15px;">III. Appairer l'appareil avec JitterBug</h2>
+                <div class="prerequis">
+                <h3>PRÉREQUIS :</h3>
+                <ul>
+                    <li><a href="https://github.com/osy/Jitterbug/releases/download/v1.3.1/jitterbugpair-win64.zip">La dernière version de JitterbugPair</a></code> <i class="fa fa-download" aria-hidden="true"></i></li>
+                    <li>L'appareil Apple est connecté via USB à votre ordinateur.</li>
+                    <li>Un code de verrouillage est configuré sur votre appareil.</li>
+                </ul>
+                </div>
+                <ul>
+                    <li style="list-style-type: decimal;">Dans l'explorateur de fichiers de votre ordinateur, faites un clic-droit sur le fichier <code>jitterbugpair-win64.zip</code> puis extrayez-le vers un dossier.</li>
+                    <li style="list-style-type: decimal;">Double-cliquez sur le fichier <code>jitterbugpair.exe</code> pour le lancer. Il devrait créer un fichier d'appairage avec l'extension <code>.mobiledevicepairing</code>.</li>
+                    <div class="indic">
+                        <p class="indic-text">Si le programme ne génère aucun fichier, vous avez deux solutions :</p>
+                        <ul>
+                            <li style="list-style-type: decimal;">Executez le programme en tant qu'administrateur.</li>
+                            <li style="list-style-type: decimal;">Dans le dossier où est présent <code>jitterbugpair.exe</code>, maintenez la touche MAJ et faites un clic-droit sur une zone vide du dossier. Cliquez ensuite sur "Ouvrir PowerShell ici" ou "Ouvrir le Terminal ici". Dans le terminal, tapez <code>./jitterbugpair.exe</code></code></li>
+                        </ul>
+                    </div>
+                    <li style="list-style-type: decimal;">Compressez le fichier d'appairage au format ZIP et transférez-le sur votre appareil Apple via Google Drive, un email, ou tout autre méthode.</li>
+                    <li style="list-style-type: decimal;">Sur votre appareil Apple, récupérez le fichier ZIP créé précédemment, ouvrez l'application "Fichiers", maintenez une pression longue sur le fichier ZIP contenant votre fichier d'appairage, puis sélectionnez "Décompresser".</li>
+                    <li style="list-style-type: decimal;">Lancez l'application "SideStore", puis appuyez sur "OK" lorsque vous y êtes invité.</li>
+                    <li style="list-style-type: decimal;">Si l'application "SideStore" n'apparaît pas, redémarrez votre appareil pour la faire apparaître.</li>
+                    <li style="list-style-type: decimal;">Sélectionnez votre fichier d'appairage décompressé, et "SideStore" sera appairé !</li>
+                </ul>
+                <div class="indic">
+                    <p class="indic-text"><strong>Remarque : </strong>Si vous mettez à jour votre appareil Apple, votre fichier d'appairage deviendra invalide et il faudra recommencer la manipulation.</p>             
+                </div>
+                <h2 class="titles" style="margin-bottom: 15px;" id="config-wireguard">IV. Configuration de WireGuard VPN sur votre iPhone</h2>
+                <div class="prerequis">
+                    <h3>PRÉREQUIS :</h3>
+                    <ul>
+                        <li><a href="https://apps.apple.com/us/app/wireguard/id1441195209">L'application WireGuard VPN. (sur l'App Store)</a> <i class="fa fa-download" aria-hidden="true"></i></li>
+                        <li><a href="https://github.com/sidestore/sidestore/releases/download/0.1.1/sidestore.conf">Le fichier de configuration SideStore pour WireGuard. (à télécharger depuis Safari sur iPhone)</a> <i class="fa fa-download" aria-hidden="true"></i></li>
+                    </ul>
+                </div>
+                <ul>
+                    <li style="list-style-type: decimal;">Rendez-vous dans l'App Store. Rercherchez "WireGuard" et installez l'application.</li>
+                    <div style="@media only screen and (min-width: 1041px) { display: flex; flex-direction: row; } @media only screen and (max-width: 1041px) { display: flex; flex-direction: row; }">
+                        <img src="https://cdn.homebrew-france.site/docs/sideloading/wireguard-1.png" width="230px" class="img-revanced" />
+                    </div>
+                    <li style="list-style-type: decimal;">Sur votre iPhone, téléchargez le fichier de configuration WireGuard, dont le lien est disponible ci-dessus.</li>
+                    <div style="@media only screen and (min-width: 1041px) { display: flex; flex-direction: row; } @media only screen and (max-width: 1041px) { display: flex; flex-direction: row; }">
+                        <img src="https://cdn.homebrew-france.site/docs/sideloading/wireguard-2.png" width="230px" class="img-revanced" />
+                    </div>
+                    <li style="list-style-type: decimal;">Rendez-vous dans l'application "Fichiers" et rendez vous dans votre dossier de "Téléchargements" et cherchez <code>SideStore.conf</code>, appuyez dessus puis appuyez sur l'icône de partage en haut puis sélectionnez "WireGuard". Cette action va envoyer le fichier de configuration directement vers WireGuard VPN.</li>
+                    <div style="@media only screen and (min-width: 1041px) { display: flex; flex-direction: row; } @media only screen and (max-width: 1041px) { display: flex; flex-direction: row; }">
+                        <img src="https://cdn.homebrew-france.site/docs/sideloading/wireguard-4.png" width="230px" class="img-revanced" />
+                        <img src="https://cdn.homebrew-france.site/docs/sideloading/wireguard-5.png" width="230px" class="img-revanced" />
+                    </div>
+                    <li style="list-style-type: decimal;">WireGuard VPN devrait se configurer automatiquement.</li>
+                </ul>
+                <h2 class="titles" style="margin-bottom: 15px;" id="ipa-install">V. Installation d'IPAs sur l'iPhone</h2>
+                <div class="indic">
+                    <p class="indic-text">Vous devez impérativement être connecté(é) à un point d'accès Wi-Fi et activer le VPN afin de pouvoir utiliser SideStore.</p>
+                </div>
+                <ul>
+                    <li style="list-style-type: decimal;">Téléchargez le fichier <code>.ipa</code> de l'application de votre choix.</li>
+                    <li style="list-style-type: decimal;">Rendez-vous sur AltStore, appuyez sur "My Apps" en bas.</li>
+                    <li style="list-style-type: decimal;">En haut à gauche, vous trouverez une icône "+".</li>
+                    <li style="list-style-type: decimal;">Cherchez le fichier <code>.ipa</code> que vous venez de télécharger pour l'installer.</li>
+                    <li style="list-style-type: decimal;">Si au moment d'installer cette pop-uop apparaît, vous avez le choix.</li>
+                    <img src="https://cdn.homebrew-france.site/docs/sideloading/app-extensions.png" />
+                </ul>
+                <div class="indic">
+                    <p class="indic-text">Vous êtes limités à 10 "App IDs" par semaine. Une seule application possède en temps normal un seul App ID, mais certaines applications avec des extensions peuvent en avoir plusieurs. En désactivant les extensions dans l'étape 5, vous risquez de perdre des fonctionnalités mais vous économiserez un ou plusieurs App ID additionnel(s).</p>
+                </div>
+                <h2 class="titles" style="margin-bottom: 15px;" id="actualiser-appid">VI. Actualiser les App IDs</h2>
+                <p>Comme dit précédemment vous disposez de 10 App IDs par semaine. Ce qui signifie qu'ils expirent tous les sept jours. Si l'app ID d'une application est supprimé, l'application l'est également. Pour y remédier, voici les étapes simples :</p>
+                <ul>
+                    <li style="list-style-type: decimal;">Connectez votre iPhone à un point d'accès Wi-Fi et activez le VPN configuré précédemment, dans vos paramètres.</li>
+                    <li style="list-style-type: decimal;">Rendez-vous sur AltStore, appuyez sur "My Apps" en bas.</li>
+                    <li style="list-style-type: decimal;">Vous y trouverez pour chaque application un bouton "X DAYS". C'est la durée restante de vos App IDs. Pensez à actualiser tous les App IDs en appuyant sur ces boutons avant que le compteur n'affiche "0 DAYS".</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Scripts -->
+        <script src="../../scripts/navItemsHighlights_docs.js"></script>
+        <script src="../../scripts/maintenance_Toggler.js"></script>
+        <script src="../../scripts/navigationBar_creation.js"></script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9864634157908409" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    </body>
+</html>

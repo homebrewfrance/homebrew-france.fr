@@ -1,0 +1,92 @@
+<!--    
+	Homebrew France Web V3
+    Copyright (C) 2025  Homebrew France
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html lang="fr" data-website-id="HBFWEB-V3-LWS">
+	<head>
+		<title>Switch | Serial-Checker</title>
+
+        <!-- Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8" />
+		<meta content="NS Serial Checker" property="og:title"/>
+		<meta content="Un outil pour vérifier la compatibilité de votre console avec la faille RCM." property="og:description"/>
+		<meta content="https://homebrew-france.fr/multi-checker/switch" property="og:url"/>
+		<meta content="https://cdn.homebrew-france.site/generic/website-icon.png" property="og:image"/>
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="apple-mobile-web-app-capable" content="YES"/>
+        <meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@HomebrewFrance" />
+		<meta name="twitter:title" content="Homebrew France - La communauté n°1 pour le jailbreak de consoles" />
+		<meta name="twitter:description" content="Rejoignez Homebrew France, la communauté dédiée au jailbreak de consoles avec support et guides en ligne." />
+		<meta name="twitter:image" content="https://cdn.homebrew-france.site/generic/website-icon.png" />
+		
+        <!-- Link -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="../../style/stylesheets/guide.css" />
+        <link rel="stylesheet" href="../../style/stylesheets/navbar__f.css" />
+    	<link rel="icon" type="image/png" href="https://cdn.homebrew-france.site/generic/lumia-guides.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        
+        <!-- Scripts -->
+        <script async src="../../scripts/analyticsServices_manager.js"></script>
+	</head>
+	<body data-page-id="MLTI-Switch">
+        <div id="navSpace"></div>
+		<div class="indicator-container">
+			<div class="indicator">Nintendo Switch Serial Checker</div>
+			<div class="indicator-desc">Un outil pour vérifier la compatibilité de votre Nintendo Switch avec la faille RCM.</div>
+		</div>
+        <div class="page">	
+            <div class="indic">
+                <p class="indic-text">Rejoignez <a href="https://discord.homebrew-france.fr/">Homebrew France</a> pour obtenir de l'assistance ou nous aider à développer le guide.</p>
+            </div>
+            <pre></pre>
+            <div class="checker">
+                <h3><i class="fa-solid fa-circle-play"></i>&nbsp;&nbsp;Vérifiez le numéro de série sous votre console</h3>
+                <p>Tapez le ensuite ci-dessous pour savoir si votre console est compatible avec la faille RCM.</p>
+                <multi-checker id="nintendoSwitch">
+                    <center><form style="margin-block: 12px;" method="get">
+                        <div class="input-switch"><input type="text" name="numberInput" required  placeholder="Ex: XAJ10046000000"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <input class="submit" type="submit" value="Vérifier la compatibilité >">
+                    </center>
+                </multi-checker>
+                <center><label style="margin-top: 6px; font-size: 16px;" id="resultat"></label></center>
+            </div>
+            <div class="checker">
+                <h3><i class="fa fa-question-circle" aria-hidden="true">&nbsp;&nbsp;</i>Informations :</h3>
+                <ul>
+                    <li style="list-style-type: none; margin-left: 5px; margin-block: 8px;"><i class='fas fa-angle-right'></i>&nbsp;<code>Votre console n'est pas patchée</code> signifie que votre console est compatible avec la faille Tegra RCM, elle est donc "hackable" sans installation de puce.</li>
+                    <li style="list-style-type: none; margin-left: 5px; margin-block: 8px;"><i class='fas fa-angle-right'></i>&nbsp;<code>Votre console est potentiellement patchée</code> signifie que votre console est supposée compatible avec la faille Tegra RCM mais n'est pas "hackable" sans installation de puce.</li>
+                    <li style="list-style-type: none; margin-left: 5px; margin-top: 8px;"><i class='fas fa-angle-right'></i>&nbsp;<code>Votre console est patchée</code> signifie que votre console est incompatible avec la faille Tegra RCM, elle n'est donc pas "hackable" sans installation de puce.</li>
+                </ul>
+            </div>
+        </div>	
+
+        <!-- Scripts -->
+        <script src="../../scripts/multi-checker/switch.js"></script>
+        <script src="../../scripts/maintenance_Toggler.js"></script>
+        <script src="../../scripts/navigationBar_creation.js"></script>
+        <!--script src="https://homebrewfrance.github.io/Lumia-Multi-Checker/multi-checker/switch/ns-serial-checker.js"></script-->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9864634157908409" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	</body>
+</html>
+

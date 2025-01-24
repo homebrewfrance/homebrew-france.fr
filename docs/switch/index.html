@@ -1,0 +1,498 @@
+<!--    
+	Homebrew France Web V3
+    Copyright (C) 2025  Homebrew France
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html lang="fr" data-website-id="HBFWEB-V3-LWS">
+	<head>
+        <title>Nintendo Switch | Docs</title>
+
+        <!-- Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charset="utf-8" />
+		<meta content="Nintendo Switch | Docs" property="og:title"/>
+		<meta content="Documentation complète sur la Nintendo Switch." property="og:description"/>
+		<meta content="https://docs.homebrew-france.fr/switch" property="og:url"/>
+		<meta content="https://cdn.homebrew-france.site/docs/switch_docs.png" property="og:image"/>
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@HomebrewFrance" />
+		<meta name="twitter:title" content="Homebrew France - La communauté n°1 pour le jailbreak de consoles" />
+		<meta name="twitter:description" content="Rejoignez Homebrew France, la communauté dédiée au jailbreak de consoles avec support et guides en ligne." />
+		<meta name="twitter:image" content="https://cdn.homebrew-france.site/generic/website-icon.png" />
+        
+        <!-- Link -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="../../style/stylesheets/guide.css" />
+        <link rel="stylesheet" href="../../style/stylesheets/navbar__f.css" />
+        <link rel="icon" type="image/png" href="https://cdn.homebrew-france.site/generic/lumia-guides.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+                                        
+        <!-- Scripts -->
+        <script async src="../../scripts/analyticsServices_manager.js"></script>
+	</head>
+    <body data-page-id="DOC-Switch">
+        <a class="top-page-button" href="#"><div href="#" class="top-page-button" title="Remonter en haut de la page">
+            <center>&#9650;</center>
+        </div></a>
+        <div id="navSpace"></div>
+		<div class="docu-container">
+			<div class="nav-menu-horiz" style="overflow: scroll;">
+				<h class="subtitles">Navigation :</h><br>
+                <div class="nav-elements-horiz"></div>
+                <div class="nav-bottom">
+                    <h4 style="font-family: 'Sora', sans-serif; font-size: 18px;"><span style="font-weight: 300;">Homebrew</span><strong>France</strong> Docs</h4>
+                    <p style="font-size: 15px; color: rgb(210, 210, 210);">&copy; 2025 - Homebrew France</p>
+                </div>
+			</div>
+			<div class="nav-menu-vert">
+				<h class="subtitles">Navigation :</h><br>
+                <div class="nav-elements-vert"></div>
+			</div>
+			<div class="page-docu">
+				<h1 class="top">Nintendo Switch - <span style="font-family: 'Sora'"><span style="font-weight: 300;">Homebrew</span><strong>France Docs</strong></span></h1>
+				<div class="indic">
+					<p class="indic-text">Rejoignez <a href="https://discord.homebrew-france.fr/">Homebrew France</a> pour obtenir de l'assistance ou nous aider à développer le guide.</p>
+				</div>
+                <h2 class="titles">Préambule :</h2>
+                <p>Cette documentation vous permettre d'installer le CFW Atmosphere sur votre console mais aussi de maitriser les différents outils que vous intsallerez sur votre console.<br />
+                Cette documentation est mise à jour régulièrement, les informations contenues peuvent toutefois s'avérer inexactes après plusieurs mois ou années.</p>
+                <h2 class="titles" id="apps-de-base-lexique">I. Applications de base et lexique</h2>
+                <p>Lors du jailbreak de votre console de la famille Nintendo 3DS, vous serez ammené(e) à installer certaines applications, mais bien souvent le rôle de chacune d'entre elles n'est pas expliqué.</p>
+                <h class="subtitles" style="font-size: 20px;">1) Applications de base :</h>
+                <ul style="list-style-type: none;">
+                    <li>
+                        <strong>1) Atmosphere :</strong>
+                        Atmosphere est ce qu'on appelle un "Custom Firmware" (micrologiciel personnalisé), il permet l'exécution d'applications "Homebrew" (non-approuvées par Nintendo).
+                    </li>
+
+                    <li>
+                        <strong>2) Hekate :</strong>
+                        Hekate est un bootloader et un outil de gestion pour la Nintendo Switch qui permet de lancer des payloads, de gérer les partitions de la carte SD, de créer des sauvegardes de la NAND, et plus encore.
+                    </li>
+
+                    <li>
+                        <strong>3) DBI :</strong>
+                        DBI est un outil homebrew utilisé pour la gestion des sauvegardes, la gestion des installations de jeux, et autres manipulations de fichiers sur la Switch.
+                    </li>
+
+                    <li>
+                        <strong>4) TegraRcmGUI : </strong>
+                        TegraRcmGUI est un logiciel pour PC qui permet d'envoyer un payload à la Nintendo Switch en mode RCM via une connexion USB.
+                    </li>
+                </ul>
+                <h class="subtitles">2) Lexique :</h>
+                <ul style="list-style-type: none;">
+                    <li>
+                        <strong>Homebrew :</strong> 
+                        Un « Homebrew » (fait-maison en anglais) est une application créée par la
+                        communauté, elle est non-approuvée par le constructeur et est bien souvent
+                        développée par un ou des développeurs indépendants. (Exemples : FBI, Homebrew
+                        Launcher, Thirdtube, etc.).
+                    </li>
+
+                    <li>
+                        <strong>NAND :</strong>
+                        La NAND est la mémoire système de votre console, sans elle, votre console ne
+                        fonctionne pas. (La « NAND Backup » désigne une sauvegarde de la mémoire NAND, que
+                        l’on peut restaurer en cas de panne).
+                    </li>
+
+                    <li>
+                        <strong>emuNAND :</strong>
+                        Une emuNAND est une version émulée de la NAND stockée sur la microSD.
+                    </li>
+
+                    <li>
+                        <strong>Firmware :</strong>
+                        Un firmware est un micrologiciel permettant le bon fonctionnement d’un
+                        appreil. De même que pour la NAND, le firmware est un élément essentiel.
+                    </li>
+
+                    <li>
+                        <strong>Emulateur :</strong>
+                        Un émulateur est un logiciel permettant de reproduire le comportement
+                        d’une console sur un autre appareil. Par exemple : on utilise un émulateur pour pouvoir
+                        jouer à des jeux de Nintendo DS sur PC
+                    </li>
+
+                    <li>
+                        <strong>Flashcard :</strong>
+                        Une « flashcard » (carte flash en anglais) permet l’exécution d’une multitude
+                        de jeux sur le même support, souvent depuis une carte spécifique qui inclus un port
+                        carte SD ou microSD. Par exemple un Mig-Switch est une flashcard.
+                    </li>
+
+                    <li>
+                        <strong>ROM :</strong>
+                        Une « ROM » est une copie dématerialisée d’un jeu. Une ROM peut être exécutée
+                        depuis un émulateur ou depuis une flashcard.
+                    </li>
+
+                    <li>
+                        <strong>Racine d’une carte SD :</strong>
+                        La racine de la carte SD signifie que vous n’êtes dans aucun
+                        dossier.
+                    </li>
+
+                    <li>
+                        <strong>RCM (Recovery Mode) :</strong>
+                        Le RCM est un mode de récupération sur la Nintendo Switch qui permet de lancer du code non signé par Nintendo, essentiel pour installer un CFW comme Atmosphère.
+                    </li>
+
+                    <li>
+                        <strong>Jig :</strong>
+                        Un jig est un petit dispositif utilisé pour court-circuiter certaines broches du joycon droit, ce qui force la Switch à entrer en mode RCM.
+                    </li>
+
+                    <li>
+                        <strong>Payload :</strong>
+                        Un payload est un petit programme (dans ce contexte, un fichier binaire) injecté dans la Switch pour exécuter des actions spécifiques, comme lancer Hekate ou Atmosphère.
+                    </li>
+
+                    <li>
+                        <strong>Downgrade :</strong>
+                        Le "downgrade" est le processus de réversion d'un logiciel (comme un jeu) à une version antérieure, souvent pour des raisons de compatibilité ou pour utiliser des exploits spécifiques.
+                    </li>
+
+                    <li>
+                        <strong>Partition :</strong>
+                        Une partition est une division du stockage d'une carte SD en plusieurs sections. 
+                    </li>
+                </ul>
+				<h2 class="titles" id="premier-hack">II. Mettre à jour Atmosphère / Premier hack</h2>
+				<div class="prerequis">
+					<h3>PRÉREQUIS :</h3>
+					<ul>
+						<li>Un carte micro SD de minimum 8GB. (privilégiez les grandes marques telles que <strong>Sandisk</strong>, <strong>PNY</strong>, <strong>Samsung</strong>, etc.)</p></li>
+							<ul>
+								<li><a href="https://www.amazon.fr/SanDisk-microSDXC-Chromebook-adaptateur-Performance/dp/B0BFH76ZCX/ref=sr_1_6?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=OYMPO8NETNX9&keywords=carte%2Bsd%2Bsandisk&qid=1700307903&sprefix=carte%2Bsd%2Bsandisk%2Caps%2C143&sr=8-6&th=1">Carte micro SD Sandisk 128GB sur Amazon</a>&nbsp;<i class="fa-solid fa-cart-shopping"></i></li>
+								<li><a href="https://www.amazon.fr/Samsung-m%C3%A9moire-microSD-Adaptateur-MB-MC128KA/dp/B09R4HNX4J/ref=sr_1_5?crid=357VBZ0CXWF8&keywords=carte+sd+samsung&qid=1700308220&sprefix=carte+sd+samsun%2Caps%2C112&sr=8-5">Carte micro SD Samsung 128GB sur Amazon</a>&nbsp;<i class="fa-solid fa-cart-shopping"></i></li>
+								<li><a href="https://www.amazon.fr/dp/B07RBMXVG2/ref=twister_B08HF1S6VC?_encoding=UTF8&th=1">Carte micro SD PNY 128GB sur Amazon</a>&nbsp;<i class="fa-solid fa-cart-shopping"></i></li>
+							</ul>
+						<li>Une console compatible avec la faille RCM (non-patchée). Vous pouvez vérifier ci-dessous en entrant le numéro de série de la console.</li>
+					</ul>
+				</div>
+				<div class="checker">
+					<h3><i class="fa-solid fa-circle-play"></i>&nbsp;&nbsp;Vérifiez le numéro de série sous votre console</h3>
+					<p>Tapez le ensuite ci-dessous pour savoir si votre console est compatible avec la faille RCM.</p>
+					<multi-checker id="nintendoSwitch">
+						<center><form style="margin-block: 12px;" method="get">
+							<div class="input-switch"><input type="text" name="numberInput" required  placeholder="Ex: XAJ10046000000"><i class="fa-solid fa-magnifying-glass"></i></div>
+							<input class="submit" type="submit" value="Vérifier la compatibilité >">
+						</center>
+					</multi-checker>
+					<center><label style="margin-top: 6px; font-size: 16px;" id="resultat"></label></center>
+				</div>
+                <ul>
+                    <li style="list-style-type: decimal;">Monter la carte SD sur le PC soit via un adaptateur (lors du premier hack) soit via Hekate (Tools &#10140; USB Tools &#10140; SD Card).<br />
+                    Supprimer tous les fichiers de la carte micro SD <strong>SAUF</strong> <code>emuMMC</code> et <code>Nintendo</code> s'ils sont présents sur la carte micro SD.</li>
+                    <li style="list-style-type: decimal;">Téléchargez le Atmopack depuis la <a href="https://homebrew-france.fr/telechargements/#SWITCHATMOPACK">page de téléchargement des packs</a>.<br />
+                    Extrayez l'archive à la racine de la carte micro SD.</li>
+                    <i>Attention à ne pas formater votre emuNAND ni les dossiers <code>emuMMC</code> et <code>Nintendo</code>.</i>
+                </ul>
+				<h class="subtitles" id="simuler-jig">Simuler un JIG et mode RCM</h>
+				<p>On va faire contact entre les broches n°9 et n°10 du joycon droit (R) à l'aide d'un morceau de feuille d'aluminium d'1 millimiètre d'épaisseur.</p>
+				<ul style="list-style-type: decimal;">
+					<li>Faites un petit morceau d'aluminium (plusieurs couches, de longueur ≈ 7 mm et de largeur ≈ 1 mm) et positionnez-le précisémment sur les broches n°9 et n°10 du joycon droit (R) (réalisez une sorte de crochet).</li>
+					<li>Positionnez du ruban adhésif et découpez les bords pour maintenir fermement le papier aluminium sur les broches n°9 et n°10 du joycon droit.</li>
+					<li>Vérifiez régulièrement le ruban adhésif pour que le contact reste bien uniquement sur les broches souhaitées.</li>
+				</ul>
+			<div class="gallery-container">
+				<div class="gallery">
+				<a href="https://cdn.homebrew-france.site/docs/switch/broches.png">
+					<img src="https://cdn.homebrew-france.site/docs/switch/broches.png" alt="Broches" width="600" height="400" />
+				</a>
+				<div class="desc">Les broches n°9 et n°10 du joycon droit.</div>
+				</div>
+
+				<div class="gallery">
+				<a href="https://cdn.homebrew-france.site/docs/switch/jig.png">
+					<img src="https://cdn.homebrew-france.site/docs/switch/jig.png" alt="Jig" width="600" height="400" />
+				</a>
+				<div class="desc">Ce à quoi ressemble normalement un JIG.</div>
+				</div>
+
+				<div class="gallery">
+				<a href="https://cdn.homebrew-france.site/docs/switch/aluminium.png">
+					<img src="https://cdn.homebrew-france.site/docs/switch/aluminium.png" alt="Ruban adhésif" width="600" height="400" />
+				</a>
+				<div class="desc">Alumnium appliqué sur les broches.</div>
+				</div>
+
+				<div class="gallery">
+				<a href="https://cdn.homebrew-france.site/docs/switch/ruban.png">
+					<img src="https://cdn.homebrew-france.site/docs/switch/ruban.png" alt="Ruban adhésif" width="600" height="400" />
+				</a>
+				<div class="desc">Ruban adhésif à bien appliquer.</div>
+				</div>
+				</div>
+				<h class="subtitles"><strong>Option A :</strong>&nbsp;avec un RCM Loader</h>
+				<p><strong>1.</strong>&nbsp;Entrez en mode RCM :</p>
+				<ul>
+					<li>Placez le jig (contacts orientés vers le bas) dans le rail du joycon droit, la carte micro SD dans la console (avec un pack correctement paramétré : DNS de blocage et INCOGNITO activés).</li>
+					<li>Restez appuyé sur le bouton de volume + de la console, puis, brièvement sur le bouton d'allumage.</li>
+					<li>En apparence, rien ne se passe sur l’écran de la Switch qui reste noir mais celle-ci est prête à recevoir un payload.</li>
+				</ul>
+				<p><strong>2.</strong>&nbsp;Réglage du RCM Loader</p>
+				<ul>
+					<li>Appuyez longuement sur le bouton + pour modifier la couleur de la LED jusqu'au rouge.</li>
+					<img src="https://cdn.homebrew-france.site/docs/switch/rcm_plus.png" id="rcm-plus" width="155" />
+					<li>Vérifiez l'insertion de la carte SD dans la console.</li>
+					<li>Insérez le RCM Loader dans le port USB-C de la console.</li>
+					<li>La Switch démarrera sous Hekate, réglez à date et heure correcte puis sauvegarder.</li>
+				</ul>
+				<h class="subtitles"><strong>Option B :</strong>&nbsp;avec un PC relié à la console</h><br />
+				<div class="os-container">
+					<h5><i class="fa-brands fa-windows"></i>&ensp;Windows</h5>
+					<ul style="list-style-type:none;">
+						<li>Téléchargez la <a href="https://github.com/eliboa/TegraRcmGUI/releases/latest">version portable de TegraRcmGui</a> et décompressez-la sur son PC.&nbsp;<i class="fa fa-download" aria-hidden="true"></i></li>
+					</ul>
+				</div>
+				<div class="os-container">
+					<h5><i class="fa-brands fa-linux"></i>&nbsp;<i class="fa-brands fa-apple"></i>&ensp;Linux et Mac</h5>
+					<ul style="list-style-type:none;">
+						<li>Téléchargez puis installez <a href="https://github.com/nh-server/fusee-interfacee-tk/releases/latest">fusee-interfacee-tk</a>.&nbsp;<i class="fa fa-download" aria-hidden="true"></i></li>
+					</ul>
+				</div>
+				<p>Ensuite, téléchargez <a href="https://github.com/CTCaer/hekate/releases/latest">hekate_ctcaer_X.Y.Z_Nyx_A.B.C.zip</a>, décompressez-le et à l’intérieur copiez <code>hekate_ctcaer_X.Y.Z.bin</code> dans le dossier <code>TegraRcmGUI</code></p>
+				<p>Lancez <code>TegraRcmGUI.exe</code> et allez dans "Settings" pour faire "Install driver" et ensuite retournez sur "Payload".</p>
+				<p>Reprenez l’étape <strong>1.</strong> et branchez la Switch au PC, le logiciel devrait passer au vert.</p>
+				<p>Dans le logiciel <code>TegraRcmGUI</code> parcourez le PC pour sélectionner le payload <code>hekate_ctcaer_X.Y.Z.bin</code> placé dans le dossier <code>TegraRcmGUI</code> puis cliquez sur "Inject payload".</p>
+				<p>La Switch va démarrer sur Hekate, réglez à heure et date correctes puis sauvegarder.</p>
+				<h2 class="titles" id="creer-emunand">III. Créer une emuNAND par partition sous Hekate</h2>
+				<div class="indic">
+					<p class="indic-text">Pour rappel, une emuNAND est une copie de la NAND stockée dans une carte micro SD. Elle peut-être stockée de deux manières différentes : par fichier ou par partition. La méthode recommandée est la méthode par partition.</p>
+				</div>
+				<div class="disclaimer">
+					<p class="indic-text">Il est nécessaire de posséder une carte micro SD de minimum 128Go (256Go recommandés) avec un pack Atmosphère sécurisé copié sur la carte micro SD.</p>
+				</div>
+				<div class="prerequis">
+					<h3>PRÉREQUIS :</h3>
+					<ul>
+						<li><p>Un câble USB-C vers USB-A ou un câble USB-C vers USB-C permettant le transfert de données.</p>
+						<i>Note: si vous ne possédez pas de câble, continuez vers l'<a href="#switch_step0bis">étape 0-bis</a>.</i></li>
+					</ul>
+				</div>
+				<div class="indic">
+					<p class="indic-text">Avant la création de la partition, il est recommandé (via démarrage en CFW SysNAND) d'activer le mode avion et des faire une copie de vos sauvegardes SysNAND avec l'Homebrew DBI afin de pouvoir les restaurer plus tard sur l'EmuNAND. La procédure à suivre se trouve dans la <a href="#saves-dbi">partie V</a>.</p>
+				</div>
+				<p><strong>0.</strong> Copie des sauvegardes du dossier "Nintendo" sur PC</p>
+				<ul>
+					<li>Démarrez en CFW SysNAND en mode avion et rendez-vous dans "Album" pour lancer DBI.</li>
+					<li>Reliez la Switch à votre ordinateur par câble. Faites "Run MTP Responder". Plusieurs disques vont apparaître dans l'explorateur de fichiers.</li>
+					<li>Créez un dossier "DataSwitch" sur votre ordinateur, puis à l'intérieur de ce dossier, créez un dossier "Saves".</li>
+					<li>Allez dans le disque n°7 : "Saves" et copiez-collez son contenu dans le dossier "DataSwitch/Saves" précédemment créé.</li>
+					<li>Allez dans le disque "External SD Card" et copiez-collez le dossier "Nintendo" dans le dossier "DataSwitch/Saves".</li>
+				</ul>
+				<p id="switch_step0bis"><strong>0-bis.</strong> Sauvegarde du dossier "Nintendo" sur ordinateur</p>
+				<ul>
+					<li>Créez un dossier "DataSwitch" sur votre ordinateur.</li>
+					<li>Eteignez votre console, retirez la carte micro SD puis insérez là dans votre ordinateur. S'il ne possède pas de port micro USB, utlisez un adaptateur selon vos besoins.</li>
+					<li>Copiez-collez le dossier "Nintendo" dans le dossier "DataSwitch" précédemment créé.</li>
+				</ul>
+				<p><strong>1.</strong> Création de la partition</p>
+				<ul>
+					<li>Passez en mode RCM et injectez le payload Hekate si la console est éteinte ou redémarrez sur Hekate via "Reboot-to-payload.nro" si la console est déjà en CFW SysNAND.</li>
+					<li>Sélectionnez le menu "Tools" d'Hekate.</li>
+				</ul>
+				<center><img src="https://cdn.homebrew-france.site/docs/switch/hekate_1.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
+				<ul>
+					<li>Sélectionnez "eMMC / SD Partitions / USB" puis "Partition SD Card" puis "OK"</li>
+				</ul>
+				<center><img src="https://cdn.homebrew-france.site/docs/switch/hekate_2.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
+				<center><img src="https://cdn.homebrew-france.site/docs/switch/hekate_3.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
+				<ul>
+					<li>Faites glisser le curseur de la ligne rouge de l'option "emuMMC RAW" jusque "29 FULL" puis appuyez sur "Next Step".</li>
+				</ul>
+				<center><img src="https://cdn.homebrew-france.site/docs/switch/hekate_4.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
+				<p>Hekate vous avertira, faites "START" pour créer la partition; la carte micro SD est alors formatée en FAT32, un système de fichiers qui, contrairement à l'exFAT n'est pas sujet aux corruptions de données pouvant empêcher le bon fonctionnement des jeux. Les "gros" dossiers de la carte micro SD seront effacés, ce qui justifie la sauvegarde du dossier "Nintendo" effectuée précédemment.</p>
+				<p><strong>2.</strong> Vérification de la carte micro SD</p>
+				<div class="indic">
+					<p class="indic-text">Il est possible, lors du partitionnement que certains fichiers du pack ainsi que le dossier "Nintendo" ne soient manquants à la racine de la carte micro SD, ce qui bloquera le démarrage d'Atmosphère.</p>
+				</div>
+				<ul>
+					<li>Reliez la console à votre ordinateur.</li>
+					<li>Dans Hekate, faites "Tools ➜ USB Tools ➜ SD Card".
+					<br /><i>Note: Windows demandera un formatage, cliquez sur <strong>"Annuler"</strong>.</i>
+					</li>
+					<li>Vérifiez la présence de tous les fichiers du pack sur la micro SD, si besoin, complétez-les.</li>
+					<li>S'il a disparu, copiez-collez à la racine de la carte micro SD le dossier "Nintendo" de l'<a href="#switch_step0bis">étape 0-bis ou 0</a> situé dans le dossier "DataSwitch" de votre ordinateur.</li>
+				</ul>
+				<p><strong>3.</strong> Création de l'emuNAND</p>
+				<ul>
+					<li>Retournez dans l'onglet "Home" de Hekate, puis allez dans la section "emuMMC".</li>
+				</ul>
+				<center><img src="https://cdn.homebrew-france.site/docs/switch/hekate_5.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
+				<ul>
+					<li>Appuyez sur "Create emuMMC" puis "SD Partition" et enfin sur "Part1"</li>
+				</ul>
+				<div class="disclaimer">
+					<p class="indic-text"><strong>Attention :</strong> Ne sélectionnez pas "SD Files".</p>
+				</div>
+				<center><img src="https://cdn.homebrew-france.site/docs/switch/hekate_6.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
+				<center><img src="https://cdn.homebrew-france.site/docs/switch/hekate_7.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
+				<center><img src="https://cdn.homebrew-france.site/docs/switch/hekate_8.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
+				<ul>
+					<li>La création de l'emuNAND prendra entre 10 et 30 minutes selon la vitesse d'écriture de votre carte micro SD, une fois terminé, appuyez sur "Close" après avoir bien vérifié qu'il est bien écrit "Enabled!" dans l'onglet "emuMMC Info & Selection".<br />
+					<i>Note: si ce n'est pas le cas; appuyez sur "Change emuMMC" puis "SD RAW1".</i></li>
+				</ul>
+				<center><img src="https://cdn.homebrew-france.site/docs/switch/hekate_9.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
+				<ul>
+					<li>Pour démarrer en emuNAND, apuyez sur "Close" et allez dans "Launch" puis "CFW (emuMMC)" ou "Switch V1" ou "Atmosphere-nx" (l'emuNAND sera automatiquement détectée) en cas de configuration "fusee.bin" ou "Atmosphere emuNAND" pour le pack LS-AIO.</li>
+				</ul>
+				<center><img src="https://cdn.homebrew-france.site/docs/switch/hekate_10.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
+				<center><img src="https://cdn.homebrew-france.site/docs/switch/hekate_11.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
+				<ul>
+					<li>Allez dans les paramètres de la console pour vérifier la présence d'un <strong>E</strong> après "AMS" dans l'onglet "Console" qui confirme le démarrage correct en emuNAND.</li>
+				</ul>
+                <center><img src="https://cdn.homebrew-france.site/docs/switch/hekate_12.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
+                <ul>
+					<li>Pour bien différencier <strong>E</strong>muNAND et <strong>S</strong>ysNAND, appliquez un thème différent pour l'emuNAND et la SysNAND.</li>
+				</ul>
+                <center><img src="https://cdn.homebrew-france.site/docs/switch/hekate_13.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
+				<h2 class="titles" id="maj-daybreak">IV. Mise à jour via Daybreak</h2>
+				<div class="prerequis">
+					<h3>PRÉREQUIS :</h3>
+					<p>Avoir un pack CFW à jour compatible avec le dernier firmware de Nintendo. (Le pack conseillé est celui de Zoria disponible sur <a href="https://homebrew-france.fr/telechargements/#SWITCHATMOPACK">la page des packs</a>).</p>
+				</div>
+				<div class="os-container">
+					<h5><i class="fa-brands fa-apple"></i>&ensp;MacOS</h5>
+					<ul style="list-style-type:none;">
+						<li>Ne pas monter la micro SD, il faudra transférer le firmware par FTP avec FileZilla par exemple pour éviter les erreurs Daybreak.</li>
+						<li>Désinstallez votre thème avant de faire la mise à jour du firmware sinon le CFW risque de ne pas démarrer par la suite.</li>
+					</ul>
+				</div>
+				<p><strong>1.</strong> Téléchargez et extrayez sur le PC le dernier firmware disponible <a href="https://github.com/THZoria/NX_Firmware/releases/">ici</a>.<br /><i>La dernière version du firmware est <span class="switchVer">X.X.X</span></i>.</p>
+				<p><strong>2.</strong> Montez la carte microSD sur le PC, créez un dossier à la racine de la carte SD et nommez-le par exemple <code>Firmware<label class="switchFirmName">XXX</label>R</code>.</p>
+				<p><strong>3.</strong> Copiez/Collez tous les fichiers <code>.nca</code> dans le dossier précédemment créé sur la carte SD.</p>
+				<div class="os-container">
+					<h5><i class="fa-brands fa-windows"></i>&ensp;Windows</h5>
+					<ul style="list-style-type:none;">
+						<li>Ejectez "proprement" votre carte microSD, sur Hekate faites "Close" et démarrez votre console en CFW via "Launch" (emuNAND de préférence)</li>
+					</ul>
+				</div>
+				<p><strong>5.</strong> Allez dans le menu "Album" de la console et lancez l'Homebrew "DayBreak".</p>
+				<ul>
+					<li>Cliquez sur "Install".</li>
+					<li>Sélectionnez le dossier précédemment crée.</li>
+					<li>Attendez le temps que "DayBreak" vérifie l'intégralité du firmware en <code>.nca</code>.</li>
+				</ul>
+				<p><strong>6.</strong> "DayBreak" va installer votre mise à jour, cliquez sur "Reboot" pour démarrer votre console en CFW emuNAND via "Launch" d'Hekate.</p>
+				<p><strong>7.</strong> Allez dans "Paramètres" &#10140; "Mise à jour" pour vérifier que le console est bien en <span class="switchVer">X.X.X</span> avec un <strong>E</strong> ou un <strong>S</strong> à la fin.</p>
+				<center><img src="https://cdn.homebrew-france.site/docs/switch/ns_1.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
+				<h2 class="titles" id="reset-emunand">V. Réinitialiser son emuNAND via Daybreak</h2>
+				<div class="prerequis">
+					<h3>PRÉREQUIS PRÉCÉDENTS</h3>
+				</div>
+				<div class="disclaimer">
+					<p class="indic-text"><strong>Attention :</strong>&nbsp;cette étape supprimera les jeux et sauvegardes présents sur l'emuNAND mais cela permet de repartir sur une base saine.</p>
+				</div>
+                <ul style="list-style-type: decimal;">
+                    <li>Récupérez les sauvegardes de son emuNAND (via DBI ou JKSV) que l'on pourra restaurer dans l'emuNAND par la suite.</li>
+                    <li>Téléchargez et extrayez sur le PC le dernier firmware disponible <a href="https://github.com/THZoria/NX_Firmware/releases/">ici</a>.<br /><i>La dernière version du firmware est <span class="switchVer">X.X.X</span></i>.</li>
+                    <li>Montez la carte microSD sur le PC, créez un dossier à la racine de la carte SD et nommez-le par exemple <code>Firmware<label class="switchFirmName">XXX</label>R</code>.</li>
+                    <li>Copiez/Collez tous les fichiers <code>.nca</code> dans le dossier précédemment créé sur la carte SD.</li>
+                </ul>
+				<div class="os-container">
+					<h5><i class="fa-brands fa-windows"></i><strong>&ensp;Windows</strong></h5>
+					<ul style="list-style-type:none;">
+						<li>Ejectez "proprement" votre carte microSD, sur Hekate faire "Close" et démarrez votre console en CFW via "Launch" (emuNAND de préférence)</li>
+					</ul>
+				</div>
+				<ul>
+					<li>Allez dans "Paramètres" &#10140; "Console" &#10140; "Mise à jour" pour vérifier que la Switch est bien en firmware <span class="switchVer">X.X.X</span> mais avec un <strong>E</strong> à la fin.</li>
+				</ul>
+				<center><img src="https://cdn.homebrew-france.site/docs/switch/ns_1.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
+				<p><strong>5.</strong> Allez dans le menu "Album" de la console et lancez l'Homebrew "DayBreak".</p>
+				<ul>
+					<li>Cliquez sur "Install".</li>
+					<li>Sélectionnez le dossier précédemment crée.</li>
+					<li>Attendez le temps que "DayBreak" vérifie l'intégralité du firmware en <code>.nca</code>.</li>
+				</ul>
+				<p><strong>6.</strong> S'il est indiqué "Update is valid", cliquez sur "Continue" puis "Reset to Factory settings" puis "Install" (FAT32 + exFAT) puis une nouvelle fois sur "Continue" sinon reprendre à l'étape <strong>1.</strong>.</p>
+				<p><strong>7.</strong> "DayBreak" va installer votre mise à jour, cliquez sur "Reboot" pour redémarrer votre Switch en CFW emuNAND via "Launch" d'Hekate.</p>
+				<ul>
+					<li>Créez un (ou des) utilisateur(s), faites<img src="https://cdn.homebrew-france.site/docs/buttons/switch_x_button.png" class="console-buttons">pour passer la connexion et mettre un thème sombre pour différencier emuNAND et sysNAND.</li>
+				</ul>
+				<p><strong>8.</strong> Aller dans "Paramètres" &#10140; "Console" &#10140; "Mise à jour" pour vérifier que la Switch est bien en <span class="switchVer">X.X.X</span> avec <strong>E</strong> à la fin.
+				<center><img src="https://cdn.homebrew-france.site/docs/switch/ns_3.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
+				<h2 class="titles" id="saves-dbi">VI. Gestion des sauvegardes via DBI</h2>
+				<p><strong>1.</strong> Vérifiez si DBI n'est pas déjà présent en allant dans le menu "Album". S'il est déjà présent, passez à l'étape <strong>3.</strong>.</p>
+				<center><img src="https://cdn.homebrew-france.site/docs/switch/ns_4.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
+				<p><strong>2.</strong> Installation de DBI.</p>
+				<ul>
+					<li>Montez la carte micro SD sur le PC, et, dans le dossier <code>Switch</code>, créez un dossier <code>dbi</code>.
+					<li>Téléchargez les <a href="https://github.com/rashevskyv/dbi/releases/latest">fichiers <code>dbi.config</code> et <code>dbi.nro</code></a>.</li>
+					<li>Copiez/Collez les 2 fichiers dans le dossier <code>dbi</code> précédemment créé sur la carte SD.</li>
+				</ul>
+				<p><strong>3.</strong> Transférer ses sauvegardes de la Switch vers le PC.</p>
+				<ul>
+					<li>Lancez la Switch en CFW soit sysNAND soit emuNAND en fonction de votre objectif.</li>
+					<li>Reliez la Switch à un PC via un câble USB-C (charge + data).</li>
+					<li>Sur la console, lancez l'Homebrew "DBI".</li>
+					<li>Faites "Run MTP responder".</li>
+					<li>Allez dans le dossier <code>switch/saves</code> qui devrait monter sur le PC (si rien ne se passe, changer de port USB et/ou tester un autre câble).</li>
+					<li>Puis allez dans le dossier <code>switch/saves</code>, Copiez/Collez son contenu sur le PC dans un dossier <code>switchhack/saves</code> par exemple.</li>
+				</ul>
+				<p><strong>4.</strong> Transférer ses sauvegardes du PC vers la Switch.</p>
+				<p>Après avoir réinitialisé son emuNAND par exemple.</p>
+				<ul>
+					<li>Lancez la Switch en CFW soit sysNAND soit emuNAND en fonction de votre objectif.</li>
+					<li>Reliez la Switch à un PC via un câble USB-C (charge + data).</li>
+					<li>Sur la console, lancez l'Homebrew "DBI".</li>
+					<li>Faites "Run MTP responder".</li>
+					<li>Allez dans le dossier <code>switch/saves</code> qui devrait monter sur le PC (si rien ne se passe, changez de port USB et/ou tester un autre câble).</li>
+
+					<center><img src="https://cdn.homebrew-france.site/docs/switch/ns_5.png" width="681" height="354" class="img-border" /></center>
+
+					<li> Puis allez dans le dossier précédent du PC <code>switch/saves</code>, Copiez/Collez son contenu dans le dossier <code>switch/saves</code> de la console.</li>
+				</ul>
+                <h2 class="titles" id="downgrade-dbi">VII. Downgrader un jeu via DBI</h2>
+                <ul style="list-style-type: decimal;">
+                    <li>Lancez l'Homebrew "DBI" depuis l'album photos de la console.</li>
+                    <li>Allez dans "Browse Installed Applications".</li>
+                    <center><img src="https://cdn.homebrew-france.site/docs/switch/dbi_down1.jpg" width="681" height="354" class="img-border" /></center>
+                    <li>Déplacez-vous sur le jeu à downgrader puis appuyez sur<img src="https://cdn.homebrew-france.site/docs/buttons/switch_a_button.png" class="console-buttons">.</li>
+                    <center><img src="https://cdn.homebrew-france.site/docs/switch/dbi_down2.jpg" width="681" height="354" class="img-border" /></center>
+                    <li id="step4">Déplacez-vous vers la mise à jour que vous souhaitez supprimer.</li>
+                    <center><img src="https://cdn.homebrew-france.site/docs/switch/dbi_down3.jpg" width="681" height="354" class="img-border" /></center>
+                    <li>Appuyez sur "+" pour faire apparaître le menu contextuel puis validez "Delete".</li>
+                    <center><img src="https://cdn.homebrew-france.site/docs/switch/dbi_down4.jpg" width="681" height="354" class="img-border" /></center>
+                    <i>Note: Si des DLCs sont liés à cette mise à jour, il faudra aussi les effacer en les sélectionnant et en reprenant à <a href="#step4">l'étape 4</a>.</i>
+                    <li>Validez "Reset required version" pour valider le downgrade.</li>
+                    <center><img src="https://cdn.homebrew-france.site/docs/switch/dbi_down5.jpg" width="681" height="354" class="img-border" /></center>
+                    <i>Note: Le downgrade peut-être utile pour ceux qui cherchent à profiter des glitchs patchés par mise à jour comme dans </i>The Legend Of Zelda : Tears of the Kingdom.<i></i>
+                </ul>
+            </div>
+		</div>
+
+        <!-- Scripts -->
+		<script src="../../scripts/navItemsHighlights_docs.js"></script>
+        <script src="../../scripts/maintenance_Toggler.js"></script>
+        <script src="../../scripts/navigationBar_creation.js"></script>
+        <script src="../../scripts/multi-checker/switch.js"></script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9864634157908409" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+        <script async src="../../scripts/switchVersion_fetcher.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	</body>		
+</html>	
+
+
+    
+

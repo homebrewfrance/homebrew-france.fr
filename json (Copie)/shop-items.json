@@ -1,0 +1,60 @@
+{
+    "modifConsoles": [
+        {
+            "name": "Switch Lite",
+            "description": "Installation d'un module Picofly (RP2040)",
+            "prixActuel": "99",
+            "prixOriginal": "199",
+            "lienInfo": "https://www.fixurphone.fr/nos-tarifs/modifications/nintendo-switch-lite",
+            "lienArticle": "https://www.fixurphone.fr/nos-tarifs/installation-de-picofly-sur-switch-lite",
+            "image": "https://cdn.homebrew-france.site/boutique/hwfly-presta.png"
+        },
+        {
+            "name": "Switch (v1 & v2)",
+            "description": "Installation d'un module Picofly (RP2040)",
+            "prixActuel": "89",
+            "prixOriginal": "199",
+            "lienInfo": "https://www.fixurphone.fr/nos-tarifs/modifications/nintendo-switch",
+            "lienArticle": "https://www.fixurphone.fr/nos-tarifs/installation-de-picofly-sur-switch-v1-v2",
+            "image": "https://cdn.homebrew-france.site/boutique/hwfly-presta.png"
+        },
+        {
+            "name": "Switch OLED",
+            "description": "Installation d'un module Picofly (RP2040)",
+            "prixActuel": "139",
+            "prixOriginal": "249",
+            "lienInfo": "https://www.fixurphone.fr/nos-tarifs/modifications/nintendo-switch-oled",
+            "lienArticle": "https://www.fixurphone.fr/nos-tarifs/installation-de-picofly-sur-switch-oled",
+            "image": "https://cdn.homebrew-france.site/boutique/hwfly-presta.png"
+        }
+    ],
+    "consolesPucees": [
+        {
+            "name": "Switch Lite",
+            "description": "Console modifiée neuve",
+            "prixActuel": "319",
+            "prixOriginal": "369",
+            "lienInfo": "https://www.fixurphone.fr/nos-tarifs/boutique/console-de-jeux/consoles-neuves/nintendo",
+            "lienArticle": "https://www.fixurphone.fr/nos-tarifs/nintendo-switch-lite-modifi%C3%A9e",
+            "image": "https://cdn.homebrew-france.site/boutique/switchlite-fixurphone.png"
+        },
+        {
+            "name": "Switch (v1 & v2)",
+            "description": "Console modifiée neuve",
+            "prixActuel": "369",
+            "prixOriginal": "399",
+            "lienInfo": "https://www.fixurphone.fr/nos-tarifs/boutique/console-de-jeux/consoles-neuves/nintendo",
+            "lienArticle": "https://www.fixurphone.fr/nos-tarifs/nintendo-switch-classique-modifi%C3%A9e",
+            "image": "https://cdn.homebrew-france.site/boutique/switch-cl-fixurphone.png"
+        },
+        {
+            "name": "Switch OLED",
+            "description": "Console modifiée neuve",
+            "prixActuel": "439",
+            "prixOriginal": "549",
+            "lienInfo": "https://www.fixurphone.fr/nos-tarifs/boutique/console-de-jeux/consoles-neuves/nintendo",
+            "lienArticle": "https://www.fixurphone.fr/nos-tarifs/nintendo-switch-oled-modifi%C3%A9e",
+            "image": "https://cdn.homebrew-france.site/boutique/switcholed-fixurphone.png"
+        }
+    ]
+}

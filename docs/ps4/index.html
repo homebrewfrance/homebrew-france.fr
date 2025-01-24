@@ -1,0 +1,148 @@
+<!--    
+	Homebrew France Web V3
+    Copyright (C) 2025  Homebrew France
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html lang="fr" data-website-id="HBFWEB-V3-LWS">
+	<head>
+        <title>PlayStation 4 | Docs</title>
+
+        <!-- Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charset="utf-8" />
+		<meta content="PlayStation 4 | Docs" property="og:title"/>
+		<meta content="Documentation complète sur la PlayStation 2." property="og:description"/>
+		<meta content="https://docs.homebrew-france.fr/ps4" property="og:url"/>
+		<meta content="https://cdn.homebrew-france.site/docs/ps2_docs.png" property="og:image"/>
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="apple-mobile-web-app-capable" content="YES"/>
+        <meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@HomebrewFrance" />
+		<meta name="twitter:title" content="Homebrew France - La communauté n°1 pour le jailbreak de consoles" />
+		<meta name="twitter:description" content="Rejoignez Homebrew France, la communauté dédiée au jailbreak de consoles avec support et guides en ligne." />
+		<meta name="twitter:image" content="https://cdn.homebrew-france.site/generic/website-icon.png" />
+        
+        <!-- Link -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="../../style/stylesheets/guide.css" />
+        <link rel="stylesheet" href="../../style/stylesheets/navbar__f.css" />
+        <link rel="icon" type="image/png" href="https://cdn.homebrew-france.site/generic/lumia-guides.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+                        
+        <!-- Scripts -->
+        <script async src="../../scripts/analyticsServices_manager.js"></script>
+	</head>
+    <body data-page-id="DOC-PS2">
+        <a class="top-page-button" href="#"><div href="#" class="top-page-button" title="Remonter en haut de la page">
+            <center>&#9650;</center>
+        </div></a>
+        <div id="navSpace"></div>
+		<div class="docu-container">
+			<div class="nav-menu-horiz" style="overflow: scroll;">
+				<h class="subtitles">Navigation :</h><br>
+                <div class="nav-elements-horiz"></div>
+                <div class="nav-bottom">
+                    <h4 style="font-family: 'Sora', sans-serif; font-size: 18px;"><span style="font-weight: 300;">Homebrew</span><strong>France</strong> Docs</h4>
+                    <p style="font-size: 15px; color: rgb(210, 210, 210);">&copy; 2025 - Homebrew France</p>
+                </div>
+			</div>
+			<div class="nav-menu-vert">
+				<h class="subtitles">Navigation :</h><br>
+                <div class="nav-elements-vert"></div>
+			</div>
+			<div class="page-docu">
+				<h1 class="top">PlayStation 4 - <span style="font-family: 'Sora'"><span style="font-weight: 300;">Homebrew</span><strong>France Docs</strong></span></h1>
+				<div class="indic">
+					<p class="indic-text">Rejoignez <a href="https://discord.homebrew-france.fr/">Homebrew France</a> pour obtenir de l'assistance ou nous aider à développer le guide.</p>
+				</div>
+                <h2 class="titles" id="preambule">Préambule</h2>
+				<p>Ce guide vous permettra d'éxecuter le jailbreak PS4 sur le firmware 9.00. Il nécessite qu'une partie de l'exploit soit injectée à l'aide d'une clé USB dédiée, elle sera nécessaire à chaque redémarrage de la console pour refaire le processus.</p>
+				<h2 class="titles" id="maj-console-900">I. Mise à jour de la console en firmware 9.00</h2>
+                <div class="disclaimer">
+                    <p class="indic-text"><strong>Attention :</strong>&nbsp;la section I. n'est à réaliser que si votre console n'est pas DÉJÀ sur le firmware 9.00.</p>
+                </div>
+                <div class="prerequis">
+                    <h3 >PRÉREQUIS :</h3>
+                    <ul>
+                        <li>Une PlayStation 4 ou une PlayStation 4 Pro sous le firmware 9.00 ou inférieur.</li>
+                        <li>Une clé USB.</li>
+                        <li><a href="https://archive.org/download/PS4-System-Firmwares/Firmware%209.00/PS4UPDATE.PUP">Le firmware 9.00</a>&nbsp;<i class="fa fa-download" aria-hidden="true"></i></li>
+                        <li><a href="https://github.com/pbatard/rufus/releases/download/v4.5/rufus-4.5.exe">La dernière version de Rufus</a>&nbsp;<i class="fa fa-download" aria-hidden="true"></i></li>
+                    </ul>
+                </div>
+                <ul>
+                    <li style="list-style-type: decimal;">Exécutez "rufus-x-x.exe" téléchargé précédemment.</li>
+                    <li style="list-style-type: decimal;">Sélectionnez dans le menu de sélection en haut votre clé USB.</li>
+                    <li style="list-style-type: decimal;">Dans "Type de démarrage", sélectionnez "Non-démarrable" puis dans "Système de fichiers", choisissez FAT32.</li>
+                    <li style="list-style-type: decimal;">A la racine de votre clé USB, créez un dossier nommé <code>PS4</code>, dans ce même dossier, créez un dossier nommé <code>UPDATE</code></li>
+                    <li style="list-style-type: decimal;">Copiez le fichier du firmware 9.00 téléchargé précedemment dans le dossier UPDATE que vous avez créé.</li>
+                    <li style="list-style-type: decimal;">Allumez votre console et déconnectez-la d'Internet par précaution pour qu'elle ne se mette pas à jour automatiquement.</li>
+                    <ul>
+                        <li>Branchez votre clé USB contenant le firmware 9.00 dans votre PS4.</li>
+                        <li>Allez dans "Paramètres" puis "Mise à jour".</li>
+                    </ul>
+                    <li style="list-style-type: decimal;">Votre console va détecter l'OFW 9.00 à partir de votre clé USB, vous pouvez procéder à l'installation.</li>
+                    <i>Note: Si vous rencontrez une erreur, vérifiez l’ensemble de cette étape ou exécutez cette mise à jour en mode Recovery</i>
+                </ul>
+                <h2 class="titles" id="prepa-usb">II. Flasher la clé USB</h2>
+                <div class="prerequis">
+                    <h3>PRÉREQUIS :</h3>
+                    <ul>
+                        <li><a href="https://github.com/ChendoChap/pOOBs4/raw/main/exfathax.img">La dernière version de ExFATHax</a>&nbsp;<i class="fa fa-download" aria-hidden="true"></i></li>
+                        <li><a href="https://github.com/pbatard/rufus/releases/download/v4.5/rufus-4.5.exe">La dernière version de Rufus</a>&nbsp;<i class="fa fa-download" aria-hidden="true"></i></li>
+                    </ul>
+                </div>
+                <ul>
+                    <li style="list-style-type: decimal;">Exécutez "rufus-x-x.exe" téléchargé précédemment.</li>
+                    <li style="list-style-type: decimal;">Sélectionnez dans le menu de sélection en haut votre clé USB.</li>
+                    <li style="list-style-type: decimal;">Assurez-vous que le "Type de démarrage" est réglé en "Image disque ou ISO", si c'est le cas, cliquez à droite sur "Sélection"</li>
+                    <li style="list-style-type: decimal;">Sélectionnez le fichier "exfathax.img" téléchargé précédemment puis cliquez sur "Démarrer".</li>
+                    <p>Si tout s'est bien déroulé, votre clé USB affichera une partition d'une taille d'environ 4Mo.</p>
+                    <img src="https://cdn.homebrew-france.site/docs/ps4/exfathax_3.png" class="img-border" />
+                </ul>
+                <h2 class="titles" id="pfOObs4">III. Lancer pfOOBs4 sur la PlayStation</h2>
+                <ul>
+                    <li style="list-style-type: decimal;">Sur votre console, allez dans "Paramètres" puis "Réseau".</li>
+                    <img src="https://cdn.homebrew-france.site/docs/ps4/pfoobs4_1.png" class="img-border" />
+                    <li style="list-style-type: decimal;">Faites la configuration d'un nouveau réseau (Ethernet ou Wi-Fi selon votre équipement).</li>
+                    <img src="https://cdn.homebrew-france.site/docs/ps4/pfoobs4_2.png" class="img-border" />
+                    <li style="list-style-type: decimal;">Sélectionnez l'option de configuration "Personnalisé".</li>
+                    <img src="https://cdn.homebrew-france.site/docs/ps4/pfoobs4_3.png" class="img-border" />
+                    <li style="list-style-type: decimal;">Laissez la configuration IP par défaut puis modifiez vos paramètres DNS :</li>
+                    <ul>
+                        <li>DNS Primaire : <code>165.227.83.145</code></li>
+                        <li>DNS Secondaire : <code>192.241.221.79</code></li>
+                    </ul>
+                    <li style="list-style-type: decimal;">Ouvrez le navigateur ou le guide de l'utilisateur et, par défaut, vous devriez voir l'exploit host d'AlAzif.</li>
+                    <li style="list-style-type: decimal;">Lancez l'exploit 9.00, insérez votre clé contenant ExFATHax lorsque cela vous est demandé, cliquez sur "OK".</li>
+                    <li style="list-style-type: decimal;">Retirez la clé contenant ExFATHax lorsque cela vous est demandé.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="../../scripts/navItemsHighlights_docs.js"></script>
+        <script src="../../scripts/maintenance_Toggler.js"></script>
+        <script src="../../scripts/navigationBar_creation.js"></script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9864634157908409" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+</html>
+    

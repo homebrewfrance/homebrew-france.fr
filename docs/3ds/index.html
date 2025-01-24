@@ -1,0 +1,637 @@
+<!--    
+	Homebrew France Web V3
+    Copyright (C) 2025  Homebrew France
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html lang="fr" data-website-id="HBFWEB-V3-LWS">
+	<head>
+        <title>Nintendo 3DS | Docs</title>
+
+        <!-- Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charset="utf-8" />
+		<meta content="Nintendo 3DS | Docs" property="og:title"/>
+		<meta content="Documentation complète sur la Nintendo 3DS." property="og:description"/>
+		<meta content="https://docs.homebrew-france.fr/3ds" property="og:url"/>
+		<meta content="https://cdn.homebrew-france.site/docs/dsi_docs.png" property="og:image"/>
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="apple-mobile-web-app-capable" content="YES"/>
+        <meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@HomebrewFrance" />
+		<meta name="twitter:title" content="Homebrew France - La communauté n°1 pour le jailbreak de consoles" />
+		<meta name="twitter:description" content="Rejoignez Homebrew France, la communauté dédiée au jailbreak de consoles avec support et guides en ligne." />
+		<meta name="twitter:image" content="https://cdn.homebrew-france.site/generic/website-icon.png" />
+        
+        <!-- Link -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="../../style/stylesheets/guide.css">
+        <link rel="stylesheet" href="../../style/stylesheets/navbar__f.css">
+        <link rel="icon" type="image/png" href="https://cdn.homebrew-france.site/generic/lumia-guides.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                
+        <!-- Scripts -->
+        <script async src="../../scripts/analyticsServices_manager.js"></script>
+	</head>
+    <body data-page-id="DOC-3DS">
+        <a class="top-page-button" href="#"><div href="#" class="top-page-button" title="Remonter en haut de la page">
+            <center>&#9650;</center>
+        </div></a>
+        <div id="navSpace"></div>
+        <div class="docu-container">
+			<div class="nav-menu-horiz" style="overflow: scroll;">
+				<h class="subtitles">Navigation :</h><br>
+                <div class="nav-elements-horiz"></div>
+                <div class="nav-bottom">
+                    <h4 style="font-family: 'Sora', sans-serif; font-size: 18px;"><span style="font-weight: 300;">Homebrew</span><strong>France</strong> Docs</h4>
+                    <p style="font-size: 15px; color: rgb(210, 210, 210);">&copy; 2025 - Homebrew France</p>
+                </div>
+			</div>
+			<div class="nav-menu-vert">
+				<h class="subtitles">Navigation :</h><br>
+                <div class="nav-elements-vert"></div>
+			</div>
+            <div class="page-docu">
+                <h1 class="top">Nintendo 3DS - <span style="font-family: 'Sora'"><span style="font-weight: 300;">Homebrew</span><strong>France Docs</strong></span></h1>
+                <div class="indic">
+                    <p class="indic-text">Rejoignez <a href="https://discord.homebrew-france.fr/">Homebrew France</a> pour obtenir de l'assistance ou nous aider à développer le guide.</p>
+                </div>
+                <h2 class="titles">Préambule :</h2>
+                <p>Cette documentation vous permettra de maîtriser les outils installés sur votre console depuis son jailbreak (ou "hack").<br>
+                Cette documentation est mise à jour régulièrement, les informations contenues peuvent toutefois s'avérer inexactes après plusieurs mois ou années.</p>
+                <h2 class="titles" id="apps-de-base-lexique">I. Applications de base et lexique</h2>
+                <p>Lors du jailbreak de votre console de la famille Nintendo 3DS, vous serez ammené(e) à installer certaines applications, mais bien souvent le rôle de chacune d'entre elles n'est pas expliqué.</p>
+                <h class="subtitles">1) Applications de base :</h>
+                <ul style="list-style-type: none;">
+                    <li>
+                        <strong>1) Luma3DS :</strong>
+                        Bien caché une fois le jailbreak installé mais pourtant essentiel, Luma3DS est ce qu'on appelle un "Custom Firmware" (micrologiciel personnalisé), il permet l'exécution d'applications "Homebrew" (non-approuvées par Nintendo).
+                    </li>
+                    <li>
+                        <strong>2) FBI :</strong>
+                        FBI permet l’installation de fichiers au format <code>.cia</code> , cela peut être des copies de jeux ou des applications « Homebrew ».
+                    </li>
+                    <li>
+                        <strong>3) GodMode9 :</strong>
+                        Cette application ne vous servira pas bien souvent, elle se lance en maintenant le bouton
+                        START au démarrage de la console. C’est un gestionnaire de fichiers multifonctions qui
+                        permet notamment d’effectuer les copies de la mémoire système (NAND Backup), mais aussi 
+                        d’effectuer des copies de ses cartouches de jeux. Il est également
+                        possible d’effectuer les actions de base avec un gestionnaire de fichiers : copier,
+                        déplacer, renommer des fichiers, etc. Cependant l’usage régulier de GodMode9 ne doit
+                        être réservé qu’aux utilisateurs expérimentés. <strong>GodMode9 a le pouvoir de détruire
+                        votre console s’il est mal utilisé (si vous vous amusez à supprimer la mémoire
+                        système (NAND) par exemple.).</strong>
+                    </li>
+                    <li>
+                        <strong>4) Anemone3DS :</strong>
+                        Anemone vous permet d’installer des thèmes personnalisés crées par des
+                        utilisateurs. La plupart des thèmes sont trouvables sur le site <a href="https://themeplaza.art/themes/">ThemePlaza</a>.
+                    </li>
+                    <li>
+                        <strong>5) Checkpoint :</strong>
+                        Checkpoint est un logiciel multifonctions permettant principalement de gérer
+                        les sauvegardes des jeux (les sauvegarder, les restaurer, etc.), mais aussi
+                        d’utiliser des codes de triche (cheats) ou de vous donner 300 pièces de jeux sans
+                        le moindre effort.
+                    </li>
+                    <li>
+                        <strong>6) Universal-Updater :</strong>
+                        Cette application permet d’installer des Homebrew et de les mettre à jour, tout
+                        ça directement depuis la console
+                    </li>
+                    <li>
+                        <strong>7) Homebrew Launcher :</strong>
+                        Le Homebrew Launcher permet de lancer des applications Homebrew au format
+                       <code>.3dsx</code>
+                    </li>
+                </ul>
+                <h class="subtitles">2) Lexique :</h>
+                <ul style="list-style-type: none;">
+                    <li>
+                        <strong>Homebrew :</strong> 
+                        Un « Homebrew » (fait-maison en anglais) est une application créée par la
+                        communauté, elle est non-approuvée par le constructeur et est bien souvent
+                        développée par un ou des développeurs indépendants. (Exemples : FBI, Homebrew
+                        Launcher, Thirdtube, etc.).
+                    </li>
+                    <li>
+                        <strong>NAND :</strong>
+                        La NAND est la mémoire système de votre console, sans elle, votre console ne
+                        fonctionne pas. (La « NAND Backup » désigne une sauvegarde de la mémoire NAND, que
+                        l’on peut restaurer en cas de panne).
+                    </li>
+                    <li>
+                        <strong>Firmware :</strong>
+                        Un firmware est un micrologiciel permettant le bon fonctionnement d’un
+                        appreil. De même que pour la NAND, le firmware est un élément essentiel.
+                    </li>
+                    <li>
+                        <strong>Emulateur :</strong>
+                        Un émulateur est un logiciel permettant de reproduire le comportement
+                        d’une console sur un autre appareil. Par exemple : on utilise un émulateur pour pouvoir
+                        jouer à des jeux de Nintendo DS sur PC
+                    </li>
+                    <li>
+                        <strong>Flashcard :</strong>
+                        Une « flashcard » (carte flash en anglais) permet l’exécution d’une multitude
+                        de jeux sur le même support, souvent depuis une carte spécifique qui inclus un port
+                        carte SD ou microSD. Par exemple une R4 est une flashcard, de même que pour une EZ-
+                        Flash.
+                    </li>
+                    <li>
+                        <strong>ROM :</strong>
+                        Une « ROM » est une copie dématerialisée d’un jeu. Une ROM peut être exécutée
+                        depuis un émulateur ou depuis une flashcard.
+                    </li>
+                    <li>
+                        <strong>Racine d’une carte SD :</strong>
+                        La racine de la carte SD signifie que vous n’êtes dans aucun
+                        dossier.
+                    </li>
+                </ul>
+                <h2 class="titles" id="maj-homebrew-console">II. Mise à jour des applications Homebrew et de la console</h2>
+                <h class="subtitles">1) Mise à jour des applications Homebrew :</h><br>
+                <h class="subtitles">Mise à jour via Universal-Updater (recommandé) :</h>
+                <ul>
+                    <li style="list-style-type: decimal;">Vérifiez la présence de l’application « Universal-Updater » dans votre menu HOME. <br><strong>Si celle-ci n’est pas installée :</strong>
+                        <ul>
+                            <li>Allumez votre console.</li>
+                            <li>Veillez à être connecté(e) à Internet, cliquez sur « Remote Install » puis « Scan QR » et
+                                scannez le QR Code suivant :</li>
+                            <img src="https://db.universal-team.net/assets/images/qr/universal-updater-cia.png" style="margin-block: 5px;" />
+                            <li>Suivez les instructions à l’écran, l’application va s’installer.</li>
+                        </ul>
+                    </li>
+                    <li style="list-style-type: decimal;">Lancez « Universal-Updater ». Patientez pendant la vérification des mises à jour.</li>
+                    <li style="list-style-type: decimal;">Vérifiez à côté des icônes s’il y a un badge vert avec une flèche : par exemple dans
+                        notre cas, l’application nécessite une mise à jour :</li>
+                        <img src="https://cdn.homebrew-france.site/docs/3ds/update-icon-uu.png">&nbsp;<i style="padding: auto;">L'icône verte à côté de l'icône d'application signifie qu'une mise à jour est disponible.</i>
+                    <li style="list-style-type: decimal;">Cliquez sur l’entrée que vous souhaitez installer (les nightlys sont des versions
+                        instables, il n’est pas recommandé de les installer). Notez que certains Homebrew se
+                        mettent à jour automatiquement lorsqu’ils sont démarrés.</li>
+                </ul>
+                <h class="subtitles">Mise à jour manuelle :</h>
+                <p>Cette méthode consiste simplement à installer le fichier <code>.cia</code> de votre Homebrew via
+                    FBI ou de lancer l’Homebrew via le Homebrew Launcher s’il s’agit d’un <code>.3dsx</code></p>
+                <h class="subtitles">Sites où trouver des Homebrew :</h>
+                <ul>
+                    <li><a href="https://db.universal-team.net/">Universal-DB</a></li>
+                    <li><a href="https://www.gamebrew.org/wiki/Main_Page">GameBrew</a></li>
+                </ul>
+                <h class="subtitles">2) Mise à jour de la console</h>
+                <p>Lorsqu’une mise à jour de la console vous est proposée, il y a des vérifications à faire
+                    avant de l’effectuer :</p>
+                <ul>
+                    <li style="list-style-type: decimal;">Rendez-vous dans l’« Universal-Updater », dans la barre de recherche, tapez « Luma ».</li>
+                    <li style="list-style-type: decimal;">Comme vu précédemment, s’il y a une icône verte à côté de l’icône de Luma, il faut le
+                        mettre à jour.</li>
+                    <li style="list-style-type: decimal;">Une fois Luma mis à jour, la mise à jour de la console peut être effectuée de manière classique, depuis les paramètres de la console.</li>
+                </ul>
+                <h2 class="titles" id="maj-boot9strap">II. Mise à jour de boot9strap</h2>
+                <p>« boot9strap » est le cœur du hack de votre console, il nécessite de temps en temps une
+                    mise à jour. Il existe deux méthodes cependant nous n’en détaillerons qu’une car il s’agit
+                    de la plus simple.</p>
+                <div class="disclaimer">
+                    <p class="indic-text"><strong>Attention :</strong>&nbsp;Si vous n'êtes pas sur boot9strap mais a9lh (arm9loaderhax) ou si votre version de Luma est inférieure à 7.0.5, suivez <a href="https://3ds.hacks.guide/fr_FR/a9lh-to-b9s.html">ce guide</a>.</p>
+                </div>
+                <ul>
+                    <li style="list-style-type: decimal;">Rendez-vous sur « Universal-Updater », cherchez « EZB9SUpdater », installez
+                        l’application.</li>
+                    <li style="list-style-type: decimal;">Vous retrouverez l’application dans le menu HOME, lancez-là. Vous arriverez sur cet
+                        écran :</li>
+                        <div style="display: flex; flex-direction: column;">
+                            <span><img src="https://cdn.homebrew-france.site/docs/3ds/ezb9s1.png" width="245px" style="margin-top: 15px;" /><br>
+                            <i>Appuyez sur<img src="https://cdn.homebrew-france.site/docs/buttons/switch_a_button.png" class="console-buttons"/>pour procéder à la suite</i></span>
+                            <span><img src="https://cdn.homebrew-france.site/docs/3ds/ezb9s2.png" width="245px" style="margin-top: 15px;" /><br>
+                            <i>Maintenez START jusqu'à arriver dans le menu SafeB9SInstaller</i></span>
+                        </div>
+                    <li style="list-style-type: decimal;">Sur le menu de SafeB9SInstaller, faites la combinaison de boutons demandée.</li>
+                    <li style="list-style-type: decimal;">L’installation va s’effectuer. Patientez.</li>
+                    <li style="list-style-type: decimal;">Vous allez être redirigé(e) vers EzB9SUpdater.</li>
+                    <li style="list-style-type: decimal;">Appuyez sur<img src="https://cdn.homebrew-france.site/docs/buttons/switch_b_button.png" class="console-buttons">. La mise à jour est terminée.</li>
+                </ul>
+                <h2 class="titles" id="maj-luma3ds">IV. Mise à jour de Luma3DS</h2>
+                <p>Au même titre que boot9strap, Luma3DS nécessite également d’être mis à jour de temps
+                    en temps. Deux méthodes s’offrent à vous.</p>
+                <h class="subtitles">Mise à jour via Universal-Updater (recommandé) :</h>
+                <ul>
+                    <li style="list-style-type: decimal;">Lancez « Universal-Updater ». Patientez pendant la vérification des mises à jour.</li>
+                    <li style="list-style-type: decimal;">Cherchez « Luma » dans la barre de recherche, vérifiez s’il y a un badge vert avec une
+                        flèche à côté de l’icône de Luma. Si c’est le cas procédez à l’étape suivante, sinon cela
+                        veut dire que vous êtes à jour.</li>
+                    <li style="list-style-type: decimal;">Appuyez sur<img src="https://cdn.homebrew-france.site/docs/buttons/switch_a_button.png"  class="console-buttons"/>pour lancer le téléchargement de la mise à jour.
+                        Vous pouvez passer à la section « Configuration de Luma ».</li>
+                        <i>Note: le logiciel
+                        « Luma3DS Updater » n’est plus fonctionnel à ce jour, vous devez impérativement utiliser
+                        l’Universal-Updater</i>
+                </ul>
+                <h class="subtitles">Mise à jour manuelle :</h>
+                <div class="prerequis">
+                    <h3>PRÉREQUIS :</h3>
+                    <ul>
+                        <li><a href="https://github.com/LumaTeam/Luma3DS/releases">La dernière version de Luma3DS</a>&nbsp;<i class="fa fa-download" aria-hidden="true"></i></li>
+                    </ul>
+                </div>
+                <ul>
+                    <li style="list-style-type: decimal;">Décompressez l'archive de Luma3DS téléchargée précédemment, copiez les fichiers <code>boot.firm</code> et <code>boot.3dsx</code> à <a href="https://homebrew-france.fr/sdroot/">la racine de
+                        votre carte SD.</a></li>
+                    <li style="list-style-type: decimal;">Allumez votre console, un écran de configuration apparaîtra.</li>
+                </ul>
+                <h class="subtitles">Configuration de Luma3DS :</h>
+                <p>Sélectionnez les options cochées comme sur l’image ci-dessous puis appuyez sur START :</p>
+                <img src="https://cdn.homebrew-france.site/docs/3ds/luma-config.png" width="420px" />
+                <h2 class="titles" id="nand-backup">V. Sauvegarde de la mémoire système (NAND Backup)</h2>
+                <p>Cette manipulation va créer une sauvegarde de votre mémoire système. Cette copie est
+                    créée à des fins de récupération en cas de panne (brick). Environ 1,5Gb d’espace libre
+                    sont nécessaires sur la carte SD pour créer la sauvegarde.</p>
+                <ul>
+                    <li style="list-style-type: decimal;">Eteignez votre console.</li>
+                    <li style="list-style-type: decimal;">Allumez-la en maintenant le bouton START, deux cas de figure :</li>
+                    <ul>
+                        <li>Vous arrivez sur un menu, sélectionnez alors « GodMode9 »</li>
+                        <li>Vous arrivez directement sur « GodMode9 »</li>
+                    </ul>
+                    <li style="list-style-type: decimal;">Ce message peut parfois appraître. Appuyez sur<img src="https://cdn.homebrew-france.site/docs/buttons/switch_b_button.png" class="console-buttons"/>pour refuser.</li>
+                    <img src="https://cdn.homebrew-france.site/docs/3ds/nandbackup-1.jpg">
+                    <li style="list-style-type: decimal;">Appuyez sur le bouton HOME ➜ « Scripts » ➜ « GM9Megascript » ➜ « Backup
+                        Options »</li>
+                    <img src="https://cdn.homebrew-france.site/docs/3ds/nandbackup-2.png" width="250px" /><img src="https://cdn.homebrew-france.site/docs/3ds/nandbackup-3.png" width="250px" /><img src="https://cdn.homebrew-france.site/docs/3ds/nandbackup-4.png" width="250px" />
+                    <li style="list-style-type: decimal;">Sélectionnez « SysNAND Backup » puis appuyez sur<img src="https://cdn.homebrew-france.site/docs/buttons/switch_a_button.png" class="console-buttons"/>pour confirmer.</li>
+                    <img src="https://cdn.homebrew-france.site/docs/3ds/nandbackup-5.png" width="250px" /><img src="https://cdn.homebrew-france.site/docs/3ds/nandbackup-6.png" width="250px" />
+                    <li style="list-style-type: decimal;">Patientez jusqu’à la fin du processus (cela peut prendre plusieurs minutes) puis appuyez sur<img src="https://cdn.homebrew-france.site/docs/buttons/switch_a_button.png" class="console-buttons"/>pour finaliser.</li>
+                    <img src="https://cdn.homebrew-france.site/docs/3ds/nandbackup-7.png" width="250px" /><img src="https://cdn.homebrew-france.site/docs/3ds/nandbackup-8.png" width="250px" />
+                    <li style="list-style-type: decimal;">Une fois terminé, appuyez sur HOME et sélectionnez « Poweroff system »</li>
+                    <img src="https://cdn.homebrew-france.site/docs/3ds/nandbackup-9.png" width="250px" />
+                    <li style="list-style-type: decimal;">Insérez la carte SD de votre 3DS dans votre PC ou téléphone :
+                        <br />Rendez-vous dans le dossier <code>/gm9/out/</code> de la carte SD et copiez les deux fichiers
+                        terminant par <code>_sysnand_##.bin</code> et <code>_sysnand_##.bin.sha</code> à un endroit sûr sur
+                        votre PC ou votre téléphone.</li>
+                </ul>
+                <div class="disclaimer">
+                    <p class="indic-text"><strong>Attention :</strong>&nbsp; Il est important de conserver ces fichiers en cas de
+                        panne ou de brick ! Ne les supprimez sous aucun prétexte !</p>
+                </div>
+                <h2 class="titles" id="installation-mods">VI. Installation de mods</h2>
+                <ul>
+                    <li style="list-style-type: decimal;">Créez un dossier <code>/titles</code> dans le dossier <code>/luma</code></li>
+                    <li style="list-style-type: decimal;">Il faudra maintenant créer un dossier avec l'ID de votre jeu, l’ID peut être trouvé sur <a href="http://www.3dsdb.com">3dsDB</a></li>
+                    <li style="list-style-type: decimal;">Nous allons prendre comme exemple le jeu Mario Kart 7, son ID est : « 0004000000030700 » alors le dossier sera nommé : <code>0004000000030700</code></li>
+                    <li style="list-style-type: decimal;">Procurez-vous un mod, le site recommandé est <a href="https://gamebanana.com">GameBanana</a>.</li>
+                    <li style="list-style-type: decimal;">Une fois le mod téléchargé, assurez-vous bien qu'il soit dans un dossier "romfs" puis
+                        placez-le dans le dossier de votre ID de jeu, avec Mario Kart 7 il y aurait donc :
+                        <code>0004000000030700/romfs/{le mod téléchargé}</code>.</li>
+                    <li style="list-style-type: decimal;">Une fois le mod déplacé sur la carte SD, vous pouvez l’éjecter et la réinsérer dans la
+                        console.</li>
+                    <li style="list-style-type: decimal;">Maintenez SELECT au démarrage pour accéder au menu de configuration de Luma.
+                        Une fois dans le menu, cochez la case « Enable Game Patching » puis appuyez sur START
+                        et la console redémarrera. <br>Une fois sur le menu HOME, lancez votre jeu et le mod devrait se lancer correctement,
+                        cependant le jeu peut crasher si votre mod est incompatible avec votre version du jeu.</li>
+                    <li style="list-style-type: decimal;">Pour désactiver les mods, reproduire le début de l’étape 6 mais en décochant « Enable
+                        Game Patching »</li>
+                    <li style="list-style-type: decimal;">Pour supprimer un mod d’un jeu spécifique sans désactiver l'option dans le menu de
+                        configuration de Luma : insérez votre carte SD dans votre PC et supprimez le dossier
+                        <code>romfs</code> du mod que vous voulez supprimer.</li>
+                </ul>
+                <h2 class="titles" id="installer-pretendo">VII. Installation de Pretendo-Network.</h2><br>
+                <h id="nimbus-dl" class="subtitles">1) Téléchargement de Nimbus</h>
+                <div class="disclaimer">
+                    <p class="indic-text"><strong>Attention :</strong>&nbsp;votre console doit éxecuter Luma 13.0 ou supérieur.</p>
+                </div>
+                <div class="prerequis">
+                    <h3>PRÉREQUIS :</h3>
+                    <ul>
+                        <li><a href="https://github.com/PretendoNetwork/Nimbus/releases/latest">La dernière version de Nimbus</a> <i class="fa fa-download" aria-hidden="true"></i></li>
+                        <p><i>Note: vous avez le choix entre "cia.X.X.X.zip", "3dsx.X.X.X.zip" ou "combined.X.X.X.zip". La version cia installe Nimbus sur le menu HOME tandis que la version 3dsx permet uniquement le lancement en passant par le Homebrew Launcher.</i></p>
+                    </ul>
+                </div>
+                <ul>
+                    <li style="list-style-type: decimal;">Eteignez votre console et insérez la carte SD dans votre ordinateur.</li>
+                    <li style="list-style-type: decimal;">Extrayez l'archive que vous avez téléchargé précédemment.</li>
+                    <li style="list-style-type: decimal;">Placez tout le contenu à la <a href="https://homebrew-france.fr/sdroot">racine de la carte SD</a> de votre console.</li>
+                    <li style="list-style-type: decimal;">Vérifiez la présence de ces fichiers sur votre carte SD :</li>
+                    -&nbsp;<code style="word-break: break-all;">SD:/luma/titles/000400300000BC02/code.ips</code> (Miiverse, JPN)<br>
+                    -&nbsp;<code style="word-break: break-all;">SD:/luma/titles/000400300000BD02/code.ips</code> (Miiverse, USA)<br>
+                    -&nbsp;<code style="word-break: break-all;">SD:/luma/titles/000400300000BE02/code.ips</code> (Miiverse, EUR)<br>
+                    -&nbsp;<code style="word-break: break-all;">SD:/luma/sysmodules/0004013000002F02.ips</code> (SSL)<br>
+                    -&nbsp;<code style="word-break: break-all;">SD:/luma/sysmodules/0004013000003202.ips</code> (FRD/Friends)<br>
+                    -&nbsp;<code style="word-break: break-all;">SD:/luma/sysmodules/0004013000003802.ips</code> (ACT/NNID)<br>
+                    -&nbsp;<code style="word-break: break-all;">SD:/3ds/juxt-prod.pem</code> (Juxtaposition certificate)
+                    <li style="list-style-type: decimal;">Réinsérez la carte SD dans votre console.</li>
+                </ul>
+                <h id="luma-patches" class="subtitles">2) Activation des patches Luma</h>
+                <ul>
+                    <li style="list-style-type: decimal;">Allumez votre console en maintenant POWER + SELECT. Vous arriverez sur l'écran de configuration de Luma3DS.</li>
+                    <li style="list-style-type: decimal;">Sur cet écran, sélectionnez les deux options suivantes :</li>
+                    -&nbsp;<code>Enable loading external FIRMS and modules</code><br>
+                    -&nbsp;<code>Enable game patching</code>
+                    <li style="list-style-type: decimal;">Validez en appuyant sur START.</li>
+                </ul>
+                <h id="nimbus-use" class="subtitles">3) Utilisation de Nimbus</h>
+                <div class="indic">
+                    <p class="indic-text">Si vous avez téléchargé la version "3dsx" de Nimbus, passez à <a href="#step-3">l'étape 3</a>.</p>
+                </div>
+                <ul>
+                    <li style="list-style-type: decimal;">Rendez-vous dans FBI, sélectionnez "SD" puis dans le dossier "cias".</li>
+                    <li style="list-style-type: decimal;">Sélectionnez l'option que vous préférez "Install" ou "Install and delete"</li>
+                    <li style="list-style-type: decimal;" id="step-3">Selon la version que vous avez installé, lancez Nimbus soit depuis le menu HOME soit depuis le Homebrew Launcher.</li>
+                </ul>
+                <p>Pretendo-Network est maintenant prêt à l'usage sur votre console.<br>
+                    La démarche pour la création d'un compte PNID (Pretendo-Network ID) est la même que pour un NNID (Nintendo-Network ID).</p>
+                <h2 class="titles" id="installation-themes">VIII. Installation de thèmes personnalisés.</h2>
+                <p>L’un des principaux avantages d’avoir une 3DS sous Luma est de pouvoir la personnaliser
+                    avec des thèmes créés par la communauté. L’installation de thèmes est très simple.</p>
+                <ul>
+                    <li style="list-style-type: decimal;">Rendez-vous dans l’application « Anemone3DS ».</li>
+                    <li style="list-style-type: decimal;">Cherchez un thème sur <a href="https://themeplaza.art/themes">Theme Plaza</a>.</li>
+                </ul>
+                <p>Deux solutions pour le téléchargement s’offrent à vous :</p>
+                <h class="subtitles">Téléchargement via QR code :</h>
+                <ul>
+                    <li style="list-style-type: decimal;">Sur Theme Plaza, une fois votre thème sélectionné, vous arrivez sur une page avec un
+                        QR code.</li>
+                    <li style="list-style-type: decimal;">Lancez Anemone3DS, appuyez sur <img src="https://cdn.homebrew-france.site/docs/buttons/switch_r_button.png" class="console-buttons"/>.</li>
+                    <li style="list-style-type: decimal;">Scannez le QR code, le téléchargement va débuter.</li>
+                </ul>
+                <h class="subtitles">Téléchargement manuel :</h>
+                <ul>
+                    <li style="list-style-type: decimal;">Sur Theme Plaza, une fois votre thème sélectionné, vous arrivez sur une page, cliquez
+                        sur « Download », cela va télécharger le fichier <code>.zip</code> contenant votre thème.</li>
+                    <li style="list-style-type: decimal;">Placez le fichier dans le dossier <code>/themes</code> de votre carte SD.</li>
+                </ul>
+                <h class="subtitles">Installation d’un thème :</h>
+                <ul>
+                    <li style="list-style-type: decimal;">Lancez « Anemone3DS », naviguez jusqu’au thème de votre choix, une fois sur le
+                        thème, maintenez<img src="https://cdn.homebrew-france.site/docs/buttons/switch_a_button.png" class="console-buttons"/>+<img src="https://cdn.homebrew-france.site/docs/buttons/nintendo_dpad_up.png" class="console-buttons"/>.</li>
+                    <li style="list-style-type: decimal;">Une fois l’installation terminée, cliquez sur START puis sur HOME pour retourner au
+                        menu HOME de la console.<br>
+                        Votre thème est désormais installé sur votre console. Pour changer de thème, la
+                        manipulation est la même.</li>
+                </ul>
+                <h class="subtitles">Créer vos propres thèmes :</h>
+                <p>Deux logiciels existent pour créer des thèmes personnalisés pour votre Nintendo 3DS :</p>
+                <ul>
+                    <h4><strong>- <a href="https://github.com/usagirei/3DS-Theme-Editor/releases">Usagi 3DS Theme Editor</a> :</strong></h4>
+                    <p>Un logiciel à installer sur votre PC permettant de créer facilement un thème avec une
+                    prévisualisation.</p>
+                    <h4><strong>- <a href="https://exelix11.github.io/Yata-online/">Yata Online</a> :</strong></h4>
+                    <p>Un éditeur de thème en ligne, idéal lorsque vous ne possédez pas d’ordinateur,
+                        cependant il est peu ergonomique.</p>
+                </ul>
+                <h2 class="titles" id="emulation">IX. Emulation et retrogaming</h2><br />
+                <h class="subtitles">1) Old 3DS (Nintendo 3DS, Nintendo 3DS XL, Nintendo 2DS) :</h>
+                <p>Voici les consoles qu’est capable d’émuler une « Old » Nintendo 3DS ainsi que les
+                    émulateurs recommandés :</p>
+                    <div style="overflow: scroll; width: 100%;">
+                        <table border="1" cellpadding="10">
+                            <thead>
+                            <tr>
+                                <th>Console</th>
+                                <th>Émulateur/Hyperviseur</th>
+                                <th>Compatibilité</th>
+                                <th>Disponibilité</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>SNES</td>
+                                <td>Snes9x</td>
+                                <td style="background-color:#66bb6a;">Très bonne</td>
+                                <td><a href="https://db.universal-team.net/3ds/snes9x-updated-fork">Universal-Updater</a></td>
+                            </tr>
+                            <tr>
+                                <td>NES</td>
+                                <td>VirtuaNES</td>
+                                <td style="background-color:#66bb6a;">Très bonne</td>
+                                <td><a href="https://db.universal-team.net/3ds/virtuanes">Universal-Updater</a></td>
+                            </tr>
+                            <tr>
+                                <td>Megadrive/MasterSystem/GameGear</td>
+                                <td>Picodrive</td>
+                                <td style="background-color:#66bb6a;">Très bonne</td>
+                                <td><a href="https://db.universal-team.net/3ds/picodrive">Universal-Updater</a></td>
+                            </tr>
+                            <tr>
+                                <td>PCEngine</td>
+                                <td>TemperPCE</td>
+                                <td style="background-color:#66bb6a;">Très bonne</td>
+                                <td><a href="https://db.universal-team.net/3ds/temperpce">Universal-Updater</a></td>
+                            </tr>
+                            <tr>
+                                <td>GameBoy Advance</td>
+                                <td>open_agb_firm</td>
+                                <td style="background-color:#43a047;">Parfaite</td>
+                                <td><a href="https://db.universal-team.net/3ds/open_agb_firm">Universal-Updater</a></td>
+                            </tr>
+                            <tr>
+                                <td>GameBoy Advance</td>
+                                <td>VC Injects</td>
+                                <td style="background-color:#43a047;">Parfaite</td>
+                                <td><a href="https://gbatemp.net/threads/release-ultimate-gba-vc-injector-for-3ds.438057/">GBATemp</a></td>
+                            </tr>
+                            <tr>
+                                <td>GameBoy/GameBoy Color</td>
+                                <td>GameYob (version NDS)</td>
+                                <td style="background-color:#66bb6a;">Très bonne</td>
+                                <td><a href="https://db.universal-team.net/ds/gameyob">Universal-Updater</a></td>
+                            </tr>
+                            <tr>
+                                <td>GameBoy/GameBoy Color</td>
+                                <td>GameYob (version 3DS)</td>
+                                <td style="background-color:#66bb6a;">Très bonne</td>
+                                <td><a href="https://db.universal-team.net/3ds/gameyob-3ds">Universal-Updater</a></td>
+                            </tr>
+                            <tr>
+                                <td>Nintendo DS/Nintendo DSi</td>
+                                <td>TWiLightMenu++ (via nds-bootstrap)</td>
+                                <td style="background-color:#ffa726;">Bonne</td>
+                                <td><a href="https://db.universal-team.net/ds/twilight-menu">Universal-Updater</a></td>
+                            </tr>
+                            <tr>
+                                <td>Atari 2600</td>
+                                <td>StellaDS (NDS)</td>
+                                <td style="background-color:#388e3c;">Excellente</td>
+                                <td><a href="https://db.universal-team.net/ds/stellads">Universal-Updater</a></td>
+                            </tr>
+                            <tr>
+                                <td>Atari 5200</td>
+                                <td>A5200DS (NDS)</td>
+                                <td style="background-color:#388e3c;">Excellente</td>
+                                <td><a href="https://db.universal-team.net/ds/a5200ds">Universal-Updater</a></td>
+                            </tr>
+                            <tr>
+                                <td>Atari 7800</td>
+                                <td>A7800DS (NDS)</td>
+                                <td style="background-color:#388e3c;">Excellente</td>
+                                <td><a href="https://db.universal-team.net/ds/a7800ds">Universal-Updater</a></td>
+                            </tr>
+                            <tr>
+                                <td>ColecoVision</td>
+                                <td>ColecoDS (NDS)</td>
+                                <td style="background-color:#388e3c;">Excellente</td>
+                                <td><a href="https://db.universal-team.net/ds/colecods">Universal-Updater</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                      <h class="subtitles">2) New 3DS (New Nintendo 3DS, New Nintendo 3DS XL, New Nintendo 2DS XL) :</h><br />
+                      <p>Voici les consoles qu’est capable d’émuler une « New » Nintendo 3DS ainsi que les
+                      émulateurs recommandés :</p>
+                      <div style="overflow: scroll; width: 100%;">
+                        <table border="1" cellpadding="10">
+                            <thead>
+                            <tr>
+                                <th>Console</th>
+                                <th>Émulateur/Hyperviseur</th>
+                                <th>Compatibilité</th>
+                                <th>Disponibilité</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td>SNES</td>
+                                <td>Snes9x</td>
+                                <td style="background-color:#66bb6a;">Très bonne</td>
+                                <td><a href="https://db.universal-team.net/3ds/snes9x-updated-fork">Universal-Updater</a></td>
+                                </tr>
+                                <tr>
+                                <td>NES</td>
+                                <td>VirtuaNES</td>
+                                <td style="background-color:#66bb6a;">Très bonne</td>
+                                <td><a href="https://db.universal-team.net/3ds/virtuanes">Universal-Updater</a></td>
+                                </tr>
+                                <tr>
+                                <td>Megadrive/MasterSystem/GameGear</td>
+                                <td>Picodrive</td>
+                                <td style="background-color:#66bb6a;">Très bonne</td>
+                                <td><a href="https://db.universal-team.net/3ds/picodrive">Universal-Updater</a></td>
+                                </tr>
+                                <tr>
+                                <td>PCEngine</td>
+                                <td>TemperPCE</td>
+                                <td style="background-color:#66bb6a;">Très bonne</td>
+                                <td><a href="https://db.universal-team.net/3ds/temperpce">Universal-Updater</a></td>
+                                </tr>
+                                <tr>
+                                    <td>GameBoy Advance</td>
+                                    <td>mGBA</td>
+                                    <td style="background-color:#66bb6a;">Très bonne</td>
+                                    <td><a href="">Universal-Updater</a></td>
+                                </tr>
+                                <tr>
+                                <td>GameBoy Advance</td>
+                                <td>open_agb_firm</td>
+                                <td style="background-color:#43a047;">Parfaite</td>
+                                <td><a href="https://db.universal-team.net/3ds/open_agb_firm">Universal-Updater</a></td>
+                                </tr>
+                                <tr>
+                                <td>GameBoy Advance</td>
+                                <td>VC Injects</td>
+                                <td style="background-color:#43a047;">Parfaite</td>
+                                <td><a href="https://gbatemp.net/threads/release-ultimate-gba-vc-injector-for-3ds.438057/">GBATemp</a></td>
+                                </tr>
+                            <tr>
+                                <td>GameBoy/GameBoy Color</td>
+                                <td>GameYob (version NDS)</td>
+                                <td style="background-color:#66bb6a;">Très bonne</td>
+                                <td><a href="https://db.universal-team.net/ds/gameyob">Universal-Updater</a></td>
+                                </tr>
+                                <tr>
+                                <td>GameBoy/GameBoy Color</td>
+                                <td>GameYob (version 3DS)</td>
+                                <td style="background-color:#66bb6a;">Très bonne</td>
+                                <td><a href="https://db.universal-team.net/3ds/gameyob-3ds">Universal-Updater</a></td>
+                                </tr>
+                                <tr>
+                                <td>Nintendo DS/Nintendo DSi</td>
+                                <td>TWiLightMenu++ (via nds-bootstrap)</td>
+                                <td style="background-color:#ffa726;">Bonne</td>
+                                <td><a href="https://db.universal-team.net/ds/twilight-menu">Universal-Updater</a></td>
+                                </tr>
+                                <tr>
+                                <td>Atari 2600</td>
+                                <td>StellaDS (NDS)</td>
+                                <td style="background-color:#388e3c;">Excellente</td>
+                                <td><a href="https://db.universal-team.net/ds/stellads">Universal-Updater</a></td>
+                                </tr>
+                                <tr>
+                                <td>Atari 5200</td>
+                                <td>A5200DS (NDS)</td>
+                                <td style="background-color:#388e3c;">Excellente</td>
+                                <td><a href="https://db.universal-team.net/ds/a5200ds">Universal-Updater</a></td>
+                                </tr>
+                                <tr>
+                                <td>Atari 7800</td>
+                                <td>A7800DS (NDS)</td>
+                                <td style="background-color:#388e3c;">Excellente</td>
+                                <td><a href="https://db.universal-team.net/ds/a7800ds">Universal-Updater</a></td>
+                                </tr>
+                                <tr>
+                                <td>ColecoVision</td>
+                                <td>ColecoDS (NDS)</td>
+                                <td style="background-color:#388e3c;">Excellente</td>
+                                <td><a href="https://db.universal-team.net/ds/colecods">Universal-Updater</a></td>
+                            </tr>
+                            <tr>
+                                <td>PlayStation 1</td>
+                                <td>PCSX-Rearmed (via RetroArch)</td>
+                                <td style="background-color:#ffa000;">Assez bonne</td>
+                                <td>Universal-Updater (via le script RetroArch)</td>
+                            </tr>
+                            <tr>
+                                <td>Nintendo 64</td>
+                                <td>DaedalusX64 (release)</td>
+                                <td style="background-color:#e53935;">Mauvaise</td>
+                                <td><a href="https://db.universal-team.net/3ds/daedalusx64-3ds">Universal-Updater</a></td>
+                            </tr>
+                            <tr>
+                                <td>Nintendo 64</td>
+                                <td>DaedalusX64 (beta)</td>
+                                <td style="background-color:#f57c00;">Médiocre</td>
+                                <td><a href="https://db.universal-team.net/3ds/daedalusx64-3ds">Universal-Updater</a></td>
+                            </tr>
+                            <tr>
+                                <td>Nintendo VirtualBoy</td>
+                                <td>r3Dragon</td>
+                                <td style="background-color:#f57c00;">Médiocre</td>
+                                <td><a href="https://db.universal-team.net/3ds/r3ddragon">Universal-Updater</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                      <h2 class="titles" id="desinstallation-hack">X. Désinstallation du hack</h2>
+                      <div class="disclaimer">
+                        <p class="indic-text"><strong>Attention :</strong>&nbsp; La désinstallation du hack de votre Nintendo 3DS n'est pas sans risque ! Le risque de brick n'est pas négligeable !<br>
+                        Soyez sûr d'uniquement utiliser ce tutoriel pour la désinstallation du hack ! <br /><strong>NE FAITES JAMAIS CONFIANCE AUX TUTORIELS TROUVÉS SUR YOUTUBE !</strong></p>
+                      </div>
+                      <p>Pour procéder à la désinstallation du hack de votre console, suivez ce guide : <a href="https://3ds.hacks.guide/fr_FR/uninstall-cfw.html">3ds.hacks.guide</a></p>
+                    </div>
+                </div>
+        
+                <!-- Scripts -->
+                <script src="../../scripts/navItemsHighlights_docs.js"></script>
+                <script src="../../scripts/maintenance_Toggler.js"></script>
+                <script src="../../scripts/navigationBar_creation.js"></script>
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9864634157908409" crossorigin="anonymous"></script>
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            </body>
+        </html>                      
+                      
+                      

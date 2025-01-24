@@ -1,0 +1,158 @@
+<!--    
+	Homebrew France Web V3
+    Copyright (C) 2025  Homebrew France
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html lang="fr" data-website-id="HBFWEB-V3-LWS">
+	<head>
+        <title>Devenir Helper</title>
+
+        <!-- Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charset="utf-8" />
+		<meta content="Devenir Helper • Homebrew France" property="og:title"/>
+		<meta content="Rejoignez notre équipe en tant que Helper sur notre serveur. Consultez les critères de recrutement et postulez pour aider notre communauté à grandir." property="og:description"/>
+		<meta content="https://homebrew-france.fr/devenir-helper" property="og:url"/>
+		<meta content="https://cdn.homebrew-france.site/meta-imgs/recrutements.png" property="og:image"/>
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="apple-mobile-web-app-capable" content="YES"/>
+        <meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@HomebrewFrance" />
+		<meta name="twitter:title" content="Homebrew France - La communauté n°1 pour le jailbreak de consoles" />
+		<meta name="twitter:description" content="Rejoignez Homebrew France, la communauté dédiée au jailbreak de consoles avec support et guides en ligne." />
+		<meta name="twitter:image" content="https://cdn.homebrew-france.site/generic/website-icon.png" />
+		
+        <!-- Link -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="../style/stylesheets/style.css" />
+		<link rel="stylesheet" href="../style/stylesheets/navbar__f.css" />
+        <link rel="stylesheet" href="../style/stylesheets/form.css" />
+        <link rel="icon" type="image/x-icon" href="https://cdn.homebrew-france.site/generic/fav.ico" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        
+        <!-- Scripts -->
+        <script async src="../scripts/analyticsServices_manager.js"></script>
+	</head>
+	<body data-page-id="RECRUTEMENTS">
+        <div id="navSpace"></div>
+		<div class="page">
+            <div class="indicator-container">
+                <div class="indicator">Devenir Helper</div>
+                <div class="indicator-desc">Devenez bénévole pour la communauté Homebrew France.</div>
+            </div>
+            <hr id="indicatorSeparator">
+			<pre></pre>
+            <h3 class="titles" style="font-size: 29px;">Formulaire :</h3>
+            <p>Remplissez le formulaire ci-dessous et cliquez sur "Envoyer" pour postuler en tant que Helper sur le serveur. </p>
+            <form action="https://formspree.io/f/mpzvwjke" method="POST" class="formHelper">
+                <h4><strong>Nom d'utilisateur</strong> Discord : <span class="required-fields">*</span></h4>
+                <input placeholder="@" name="Pseudo" id="pseudo" oninput="preventRemoval()" required><br>
+                <script>
+                    function preventRemoval() {
+                      var input = document.getElementById("pseudo");
+                      if (!input.value.startsWith("@")) {
+                        input.value = "@" + input.value;
+                      }
+                    }
+                </script>
+                <br>
+                <h4>Adresse <strong>e-mail</strong>  : <span class="required-fields">*</span></h4>
+                <input type="email" id="email" name="Adresse-mail" pattern=".+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" size="20" required />
+                <pre></pre>
+                <h4><strong>Domaines</strong> d'aide : <span class="required-fields">*</span></h4>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="consoles[]" value="PSP" class="formulaire-helper" for="consoles[]"> PlayStation Portable (PSP)</input></br>
+                    <input type="checkbox" name="consoles[]" value="PS4" class="formulaire-helper" for="consoles[]"> PlayStation 4</input></br>
+                    <input type="checkbox" name="consoles[]" value="Xbox-OG" class="formulaire-helper" for="consoles[]"> Xbox (1 ère génération)</input></br>
+                    <input type="checkbox" name="consoles[]" value="Xbox-360" class="formulaire-helper" for="consoles[]"> Xbox 360</br>
+                    <input type="checkbox" name="consoles[]" value="Wii" class="formulaire-helper" for="consoles[]"> Nintendo Wii</input></br>
+                    <input type="checkbox" name="consoles[]" value="Wii-U" class="formulaire-helper" for="consoles[]"> Nintendo Wii U</input></br>
+                    <input type="checkbox" name="consoles[]" value="3DS" class="formulaire-helper" for="consoles[]"> Nintendo 3DS <span class="required-fields">**</span></input></br>
+                    <input type="checkbox" name="consoles[]" value="DSi" class="formulaire-helper" for="consoles[]"> Nintendo DSi</input></br>
+                    <input type="checkbox" name="consoles[]" value="PC-Hardware" class="formulaire-helper" for="consoles[]"> PC (Hardware)</input></br>
+                    <input type="checkbox" name="consoles[]" value="PC-Software" class="formulaire-helper" for="consoles[]"> PC (Software)</input></br>
+                </div>
+                <label style="margin-left: 2.3%;">Autre(s) (préciser) :</label>             
+                <input name="Autres consoles (optionnel)" id="autres-rep"><br />
+                <small><i><span class="required-fields">** </span>Un test de connaissances est susceptible d'être réalisé.</i></small>
+                <pre></pre>
+                <h4>Paragraphe de <strong>motivation</strong> : <span class="required-fields">*</span></h4>
+                <textarea name="Arguments" style="width: 100%; height: 150px; margin-bottom: 15px;" id="motivation" required></textarea>
+                </br>
+                <h4><strong>Serveurs</strong> sur lesquels vous êtes déjà ou avez été Helper :</h4>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="serveurs[]" value="Nintendo-Homebrew" class="formulaire-helper" for="serveurs[]"> Nintendo-Homebrew</input><br>
+                    <input type="checkbox" name="serveurs[]" value="LS-Atelier" class="formulaire-helper" for="serveurs[]"> LS-Atelier</input><br>
+                    <input type="checkbox" name="serveurs[]" value="SigHya" class="formulaire-helper" for="serveurs[]"> SigHya</input><br>
+                    <input type="checkbox" name="serveurs[]" value="MikeGamers" class="formulaire-helper" for="serveurs[]"> MikeGamers</input><br>
+                    <input type="checkbox" name="serveurs[]" value="Jihel" class="formulaire-helper" for="serveurs[]"> Jihel Jay</input><br>
+                    <input type="checkbox" name="serveurs[]" value="DSiModeHacking" class="formulaire-helper" for="serveurs[]"> DS(i) Mode Hacking!</input><br>
+                    <input type="checkbox" name="serveurs[]" value="PlayStation-Homebrew" class="formulaire-helper" for="serveurs[]"> PlayStation-Homebrew</input><br>
+                    <input type="checkbox" name="serveurs[]" value="Deejay" class="formulaire-helper" for="serveurs[]"> Deejay</input><br>
+                    <input type="checkbox" name="serveurs[]" value="Ile-des-Cocos" class="formulaire-helper" for="serveurs[]"> Île des Cocos</input><br>
+                    <input type="checkbox" name="serveurs[]" value="3DS-Hacks-FR" class="formulaire-helper" for="serveurs[]"> 3DS Hacks FR</input><br>
+                    <input type="checkbox" name="serveurs[]" value="Classic-Gamer" class="formulaire-helper" for="serveurs[]"> Classic Gamer</input><br>
+                </div>
+                <label style="margin-left: 2.3%;">Autre(s) (préciser) :</label>
+                <input type="text" name="Autres serveurs (optionnel)" id="autres-rep2"></input>
+                <pre></pre>
+                <h4>Date de <strong>naissance</strong> : <span class="required-fields">*</span></h4>
+                <input id="date-naissance" type="date" name="Date de naissance" ></input>
+                <pre></pre>
+                <h4><strong>Disponibilités</strong> générales : <span class="required-fields">*</span></h4>
+                <p>Semaine (Lun, Mar, Mer, Jeu, Ven) :</p>
+                <p>De <input class="time" type="time" name="Disponibilités (L/M/M/J/V) (heure début)" required></input> à <input class="time" type="time" name="Disponibilités (L/M/M/J/V) (heure fin)" required></input></p>
+                <p>Week-end (Sam, Dim) :</p>
+                <p>De <input class="time" type="time" name="Disponibilités (S/D) (heure début)" required></input> à <input class="time" type="time" name="Disponibilités (S/D) (heure fin)" required></input></p>
+                <div style="text-align: center; margin-bottom: 25px;">
+                    <input type="checkbox" name="Règlement lu" value="Oui" class="formulaire-helper" for="reglement-lu" id="reglement-lu" required></input> Je confirme avoir pris connaissance du règlement de la communauté. <span class="required-fields">*</span></br>
+                    <input type="checkbox" name="Avoir plus de 15 ans" value="Oui" class="formulaire-helper" for="plus-de-15a" id="plus-de-15a" required></input> Je certifie être âgé de 15 ans ou plus. <span class="required-fields">*</span></br>
+                </div>
+                <center>
+                    <div class="cf-turnstile" data-sitekey="0x4AAAAAAA1T5qLXEv3MgOP-"></div>
+                </center>
+                <button type="submit" class="default-button" style="margin-left: 0; width: 100%; padding: 10px; font-size: 24px;">Envoyer</button>
+            </form>
+            <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+            <script>
+                document.querySelector('.formHelper').addEventListener('submit', function(event) {
+                    const turnstileToken = document.querySelector('[name="cf-turnstile-response"]');
+                    
+                    if (turnstileToken) {
+                        turnstileToken.remove();
+                    }
+            
+                    if (!turnstileToken || !turnstileToken.value) {
+                        alert("Veuillez compléter le Captcha avant de soumettre.");
+                        event.preventDefault(); 
+                    }
+                });
+            </script>
+            <small><i><span class="required-fields">*</span> Champs obligatoires</i></small>
+        </div>        
+
+        <!-- Scripts -->
+        <script src="../scripts/maintenance_Toggler.js"></script>
+        <script src="../scripts/navigationBar_creation.js"></script>
+        <script src="../scripts/footer_creation.js"></script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9864634157908409" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

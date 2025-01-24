@@ -1,0 +1,136 @@
+<!--    
+	Homebrew France Web V3
+    Copyright (C) 2025  Homebrew France
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html lang="fr" data-website-id="HBFWEB-V3-LWS">
+	<head>
+        <title>PSVita | Docs</title>
+
+        <!-- Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charset="utf-8" />
+		<meta content="PSVita | Docs" property="og:title"/>
+		<meta content="Documentation complète sur la PlayStation Vita." property="og:description"/>
+		<meta content="https://docs.homebrew-france.fr/psvita" property="og:url"/>
+		<meta content="https://cdn.homebrew-france.site/docs/psvita_docs.png" property="og:image"/>
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="apple-mobile-web-app-capable" content="YES"/>
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@HomebrewFrance" />
+		<meta name="twitter:title" content="Homebrew France - La communauté n°1 pour le jailbreak de consoles" />
+		<meta name="twitter:description" content="Rejoignez Homebrew France, la communauté dédiée au jailbreak de consoles avec support et guides en ligne." />
+		<meta name="twitter:image" content="https://cdn.homebrew-france.site/generic/website-icon.png" />
+        
+        <!-- Link -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="../../../style/stylesheets/guide.css" />
+        <link rel="stylesheet" href="../../../style/stylesheets/navbar__f.css" />
+        <link rel="icon" type="image/png" href="https://cdn.homebrew-france.site/generic/lumia-guides.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+                                
+        <!-- Scripts -->
+        <script async src="../../../scripts/analyticsServices_manager.js"></script>
+	</head>
+    <body data-page-id="DOC-PSVita">
+        <a class="top-page-button" href="#"><div href="#" class="top-page-button" title="Remonter en haut de la page">
+            <center>&#9650;</center>
+        </div></a>
+        <div id="navSpace"></div>
+		<div class="docu-container">
+			<div class="nav-menu-horiz" style="overflow: scroll;">
+				<h class="subtitles">Navigation :</h><br>
+                <div class="nav-elements-horiz"></div>
+                <div class="nav-bottom">
+                    <h4 style="font-family: 'Sora', sans-serif; font-size: 18px;"><span style="font-weight: 300;">Homebrew</span><strong>France</strong> Docs</h4>
+                    <p style="font-size: 15px; color: rgb(210, 210, 210);">&copy; 2025 - Homebrew France</p>
+                </div>
+			</div>
+			<div class="nav-menu-vert">
+				<h class="subtitles">Navigation :</h><br>
+                <div class="nav-elements-vert"></div>
+			</div>
+			<div class="page-docu">
+				<h1 class="top">PlayStation Vita - <span style="font-family: 'Sora'"><span style="font-weight: 300;">Homebrew</span><strong>France Docs</strong></span></h1>
+				<div class="indic">
+					<p class="indic-text">Rejoignez <a href="https://discord.homebrew-france.fr/">Homebrew France</a> pour obtenir de l'assistance ou nous aider à développer le guide.</p>
+				</div>
+				<p>Ce guide permettera de jailbreaker votre PlayStation Vita en basculant vers la version 3.60 du firmware. Suivez les étapes de ce guide afin de mettre à jour votre PlayStation Vita vers le firmware 3.60.</p>
+				<h2 class="titles" id="maj-360">I. Mise à niveau de la console en 3.60</h2>
+				<div class="indic">
+					<p class="indic-text">Cette section n'est réalisable que si votre console est sur un firmware inférieur à 3.60.</p>
+				</div>
+				<ul>
+					<li style="list-style-type: decimal;">Ouvrez les paramètres de votre console.</li>
+					<li style="list-style-type: decimal;">Rendez-vous dans "Réseau ➜ Paramètres Wi-Fi".</li>
+					<li style="list-style-type: decimal;">Connectez-vous à votre point d'accès Wi-Fi.</li>
+					<li style="list-style-type: decimal;">Rendez-vous dans "Paramètres avancés puis "Paramètres DNS".</li>
+					<li style="list-style-type: decimal;">Réglez en "Manuelle" et non "Automatique". Deux paramètres apparaissent : "DNS primaire" et "DNS secondaire".</li>
+					<li style="list-style-type: decimal;">Renseignez l'adresse IP <code>212.47.229.76</code> dans le champ "DNS primaire". Laissez le champ vide pour "DNS secondaire".</li>
+					<li style="list-style-type: decimal;">Vérifiez également que le paramètre "Serveur Proxy" soit configuré sur "Ne pas utiliser". N'oubliez pas d'enregistrer vos configurations puis retournez à la page principale des paramètres.</li>
+					<li style="list-style-type: decimal;">Rendez-vous dans "Mise à jour système ➜ Mise à jour via Wi-Fi". Votre console fonctionne désormais sous le firmware 3.60.</li>
+				</ul>
+				<h2 class="titles" style="margin-bottom: 15px;" id="exploit-lancement">II. Lancement de l'exploit</h2>
+				<div class="prerequis">
+					<h3>PRÉREQUIS :</h3>
+					<ul>
+						<li>Une connexion Wi-FI/WLAN.</a></li>
+						<li><a href="https://github.com/henkaku/enso/releases/latest/download/enso.vpk">La dernière version de Enso</a>&nbsp;<i class="fa fa-download" aria-hidden="true"></i></li>
+						<li><a href="https://github.com/TheOfficialFloW/VitaShell/releases/latest/download/VitaShell.vpk">La dernière version de VitaShell</a>&nbsp;<i class="fa fa-download" aria-hidden="true"></i></li>
+						<li><a href="https://filezilla-project.org/download.php?type=client">La dernière verison de FileZilla Client</a>&nbsp;<i class="fa fa-download" aria-hidden="true"></i></br>
+						<i>Note: FileZilla est le Client FTP que nous recommandons mais cela fonctionnera avec n'importe quel autre Client FTP.</i></li>
+					</ul>
+				</div>
+				<ul>
+					<li style="list-style-type: decimal;">Ouvrez le navigateur Internet de la console. Puis tapez l'adresse suivante : <a href="https://henkaku.xyz">henkaku.xyz</a>. Une fois la page chargée, appuyez sur le bouton orange "Install".</li>
+					<li style="list-style-type: decimal;">Au moment où le menu apparaît, maintenez le bouton <img src="https://cdn.homebrew-france.site/docs/buttons/ps_r1.png" class="console-buttons"/> enfoncé pendant que les manipulations s'effectuent à l'écran. Cela permet l'installation de Molecular Shell en même temps que HENkaku.</li>
+					<li style="list-style-type: decimal;">Une fois que les manipulations sont terminées et que vous êtes redirigé sur le LiveArea (le menu principal), vérifiez que tout s'est bien passé dans les Paramètres, vous devriez voir apparaître "Paramètres de HENkaku".</li>
+					<li style="list-style-type: decimal;">Dans ce menu, cochez les options suivantes : "Activer le spoof du PSN", "Autoriser l'installation de Homebrew non-sécurisés", "Activer le spoof de version". En-dessous de "Version spoofée", écrivez le dernier firmware en date. Le firmware actuel est "3.74".</li>
+					<li style="list-style-type: decimal;">Retournez sur le LiveArea et lancez "Molecular Shell".</li>
+					<p>Nous allons maintenant installer Enso et VitaShell sur la console. Pour procéder nous aurons besoin de FileZilla.</p>
+					<li style="list-style-type: decimal;">Installez FileZilla avec le programme d'installation précédemment téléchargé.</li>
+					<li style="list-style-type: decimal;">Connectez votre console et votre ordinateur au même réseau.</li>
+					<li style="list-style-type: decimal;">Sur votre console, ouvrez "Molecular Shell". Appuyez sur la touche SELECT, un message apparaît vous indiquant l'adresse IP de votre console. Ne touchez plus à rien.</li>
+					<img class="img-border" src="https://cdn.homebrew-france.site/docs/psvita/molecular_1.png" />
+					<li style="list-style-type: decimal;">Vous allez devoir à présent rentrer les différentes informations de connexion dans le logiciel FileZilla.</li>
+					<li style="list-style-type: decimal;">Entrez dans "Hôte", l'adresse IP de votre console, elle est généralement de cette forme : <code>192.168.X.XX</code>.</li>
+					<li style="list-style-type: decimal;">Entrez dans "Port", le chiffre <code>1227</code>. Une fois cela fait, cliquez sur "Connexion rapide". Si par la suite FileZilla affiche un message, cliquez simplement sur "OK".</li>
+					<li style="list-style-type: decimal;">Une fois la connexion établie, sur la partie droite de la fenêtre, vous aurez le contenu de votre PSVita avec toutes les partitions qu'elle possède. Ouvrez <code>ux0:</code> et glissez-déposez les fichiers VPK de Enso et VitaShell téléchargés précédemment.</p>
+					<li style="list-style-type: decimal;">Une fois le transfert terminé, revenez sur votre console. Fermez la connexion en appuyant sur<img src="https://cdn.homebrew-france.site/docs/buttons/ps_circle.png" class="console-buttons"/></li>
+					<li style="list-style-type: decimal;">Nous allons à présent installer les deux fichiers VPK que nous venons d'envoyer sur la console. en théorie, si ce guide a bien été suivi, vous devrez aller dans <code>ux0:</code> pour les retrouver.</li>
+					<li style="list-style-type: decimal;">Pour chacun des fichiers VPK, appuyez sur<img src="https://cdn.homebrew-france.site/docs/buttons/ps_cross.png" class="console-buttons"/>pour les installer. Vous pouvez à présent lancer "Enso", appuyez sur<img src="https://cdn.homebrew-france.site/docs/buttons/ps_circle.png" class="console-buttons"/>pour accepter les termes puis<img src="https://cdn.homebrew-france.site/docs/buttons/ps_cross.png" class="console-buttons"/>pour installer Enso. La console devrait alors démarrer en affichant le logo "Molecule", ce qui montre que l'opération est réussie et que votre console est sous Enso.</li>
+				</ul>
+				<img class="img-border" src="https://cdn.homebrew-france.site/docs/psvita/molecule.png" />
+				<div class="indic">
+					<p class="indic-text">Maintenant que votre console est hackée, "Molecular Shell" vous sera inutile. Pour un aspect plus rapide et pratique, utilisez à présent VitaShell, de préférence via USB.</p>
+				</div>
+			</div>
+		</div>
+
+        <!-- Scripts -->
+		<script src="../../../scripts/navItemsHighlights_docs.js"></script>
+		<script src="../../../scripts/maintenance_Toggler.js"></script>
+        <script src="../../../scripts/navigationBar_creation.js"></script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9864634157908409" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+</html>
+						
+

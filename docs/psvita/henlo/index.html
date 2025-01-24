@@ -1,0 +1,380 @@
+<!--    
+	Homebrew France Web V3
+    Copyright (C) 2025  Homebrew France
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html lang="fr" data-website-id="HBFWEB-V3-LWS">
+	<head>
+        <title>PSVita | Docs</title>
+
+        <!-- Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charset="utf-8" />
+		<meta content="PSVita | Docs" property="og:title"/>
+		<meta content="Documentation complète sur la PlayStation Vita." property="og:description"/>
+		<meta content="https://docs.homebrew-france.fr/psvita" property="og:url"/>
+		<meta content="https://cdn.homebrew-france.site/docs/psvita_docs.png" property="og:image"/>
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="apple-mobile-web-app-capable" content="YES"/>
+        <meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@HomebrewFrance" />
+		<meta name="twitter:title" content="Homebrew France - La communauté n°1 pour le jailbreak de consoles" />
+		<meta name="twitter:description" content="Rejoignez Homebrew France, la communauté dédiée au jailbreak de consoles avec support et guides en ligne." />
+		<meta name="twitter:image" content="https://cdn.homebrew-france.site/generic/website-icon.png" />
+        
+        <!-- Link -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="../../../style/stylesheets/guide.css" />
+        <link rel="stylesheet" href="../../../style/stylesheets/navbar__f.css" />
+        <link rel="icon" type="image/png" href="https://cdn.homebrew-france.site/generic/lumia-guides.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+                                
+        <!-- Scripts -->
+        <script async src="../../../scripts/analyticsServices_manager.js"></script>
+	</head>
+    <body data-page-id="DOC-PSVita">
+        <a class="top-page-button" href="#"><div href="#" class="top-page-button" title="Remonter en haut de la page">
+            <center>&#9650;</center>
+        </div></a>
+        <div id="navSpace"></div>
+		<div class="docu-container">
+			<div class="nav-menu-horiz" style="overflow: scroll;">
+				<h class="subtitles">Navigation :</h><br>
+                <div class="nav-elements-horiz"></div>
+                <div class="nav-bottom">
+                    <h4 style="font-family: 'Sora', sans-serif; font-size: 18px;"><span style="font-weight: 300;">Homebrew</span><strong>France</strong> Docs</h4>
+                    <p style="font-size: 15px; color: rgb(210, 210, 210);">&copy; 2025 - Homebrew France</p>
+                </div>
+			</div>
+			<div class="nav-menu-vert">
+				<h class="subtitles">Navigation :</h><br>
+                <div class="nav-elements-vert"></div>
+			</div>
+			<div class="page-docu">
+				<h1 class="top">PlayStation Vita - <span style="font-family: 'Sora'"><span style="font-weight: 300;">Homebrew</span><strong>France Docs</strong></span></h1>
+                <div class="indic">
+                    <p class="indic-text">Rejoignez <a href="https://discord.homebrew-france.fr/">Homebrew France</a> pour obtenir de l'assistance ou nous aider à développer le guide.</p>
+                </div>
+                <p>Ce guide vous permettra de jailbreak votre PS Vita (TV) et d'installer des applications non officielles via HENlo, HENkaku et VitaDeploy.</p>
+                <p style="margin-bottom: 13px;">Ce guide est applicable sur les versions de firmware 3.65 à 3.74.</p>
+                <div class="prerequis">
+                    <h3>PRÉREQUIS :</h3>
+                    <ul>
+                        <li style="list-style-type: decimal;">Une connexion Internet stable sur votre PS Vita (TV).</li>
+                        <li style="list-style-type: decimal;">Une PS Vita reliée au secteur via son câble de charge.</li>
+                        <li style="list-style-type: decimal;">Une memory card Sony.</br>
+                        <i>Si vous n'en disposez pas, une alternative est proposée, y compris pour les PS Vita 1000. Suivez les instructions notées plus bas.</i></li>
+                        <li style="list-style-type: decimal;">Un SD2Vita Pro ainsi qu'une microSD de marque réputée.</li>
+                    </ul>
+                </div>
+                <h2 class="titles" id="utilisation-henlo">I. Utilisation de HENlo</h2>
+                <div class="disclaimer">
+                    <p class="indic-text"><strong>Note :</strong>&nbsp;HENlo n'est pas permanent (il ne reste pas installé après un redémarrage). Ce soucis est réglé plus tard dans le guide par l'installation de HENkaku Enso.</p>
+                </div>
+                <ul>
+                    <li style="list-style-type: decimal;">Lancez le navigateur de la PS Vita et rendez-vous à l'URL suivante : <a href="http://jailbreak.psp2.dev/">http://jailbreak.psp2.dev/</a></li>
+                    <li style="list-style-type: decimal;">Sur la page HENlo, appuyez sur <strong>"Unlock my Vita"</strong>, puis appuyez sur <strong>"Unlock"</strong>.</li>
+                    <li style="list-style-type: decimal;">Si vous obtenez une erreur ou ne pouvez pas continuer, suivez notre <a href="#">guide de dépannage</a>.</li>
+                    <li style="list-style-type: decimal;">Si l'exploit a réussi, vous serez accueilli par un écran intitulé <strong>"henlo-bootstrap"</strong>.</br>
+                        <img src="https://cdn.homebrew-france.site/docs/psvita/henlo-guide_1.jpeg" class="img-border" style="width: 460px;" /></li>
+                </ul>
+                <h2 class="titles" id="utilisation-henkaku-vitadeploy">II. Installation de HENkaku et VitaDeploy</h2>
+                <ul>
+                    <li style="list-style-type: decimal;">Appuyez sur<img src="https://cdn.homebrew-france.site/docs/buttons/ps_cross.png" class="console-buttons"/>sur "Install henkaku" pour activer les applications non officielles.</li>
+                    <li style="list-style-type: decimal;">Appuyez sur<img src="https://cdn.homebrew-france.site/docs/buttons/ps_cross.png" class="console-buttons"/>sur "Install VitaDeploy".</li>
+                    <li style="list-style-type: decimal;">Si vous êtes sur une PS Vita sans carte mémoire, appuyez sur<img src="https://cdn.homebrew-france.site/docs/buttons/ps_cross.png" class="console-buttons"/>sur "Replace NEAR with VitaDeploy".</li>
+                    <li style="list-style-type: decimal;">Appuyez sur<img src="https://cdn.homebrew-france.site/docs/buttons/ps_cross.png" class="console-buttons">sur "Exit".</li>
+                    <li style="list-style-type: decimal;">Si vous êtes sur une PS Vita sans carte mémoire, suivez les instructions pour "Créer une carte mémoire interne" après avoir effectué la partie IV.</li>
+                    <li style="list-style-type: decimal;">Une fois la partition de mémoire interne créée, suivez à nouveau les parties II et III pour installer VitaDeploy normalement sur la memory card simulée de 1 Go.</li>
+                </ul>
+                <h2 class="titles" id="configuration-henkaku">III. Configuration de HENkaku</h2>
+                <ul>
+                    <li style="list-style-type: decimal;">Lancez l'application <strong>Paramètres</strong>.</li>
+                    <li style="list-style-type: decimal;">Accédez à <strong>"Paramètres de HENkaku"</strong>.</li>
+                    <li style="list-style-type: decimal;">Cochez <strong>"Enable unsafe Homebrew"</strong>.</li>
+                    <li style="list-style-type: decimal;">Revenez au menu HENkaku.</li>
+                    <li style="list-style-type: decimal;">Fermez l'application Paramètres.</br>
+                        <img src="https://cdn.homebrew-france.site/docs/psvita/henlo-guide_2.jpeg" class="img-border" style="width: 460px;" /></li>
+                </ul>
+                <h2 class="titles" id="creer-carte-memoire-interne">IV. Créer une carte mémoire interne</h2><br />
+
+                <h class="subtitles">1) Repartitionnement</h>
+                <ul>
+                    <li style="list-style-type: decimal;">Lancez l'application VitaDeploy via Near nommé “vedp”.</li>
+                    <li style="list-style-type: decimal;">Appuyez sur<img src="https://cdn.homebrew-france.site/docs/buttons/ps_cross.png" class="console-buttons"/>sur "Miscellaneous".</li>
+                    <li style="list-style-type: decimal;">Appuyez sur<img src="https://cdn.homebrew-france.site/docs/buttons/ps_cross.png" class="console-buttons"/>sur "Create an internal memory card".</li>
+                    <li style="list-style-type: decimal;">Lisez le disclaimer, puis appuyez sur<img src="https://cdn.homebrew-france.site/docs/buttons/ps_cross.png" class="console-buttons"/>pour continuer.</br>
+                    <i>Si l'application plante, ouvrez-la et réessayez.</i></li>
+                    <li style="list-style-type: decimal;">Appuyez sur<img src="https://cdn.homebrew-france.site/docs/buttons/ps_cross.png" class="console-buttons"/>sur "Default 2xxx storage configuration".</li>
+                    <li style="list-style-type: decimal;">Une fois repartitionné, votre appareil redémarrera.</li>
+                </ul>
+                <h class="subtitles">2) Formatage</h>
+                <ul>
+                    <li style="list-style-type: decimal;">Si une carte mémoire physique est insérée, éteignez la PS Vita et retirez-la pour éviter des erreurs d’installation par la suite.</li>
+                    <li style="list-style-type: decimal;">Ouvrez l'application Paramètres.</li>
+                    <li style="list-style-type: decimal;">Accédez à <strong>Formater</strong> ➜ <strong>Formater la carte mémoire</strong>.</br>
+                        <img src="https://cdn.homebrew-france.site/docs/psvita/henlo-guide_3.jpeg" class="img-border" style="width: 460px;" /></li>
+                    <li style="list-style-type: decimal;">Appuyez sur<img src="https://cdn.homebrew-france.site/docs/buttons/ps_cross.png" class="console-buttons"/>sur "Formater".</li>
+                    <li style="list-style-type: decimal;">Lorsque vous êtes invité, sélectionnez "Oui" pour confirmer.</li>
+                    <li style="list-style-type: decimal;">Une fois formaté, sélectionnez "OK" pour redémarrer.</li>
+                    <li style="list-style-type: decimal;">Vous devriez maintenant avoir une partition interne de 1 Go sur votre appareil.</li>
+                    <li style="list-style-type: decimal;">Vous pouvez le vérifier en ouvrant l'application Paramètres et en accédant à <strong>Système</strong> ➜ <strong>Informations système</strong>.</li>
+                </ul>
+                <h class="subtitles">3) Installation de VitaDeploy sur la memory card virtuelle</h>
+                <p>Pour installer VitaDeploy sur cette nouvelle partition, suivez <strong>“Lancement de HENlo”</strong> et installez l'application normalement (voir les Parties II et III précédentes).</p>
+                <p>Ensō est une solution CFW complète pour la PS Vita (TV) qui permet un accès pratique aux applications non officielles sur votre appareil en exécutant une faille au démarrage pour configurer l'environnement des applications non officielles HENkaku.</p>
+                <p>C'est plus pratique que HENkaku car cela ne nécessite pas de déclencher manuellement une faille sur votre appareil après chaque redémarrage.</p>
+                <p>Dans ce guide, nous utiliserons VitaDeploy pour installer à la fois HENkaku Ensō et la version 3.65 du firmware.</p>
+                <div class="disclaimer">
+                    <p class="indic-text"><strong>Attention :</strong>&nbsp;Cette modification apportera des modifications <strong>PERMANENTES</strong> à votre appareil. En cas de problème, il n'y a pas de possibilité de récupération.</p>
+                </div>
+                <h2 class="titles" id="installer-hack-permanent">V. Installer le hack permanent et les drivers SD2Vita</h2>
+                <div class="prerequis">
+                    <h3>PRÉREQUIS :</h3>
+                    <ul>
+                        <li>Le mode veille réglé à son maximum.</li>
+                        <li>La console branchée sur secteur.</li>
+                        <li>Une connexion Wi-Fi stable.</li>
+                        <li>L'application VitaDeploy installée sur votre appareil.</li>
+                    </ul>
+                </div>
+                <ul>
+                    <li style="list-style-type: decimal;">Ouvrez l'application VitaDeploy.</li>
+                    <li style="list-style-type: decimal;">Appuyez sur <strong>"Install a different OS"</strong>.</li>
+                    <li style="list-style-type: decimal;">Si vous ne voyez pas un menu vert avec cette option, assurez-vous d'avoir activé <strong>« Enable unsafe homebrew »</strong> dans les paramètres de HENkaku.</li>
+                    <li style="list-style-type: decimal;">Appuyez sur <strong>« Playstation Update Package »</strong> et paramétrez votre installation du CFW HENkaku Ensō comme indiqué :</br>
+                        <img src="https://cdn.homebrew-france.site/docs/psvita/henlo-guide_4.jpeg" class="img-border" style="width: 460px;" />
+                    <li style="list-style-type: decimal;">Vous devez être connecté à Internet pour cela.</li>
+                    <li style="list-style-type: decimal;">Ne laissez pas la Vita passer en mode veille pendant ce processus.</li>
+                    <li style="list-style-type: decimal;">Validez en sélectionnant <strong>“Install the selected firmware”</strong>.</li>
+                    <li style="list-style-type: decimal;">Attendez que les composants soient téléchargés.</li>
+                    <li style="list-style-type: decimal;">Appuyez sur<img src="https://cdn.homebrew-france.site/docs/buttons/ps_cross.png" class="console-buttons"/>pour confirmer.
+                    <li style="list-style-type: decimal;">Lisez l'avis affiché à l'écran et attendez 20 secondes.</li>
+                    <li style="list-style-type: decimal;">Appuyez à nouveau sur<img src="https://cdn.homebrew-france.site/docs/buttons/ps_cross.png" class="console-buttons"/>pour confirmer.
+                    <li style="list-style-type: decimal;">Si vous changez d'avis, vous pouvez appuyer sur <strong>R</strong> pour annuler.</li>
+                    <li style="list-style-type: decimal;">Votre appareil installera alors le firmware version 3.65, ainsi que HENkaku Ensō. Une fois terminé, il redémarrera en mode CFW.</li>
+                    <li style="list-style-type: decimal;">Vérifiez la présence de <strong>3.65变革-2</strong> dans <strong>Paramètres</strong> ➜ <strong>Système</strong> ➜ <strong>Informations système</strong>, ce qui montre que tout s’est bien déroulé : votre PSVita est en CFW 3.65 HENkaku Ensō permanent.</br>
+                        <img src="https://cdn.homebrew-france.site/docs/psvita/henlo-guide_5.jpeg" class="img-border" style="width: 460px;" />
+                    <li style="list-style-type: decimal;">Vous pouvez dès maintenant débrancher éventuellement votre PS Vita du secteur.</li>
+                </ul>
+                <h class="subtitles">Difficultés éventuelles et avertissements</h>
+                <ul>
+                    <li style="list-style-type: decimal;">Ne laissez pas la Vita passer en mode veille pendant ce processus.</li>
+                    <li style="list-style-type: decimal;">Si cela se produit quand même et que l'écran devient noir, maintenez le bouton d'alimentation enfoncé jusqu'à ce que la console s'éteigne, puis refaites cette partie.</li>
+                    <li style="list-style-type: decimal;">Si vous obtenez une demande "Voulez-vous transférer les données de la carte mémoire interne vers la carte mémoire amovible ?" lors du redémarrage, sélectionnez "Non".</li>
+                    <li style="list-style-type: decimal;">Sélectionner "Oui" supprimerait les données de votre carte mémoire.</li>
+                </ul>
+                <h2 class="titles" id="finalisation">VI. Finalisation de la configuration</h2>
+                <div class="prerequis">
+                    <h3>PRÉREQUIS :</h3>
+                    <ul>
+                        <li>L'application VitaDeploy installée sur votre appareil.</li>
+                    </ul>
+                </div>
+                <h class="subtitles">1) Installation d'applications homebrew :</h>
+                <ul>
+                    <li style="list-style-type: decimal;">Lancez l'application VitaDeploy.</li>
+                    <li style="list-style-type: decimal;">Appuyez sur <strong>"App downloader"</strong>.</li>
+                    <li style="list-style-type: decimal;">Si vous ne voyez pas un menu vert avec cette option, assurez-vous d'avoir activé <strong>« Enable unsafe homebrews »</strong> dans les paramètres de HENkaku.</li>
+                    <li style="list-style-type: decimal;">Sélectionnez les applications suivantes :</li>
+                    <ul>
+                        <li style="list-style-type: decimal;">iTLS Installer</li>
+                        <li style="list-style-type: decimal;">VitaShell</li>
+                    </ul>
+                    <img src="https://cdn.homebrew-france.site/docs/psvita/henlo-guide_6.jpeg" class="img-border" style="width: 460px;" />
+                    <li style="list-style-type: decimal;">Appuyez sur <strong>"Download the selected apps"</strong> en haut du menu.</li>
+                    <li style="list-style-type: decimal;">Attendez que les applications finissent de télécharger et de s'installer.</li>
+                    <li style="list-style-type: decimal;">Une fois terminé, vous pouvez quitter VitaDeploy en utilisant le bouton PS.</li>
+                </ul>
+                <h class="subtitles">2) Installation de iTLS :</h>
+                <ul>
+                    <li style="list-style-type: decimal;">Sur le LiveAera de la PS Vita, ouvrez l'application iTLS-Enso.</li>
+                    <img src="https://cdn.homebrew-france.site/docs/psvita/henlo-guide_7.jpeg" class="img-border" style="width: 460px;" />
+                    <li style="list-style-type: decimal;">Appuyez sur<img src="https://cdn.homebrew-france.site/docs/buttons/ps_cross.png" class="console-buttons"/>sur "Install the full iTLS package".</li>
+                    <img src="https://cdn.homebrew-france.site/docs/psvita/henlo-guide_8.jpeg" class="img-border" style="width: 460px;" />
+                    <li style="list-style-type: decimal;">Attendez que votre appareil redémarre.</li>
+                </ul>                
+                <h class="subtitles">3) Blocage des mises à jour :</h>
+                <ul>
+                    <li style="list-style-type: decimal;">Lancez l'application Paramètres.</li>
+                    <li style="list-style-type: decimal;">Accédez à <strong>Système</strong> ➜ <strong>Paramètres de démarrage automatique</strong>.</li>
+                    <li style="list-style-type: decimal;">Décochez la case <strong>Télécharger le fichier de mise à jour du logiciel système</strong>.</li>
+                    <img src="https://cdn.homebrew-france.site/docs/psvita/henlo-guide_9.jpeg" class="img-border" style="width: 460px;" />
+                    <li style="list-style-type: decimal;">Fermez l'application Paramètres.</li>
+                </ul>
+                <h class="subtitles">4) Accès au PSN :</h>
+                <ul>
+                    <li style="list-style-type: decimal;">Lancez l'application Paramètres.</li>
+                    <li style="list-style-type: decimal;">Accédez aux <strong>Paramètres HENkaku</strong>.</li>
+                    <li style="list-style-type: decimal;">Cochez <strong>"Activer le spoof de PSN"</strong>.</li>
+                    <li style="list-style-type: decimal;">Cochez <strong>"Activer le spoof de version"</strong>.</li>
+                    <img src="https://cdn.homebrew-france.site/docs/psvita/henlo-guide_10.jpeg" class="img-border" style="width: 460px;" />
+                    <li style="list-style-type: decimal;">Accédez à <strong>"Version spoofée"</strong>.</li>
+                    <li style="list-style-type: decimal;">Entrez <strong>"3.74"</strong> dans la case.</li>
+                    <i>Si une nouvelle version du firmware est publiée à l'avenir, vous devrez modifier la version spoofée pour correspondre afin d'accéder au PSN.</i>
+                    <img src="https://cdn.homebrew-france.site/docs/psvita/henlo-guide_11.jpeg" class="img-border" style="width: 460px;" />
+                    <li style="list-style-type: decimal;">Fermez l'application Paramètres.</li>
+                </ul>
+                
+                <div class="disclaimer">
+                    <p class="indic-text"><strong>Attention :</strong>&nbsp;Pour la suite, il n'est pas recommandé de modifier votre installation de Custom Firmware en installant des applications non officielles destinées aux utilisateurs avancés (telles que "Enso EX").</br>
+                    Le faire sans comprendre pleinement le système peut entraîner un <strong>BRICK</strong> de votre PS Vita !</p>
+                </div>
+                <h2 class="titles" id="configuration-yamt">VII. Configurer sa SD2Vita avec YAMT</h2>
+
+                <p>YAMT (Yet Another Mount Tool) est un plugin de noyau polyvalent pour la PS Vita qui permet d'utiliser une carte microSD comme dispositif de stockage via un adaptateur SD2Vita.</p>
+                <p>Le SD2Vita est un adaptateur de carte microSD vers carte de jeu qui est inséré dans le slot de carte de jeu de votre appareil.</p>
+                <p>En utilisant le plugin de noyau YAMT, la clé USB ou la carte microSD que vous utilisez sera montée sur <strong>ux0:</strong> comme une carte mémoire Sony.</p>
+                <p>C'est très utile car les cartes microSD sont nettement moins chères que les cartes mémoire Sony (surtout à des capacités plus élevées).</p>
+                <p><img src="https://cdn.homebrew-france.site/docs/psvita/henlo-guide_12.jpeg" class="img-border" style="width: 460px;" /></p>
+                <p>Si vous utilisez une clé USB, un adaptateur psvsd, ou si cette méthode ne fonctionne pas pour vous, suivez le guide <strong>StorageMgr</strong>.</p>
+                <p><strong>YAMT est compatible uniquement avec les versions du firmware 3.60 et 3.65 sous HENkaku Ensō.</strong></p>
+                <div class="prerequis">
+                    <h3>PRÉREQUIS :</h3>
+                    <ul>
+                        <li>Un dispositif de stockage compatible avec votre système.</li>
+                        <li>Une memory card Sony physique ou virtuelle déjà configurée.</li>
+                        <li>La dernière version de VitaDeploy installée sur cette memory card.</li>
+                    </ul>
+                </div>
+                <h class="subtitles">1) Formatage de la microSD :</h>
+                <ul>
+                    <li style="list-style-type: decimal;">Si vous avez précédemment installé StorageMgr ou un autre plugin de stockage, veuillez le supprimer de votre dossier <strong>ux0:tai/</strong> ou <strong>ur0:tai/</strong> avant de continuer.</li>
+                    <li style="list-style-type: decimal;">Insérez votre SD2Vita avec sa carte microSD dans votre appareil PS Vita ou PS TV.</li>
+                    <li style="list-style-type: decimal;">Lancez l'application VitaDeploy.</li>
+                    <li style="list-style-type: decimal;">Appuyez sur<img src="https://cdn.homebrew-france.site/docs/buttons/ps_cross.png" class="console-buttons"/>sur "Miscellaneous".</li>
+                    <li style="list-style-type: decimal;">Appuyez sur<img src="https://cdn.homebrew-france.site/docs/buttons/ps_cross.png" class="console-buttons"/>sur "Format a storage device".</li>
+                    <li style="list-style-type: decimal;">Assurez-vous que "Target" est défini sur <strong>SD2Vita</strong> et que "Filesystem" est défini sur <strong>TexFAT</strong>.</li>
+                    <img src="https://cdn.homebrew-france.site/docs/psvita/henlo-guide_13.jpeg" class="img-border" style="width: 460px;" />
+                    <li style="list-style-type: decimal;">Appuyez sur<img src="https://cdn.homebrew-france.site/docs/buttons/ps_cross.png" class="console-buttons"/>sur "Format target storage".</li>
+                    <li style="list-style-type: decimal;">Si cela échoue, assurez-vous que l'adaptateur est inséré correctement et qu'il n'est pas endommagé - puis redémarrez et réessayez.</li>
+                    <li style="list-style-type: decimal;">Si l'échec persiste, suivez le guide StorageMgr.</li>
+                    <li style="list-style-type: decimal;">Revenez au menu VitaDeploy et appuyez sur<img src="https://cdn.homebrew-france.site/docs/buttons/ps_cross.png" class="console-buttons"/>sur "Reboot your device".</li>
+                </ul>
+                <h class="subtitles">2) Activation du driver YAMT :</h>
+                <ul>
+                    <li style="list-style-type: decimal;">Sur le LiveArea de la PS Vita, ouvrez l'application <strong>Paramètres</strong>.</li>
+                    <li style="list-style-type: decimal;">Accédez à <strong>Périphériques</strong> ➜ <strong>Storage Devices</strong>.</li>
+                    <li style="list-style-type: decimal;"><i>Si ce paramètre est manquant, effectuer <strong>« Installation du driver YAMT »</strong>.</i></li>
+                    <li style="list-style-type: decimal;">Activez <strong>"Utiliser YAMT"</strong> pour activer le pilote YAMT.</li>
+                    <li style="list-style-type: decimal;">Définissez <strong>ux0:</strong> sur <strong>"Default"</strong>.</li>
+                    <li style="list-style-type: decimal;">Définissez <strong>uma0:</strong> sur <strong>"SD2Vita"</strong>.</li>
+                    <img src="https://cdn.homebrew-france.site/docs/psvita/henlo-guide_14.jpeg" class="img-border" style="width: 460px;" />
+                    <li style="list-style-type: decimal;">Maintenez le bouton d'alimentation enfoncé et sélectionnez <strong>"Éteindre"</strong>.</li>
+                </ul>
+                
+                <h class="subtitles">3) Installation du driver YAMT :</h>
+                <p>Si l’option <strong>Storage Devices</strong> est manquante dans les paramètres de la PS Vita :</p>
+                <ul>
+                    <li style="list-style-type: decimal;">Lancez l'application <strong>VitaDeploy</strong>.</li>
+                    <li style="list-style-type: decimal;">Appuyez sur <strong>"App downloader"</strong>.</li>
+                    <li style="list-style-type: decimal;"><i>Si vous ne voyez pas un menu vert avec cette option, assurez-vous d'avoir activé <strong>« enable unsafe homebrews »</strong> dans <strong>les paramètres de HENkaku</strong>.</i></li>
+                    <li style="list-style-type: decimal;">Sélectionnez l'application suivante :</li>
+                    <li style="list-style-type: decimal;"><strong>YAMT Installer</strong>.</li>
+                    <img src="https://cdn.homebrew-france.site/docs/psvita/henlo-guide_15.jpeg" class="img-border" style="width: 460px;" />
+                    <li style="list-style-type: decimal;">Appuyez sur <strong>"Download the selected apps"</strong> en haut du menu.</li>
+                    <li style="list-style-type: decimal;">Attendez que l'application finisse de télécharger et de s'installer.</li>
+                    <li style="list-style-type: decimal;">Une fois terminé, fermez l'application VitaDeploy.</li>
+                    <li style="list-style-type: decimal;">Sur le LiveArea de la PS Vita, lancez l'application <strong>YAMT Installer</strong> nouvellement installée.</li>
+                    <li style="list-style-type: decimal;">Appuyez sur<img src="https://cdn.homebrew-france.site/docs/buttons/ps_cross.png" class="console-buttons"/>sur <strong>"Install the lite version"</strong>.</li>
+                    <img src="https://cdn.homebrew-france.site/docs/psvita/henlo-guide_16.jpeg" class="img-border" style="width: 460px;" />
+                    <li style="list-style-type: decimal;">Une fois terminé, votre appareil redémarrera et vous pourrez reprendre la Section II précédente 🔼.</li>
+                </ul>
+                <h class="subtitles">4) Transfert de données :</h>
+                <p>Cette section copiera les données de votre ancienne carte mémoire Sony (ou de la mémoire interne si vous n'avez pas de carte mémoire Sony) vers votre nouveau dispositif de stockage.</p>
+                <p>Il est impératif de ne pas négliger cette section, afin que le passage de l'ancien stockage principal à la SD2Vita soit aussi fluide que possible et que toutes vos applications homebrews soient transférées sur votre SD2Vita.</p>
+                
+                <ul>
+                    <li style="list-style-type: decimal;">Allumez votre appareil pour redémarrer.</li>
+                    <li style="list-style-type: decimal;">Ouvrez l’application <strong>VitaShell</strong>.</li>
+                    <li style="list-style-type: decimal;">Accédez à la partition <strong>ux0:</strong> <br />
+                    <i>Il s’agit actuellement de votre memory card Sony physique ou virtuelle interne.</i></li>
+                    <li style="list-style-type: decimal;">Appuyez vers le bas sur le D-pad pour mettre en surbrillance un dossier ou un fichier.</li>
+                    <li style="list-style-type: decimal;">Appuyez sur<img src="https://cdn.homebrew-france.site/docs/buttons/ps_triangle.png" class="console-buttons"/>pour faire apparaître le menu contextuel.</li>
+                    <li style="list-style-type: decimal;">Appuyez sur<img src="https://cdn.homebrew-france.site/docs/buttons/ps_cross.png" class="console-buttons"/>sur “Mark All” pour sélectionner tous les dossiers et fichiers de la partition <strong>ux0</strong>.</li>
+                    <li style="list-style-type: decimal;">Utilisez le D-pad pour se positionner sur le dossier <strong>ux0/SceloTrash</strong> et appuyer sur<img src="https://cdn.homebrew-france.site/docs/buttons/ps_square.png" class="console-buttons"/>pour le désélectionner de la copie. <br />
+                    <i>Il ne sera plus en surbrillance (risque d’erreur de copie si non effectué).</i></li>
+                    <li style="list-style-type: decimal;">Appuyez à nouveau sur<img src="https://cdn.homebrew-france.site/docs/buttons/ps_triangle.png" class="console-buttons"/>pour faire apparaître le menu contextuel.</li>
+                    <img src="https://cdn.homebrew-france.site/docs/psvita/henlo-guide_17.jpeg" class="img-border" style="width: 460px;" />
+                    <li style="list-style-type: decimal;">Appuyez sur<img src="https://cdn.homebrew-france.site/docs/buttons/ps_cross.png" class="console-buttons"/>sur “Copy”.</li>
+                    <img src="https://cdn.homebrew-france.site/docs/psvita/henlo-guide_18.jpeg" class="img-border" style="width: 460px;" />
+                    <li style="list-style-type: decimal;">Appuyez à nouveau sur<img src="https://cdn.homebrew-france.site/docs/buttons/ps_cross.png" class="console-buttons"/>lorsque vous y êtes invité.</li>
+                </ul>
+                <ul>
+                    <li style="list-style-type: decimal;">Quittez la partition <strong>ux0</strong> avec<img src="https://cdn.homebrew-france.site/docs/buttons/ps_circle.png" class="console-buttons"/>et accédez à la partition <strong>uma0</strong> avec <img src="https://cdn.homebrew-france.site/docs/buttons/ps_cross.png" class="console-buttons"/> : <br />
+                    <i>Il s’agit de la mémoire de votre dispositif de stockage non officiel : la SD2Vita.</i></li>
+                    <li style="list-style-type: decimal;">Appuyez sur<img src="https://cdn.homebrew-france.site/docs/buttons/ps_triangle.png" class="console-buttons"/>pour faire apparaître le menu contextuel.</li>
+                    <img src="https://cdn.homebrew-france.site/docs/psvita/henlo-guide_19.jpeg" class="img-border" style="width: 460px;" />
+                    <li style="list-style-type: decimal;">Appuyez sur<img src="https://cdn.homebrew-france.site/docs/buttons/ps_cross.png" class="console-buttons"/>sur “Paste” et attendez que l’opération se termine.</li>
+                    <li style="list-style-type: decimal;"><i>En cas d’erreur de copie, reprenez le formatage de la SD2Vita comme indiqué dans la Partie VII Section I.</i></li>
+                    <li style="list-style-type: decimal;">Une fois terminé, quittez VitaShell et ouvrez l’application <strong>Paramètres</strong>.</li>
+                    <li style="list-style-type: decimal;">Accédez à <strong>Périphériques</strong> ➜ <strong>Storage Devices</strong>.</li>
+                    <li style="list-style-type: decimal;">Définissez <strong>ux0:</strong> sur <strong>"SD2Vita"</strong>.</li>
+                    <li style="list-style-type: decimal;">Définissez <strong>uma0:</strong> sur <strong>"Memory Card"</strong>. <br />
+                    <i>Si vous n’utilisez pas de carte mémoire, sélectionnez “Mémoire interne”.</i></li>
+                    <img src="https://cdn.homebrew-france.site/docs/psvita/henlo-guide_20.jpeg" class="img-border" style="width: 460px;" />
+                    <li style="list-style-type: decimal;">Allez dans les Paramètres de <strong>HENkaku</strong> et tout en bas sélectionnez <strong>"Redémarrer la console"</strong>.</li>
+                    <li style="list-style-type: decimal;">Vérifiez dans <strong>Informations système</strong> la prise en compte de votre SD2Vita.</li>
+                    <img src="https://cdn.homebrew-france.site/docs/psvita/henlo-guide_21.jpeg" class="img-border" style="width: 460px;" />
+                </ul>
+                <h2 class="titles" id="recuperer-espace">VIII. Récupérer de l'espace sur la carte mémoire</h2>
+                <p>Vous pouvez supprimer le contenu de <strong>uma0:</strong> (le nouveau point de montage de la carte mémoire) et / ou <strong>imc0:</strong> (si vous possédez une PS Vita 2000 ou une PS TV).</p>
+                <p><strong>Si vous décidez de le faire, vous ne devez pas supprimer ces dossiers s'ils existent :</strong></p>
+                <ul>
+                    <li><code>uma0:app/PCSG90096</code></li>
+                    <li><code>uma0:app/VITASHELL</code></li>
+                    <li><code>uma0:appmeta/PCSG90096</code></li>
+                    <li><code>uma0:appmeta/VITASHELL</code></li>
+                    <li><code>uma0:data/bootstrap.self</code></li>
+                    <li><code>uma0:license/app/PCSG90096</code></li>
+                    <li><code>uma0:license/app/VITASHELL</code></li>
+                    <li><code>ma0:user/00/savedata/PCSG90096</code></li>
+                    <li><code>uma0:user/00/savedata/VITASHELL</code></li>
+                </ul>
+                <p><i>Cela est nécessaire car vous devez conserver h-encore installé sur la carte mémoire afin de pouvoir activer HENkaku (et donc YAMT) après un redémarrage.</i></p>
+                
+                <h2 class="titles" id="installer-autoplugin">VIV. Installer AutoPlugin II sans PC</h2>
+                <p>Lancez <strong>VitaShell</strong> et appuyez sur ces deux touches simultanément :</p>
+                <img src="https://cdn.homebrew-france.site/docs/psvita/henlo-guide_22.jpeg" class="img-border" style="width: 460px;" />
+                
+                <p>Scannez le QR code suivant :</p>
+                <img src="https://cdn.homebrew-france.site/docs/psvita/henlo-guide_23.jpeg" class="img-border" style="width: 460px;" />
+                
+                <p>Recommencez (en variant éventuellement la luminosité du QR code, la position de la Vita) jusqu’à obtenir l’adresse suivante : <br />
+                <i>Il faudra plusieurs essais</i></p>
+                <img src="https://cdn.homebrew-france.site/docs/psvita/henlo-guide_24.jpeg" class="img-border" style="width: 460px;" />
+                
+                <p>Validez toutes les étapes d’installation, quittez pour lancer <strong>AutoPlugin</strong> disponible sur le <strong>LiveArea</strong> :</p>
+                <img src="https://cdn.homebrew-france.site/docs/psvita/henlo-guide_25.jpeg" class="img-border" style="width: 460px;">
+			</div>
+		</div>
+
+        <!-- Scripts -->
+        <script src="../../../scripts/navItemsHighlights_docs.js"></script>
+        <script src="../../../scripts/maintenance_Toggler.js"></script>
+        <script src="../../../scripts/navigationBar_creation.js"></script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9864634157908409" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+</html>
+						
+
+                                                                                                  
+                

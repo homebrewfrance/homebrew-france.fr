@@ -1,0 +1,201 @@
+<!--    
+	Homebrew France Web V3
+    Copyright (C) 2025  Homebrew France
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html lang="fr" data-website-id="HBFWEB-V3-LWS">
+	<head>
+        <title>PSVita | Docs</title>
+
+        <!-- Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charset="utf-8" />
+		<meta content="PSVita | Docs" property="og:title"/>
+		<meta content="Documentation complète sur la PlayStation Vita." property="og:description"/>
+		<meta content="https://docs.homebrew-france.fr/psvita" property="og:url"/>
+		<meta content="https://cdn.homebrew-france.site/docs/psvita_docs.png" property="og:image"/>
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="apple-mobile-web-app-capable" content="YES"/>
+        <meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@HomebrewFrance" />
+		<meta name="twitter:title" content="Homebrew France - La communauté n°1 pour le jailbreak de consoles" />
+		<meta name="twitter:description" content="Rejoignez Homebrew France, la communauté dédiée au jailbreak de consoles avec support et guides en ligne." />
+		<meta name="twitter:image" content="https://cdn.homebrew-france.site/generic/website-icon.png" />
+        
+        <!-- Link -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="../../style/stylesheets/guide.css" />
+        <link rel="stylesheet" href="../../style/stylesheets/navbar__f.css" />
+        <link rel="icon" type="image/png" href="https://cdn.homebrew-france.site/generic/lumia-guides.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+                                
+        <!-- Scripts -->
+        <script async src="../../scripts/analyticsServices_manager.js"></script>
+	</head>
+    <body data-page-id="DOC-PSVita">
+        <a class="top-page-button" href="#"><div href="#" class="top-page-button" title="Remonter en haut de la page">
+            <center>&#9650;</center>
+        </div></a>
+        <div id="navSpace"></div>
+		<div class="docu-container">
+			<div class="nav-menu-horiz" style="overflow: scroll;">
+				<h class="subtitles">Navigation :</h><br>
+                <div class="nav-elements-horiz"></div>
+                <div class="nav-bottom">
+                    <h4 style="font-family: 'Sora', sans-serif; font-size: 18px;"><span style="font-weight: 300;">Homebrew</span><strong>France</strong> Docs</h4>
+                    <p style="font-size: 15px; color: rgb(210, 210, 210);">&copy; 2025 - Homebrew France</p>
+                </div>
+			</div>
+			<div class="nav-menu-vert">
+				<h class="subtitles">Navigation :</h><br>
+                <div class="nav-elements-vert"></div>
+			</div>
+			<div class="page-docu">
+				<h1 class="top">PlayStation Vita - <span style="font-family: 'Sora'"><span style="font-weight: 300;">Homebrew</span><strong>France Docs</strong></span></h1>
+				<div class="indic">
+					<p class="indic-text">Rejoignez <a href="https://discord.homebrew-france.fr/">Homebrew France</a> pour obtenir de l'assistance ou nous aider à développer le guide.</p>
+				</div>
+                <h2 class="titles">Préambule</h2>
+				<p>Ce guide permettera de jailbreaker votre PlayStation Vita peu importe le firmware sur lequel vous êtes soit via HENkaku soit via HENlo.</p>
+                <h2 class="titles" id="apps-plugins">I. Applications de base et plugins</h2>
+                <p>Lors du jailbreak de votre PlayStation, vous serez ammené(e) à installer certaines applications (ou plugins), mais bien souvent le rôle de chacune d'entre elles n'est pas expliqué.</p>
+                <h class="subtitles" style="font-size: 20px;">1) Applications de base :</h>
+                <ul style="list-style-type: none;">
+                    <li> <strong>1) Vitashell :</strong> 
+                        Vitashell est un gestionnaire de fichiers indispensable pour la PS Vita. Il est installable via h-encore² et VitaDeploy. Si vous utilisez l'exploit en version 3.60, vous obtiendrez MolecularShell, un précurseur de Vitashell, mais ce dernier offre bien plus de fonctionnalités. </li>
+                    <li>
+                        <strong>2) Adrenaline :</strong>
+                        Adrenaline est un émulateur qui réplique une PSP entièrement fonctionnelle à l'intérieur de la PS Vita. Il permet d'utiliser quasiment toutes les fonctions originales de la PSP, transformant ainsi votre PS Vita en une console PSP avec accès à ses jeux et fonctionnalités.
+                    </li>
+                    
+                    <li>
+                        <strong>3) Retroarch :</strong>
+                        Retroarch est une station d'émulation qui permet d'émuler une multitude de consoles à partir d'une seule application. Notez qu'il est également possible d'installer des émulateurs indépendants un par un, plutôt que d'avoir "tout et n'importe quoi" avec Retroarch.
+                    </li>
+                    
+                    <li>
+                        <strong>4) AutoPlugin II :</strong>
+                        AutoPlugin II est un store alternatif qui permet d'installer des plugins directement depuis la console. C'est un outil pratique pour ceux qui souhaitent personnaliser leur expérience sur la PS Vita.
+                    </li>
+                    
+                    <li>
+                        <strong>5) VitaDB Downloader :</strong>
+                        VitaDB Downloader est un autre store alternatif qui permet d'installer des homebrews directement depuis la console. Il est basé sur le site VitaDB, offrant un accès facile à de nombreuses applications homebrew pour la PS Vita.
+                    </li>
+                </ul>
+                <h class="subtitles">2) Plugins :</h>
+                <ul style="list-style-type: none;"> 
+                    <li> 
+                        <strong>1) 0syscall6 :</strong> 
+                        Successeur de reF00D, ce plugin permet de jouer à des jeux nécessitant un firmware récent (souvent 3.69 ou plus) sans mettre à jour sa console. 
+                    </li>
+                    <li>
+                        <strong>2) ds3vita et ds4vita :</strong>
+                        Ces plugins permettent de connecter une manette DualShock 3 ou DualShock 4 (selon le plugin installé) à la PS Vita via Bluetooth. Notez que ce plugin est inutile sur PSTV qui prend déjà en charge ces deux manettes nativement.
+                    </li>
+                    
+                    <li>
+                        <strong>3) NoAVLS :</strong>
+                        NoAVLS désactive de façon permanente l'AVLS (Automatic Volume Limiter System), permettant ainsi de monter le volume au maximum sans limite.
+                    </li>
+                    
+                    <li>
+                        <strong>4) PSVshell :</strong>
+                        PSVshell est un plugin servant à overclocker la PS Vita. Il est bien plus ergonomique que ses prédécesseurs comme Lolicon et d'autres.
+                    </li>
+                    
+                    <li>
+                        <strong>5) rePatch :</strong>
+                        Ce plugin sert à appliquer des patchs aux jeux installés dans ux0/patch. Il est utile si vous souhaitez patcher certains jeux, notamment pour des traductions.
+                    </li>
+                    
+                    <li>
+                        <strong>6) Shellbat :</strong>
+                        Shellbat permet d'afficher le pourcentage de batterie, une fonctionnalité absente sur la PS Vita à l'origine. Ce plugin offre une indication bien plus fiable que l'icône d'origine, souvent imprécise.
+                    </li>
+                    
+                    <li>
+                        <strong>7) Vitabright :</strong>
+                        Vitabright modifie l'échelle de luminosité de l'écran de la console. Il permet de réduire la luminosité en dessous des niveaux d'origine ou de l'augmenter au-delà des capacités standards, au prix d'une consommation de batterie plus élevée.
+                    </li>
+                    
+                    <li>
+                        <strong>8) Kubridge et FdFix :</strong>
+                        Ces plugins sont utilisés pour améliorer la compatibilité et les performances des homebrews et jeux, notamment en permettant l'utilisation de bibliothèques supplémentaires.
+                    </li>
+                </ul>
+                <h2 class="titles" id="selection-firmware">II. Sélection du firmware</h2>
+                <p>Rendez vous dans "Paramètres" ➜ "Système" ➜ "Informations sur le système". Vous y trouverez la version de votre firmware. Sélectionnez la version ci-dessous :</p>
+                <div id="playstationVita" style="margin-bottom: 18px;">
+                    <center><form>
+                        <select id="major-version" name="major-version">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <select id="minor-version" name="minor-version">
+                            <option value="00">00</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="05">05</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="15">15</option>
+                            <option value="18">18</option>
+                            <option value="30">30</option>
+                            <option value="36">36</option>
+                            <option value="50">50</option>
+                            <option value="51">51</option>
+                            <option value="52">52</option>
+                            <option value="60">60</option>
+                            <option value="61">61</option>
+                            <option value="63">63</option>
+                            <option value="65">65</option>
+                            <option value="67">67</option>
+                            <option value="68">68</option>
+                            <option value="69">69</option>
+                            <option value="70">70</option>
+                            <option value="71">71</option>
+                            <option value="72">72</option>
+                            <option value="73">73</option>
+                            <option value="74">74</option>
+                        </select>
+                        <input class="submit" type="submit" value="Go">
+                    </form></center>
+                    <center><label id="resultat">Lumia Multi-Checker v0.3</label></center>
+                </div>
+                
+                <pre></pre>
+                <i style="padding-block: 12px;"><center>Vous serez redirigé(e) vers la marche à suivre adéquate selon votre version de firmware.</center></i>
+			</div>
+		</div>
+
+        <!-- Scripts -->
+        <script src="../../scripts/navItemsHighlights_docs.js"></script>
+        <script src="../../scripts/maintenance_Toggler.js"></script>
+        <script src="../../scripts/navigationBar_creation.js"></script>
+        <script src="../../scripts/multi-checker/psvita-firm-checker.js"></script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9864634157908409" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+</html>
+						
+

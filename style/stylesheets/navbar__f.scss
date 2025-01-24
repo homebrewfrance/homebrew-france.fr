@@ -1,0 +1,345 @@
+
+.hbf-version {
+    background-color: rgb(37, 14, 59);
+    color: rgb(152, 53, 245);
+    border: 1px solid rgb(147, 51, 236);
+    padding-inline: 4px;
+    padding-block: 2px;
+    border-radius: 50px;
+    margin-left: 7px;
+    margin-top: 3px;
+    font-size: 11px;
+    width: fit-content;
+    height: fit-content;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    display: flex; 
+    height: 60px auto; 
+    background-color: #1f202370;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 0.8px solid rgba(66, 66, 66, 0.632);
+    padding: 10px; 
+    z-index: 550;
+    width: 100%;
+}
+
+.active {
+    text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5);
+}
+
+#navSpace {
+    height: 70px;
+    margin-bottom: 10px;
+    z-index: 230;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#navContainer {
+    display: flex; 
+    align-items: center; 
+    height: 100%;
+    justify-content: space-between;
+}
+
+#desktopItems, #mobileItems {
+    display: flex;
+    align-items: center; 
+}
+
+#navIcon {
+    height: 45px;
+    width: 45px;
+    margin-right: 20px; 
+    border-radius: 50%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    aspect-ratio: 4/3;
+}
+
+#navIcon:hover {
+    box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+}
+
+.nav-link, .dropdown-item {
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    margin-inline: 10px;
+    display: flex;
+    align-items: center; 
+    height: 100%;
+    transition: 0.4s;
+    position: relative; 
+    user-select: none; 
+}
+
+.nav-link:hover {
+    text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5);
+    color: white;
+}
+
+.dropdown-item:hover {
+    span {
+        text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5);
+        color: white;
+    }
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+
+@media only screen and (min-width: 800px) {
+    .dropdown-item::after {
+        content: "\f13a"; 
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        margin-left: 8px;
+    }
+    
+    .navbar {
+        padding-inline: 9%;
+    }
+
+    #navbarToggler {
+        display: none;
+    }
+    #mobileItems {
+        display: none;
+    }
+
+    .dropdown-menu {
+        position: absolute; 
+        background: rgba(40, 43, 48, 0.68);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 11px;
+        border: none;
+        transition: 0.3s;
+        font-family: 'Sora', sans-serif;
+        top: 100%; 
+        left: 0; 
+        z-index: 1000;
+    }
+
+    .showDropdown {
+        display: flex;
+        flex-direction: column;
+        min-width: max-content;
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    footer {
+        padding-inline: 7%;
+    }
+    .ua-flag {
+        width: 16px;
+        height: auto;
+    }
+    .hbf-logo-container {
+        display: flex;
+        flex-direction: row;
+    }
+    
+}
+
+
+@media only screen and (max-width: 800px) {
+    .hbf-version {
+        display: none;
+    }
+
+    .hbf-logo-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #desktopItems {
+        display: none;
+    }
+    #mobileItems {
+        display: none;
+    }
+    #mobileItems.showLinks {
+        display: flex;
+        flex-direction: column;
+        margin: 15px 0; 
+        align-items: flex-start;
+        padding: 0;
+        position: relative;
+        z-index: 1; 
+    }
+    
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        padding-inline: 3%;
+    }
+    .dropdown-item {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        text-align: left;
+    }
+    .dropdown-menu {
+        background: rgba(40, 43, 48, 0.68);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 11px;
+        transition: 0.3s;
+        font-family: 'Sora', sans-serif;
+        display: none; 
+    }
+    .showDropdown {
+        display: flex; 
+        flex-direction: column;
+    }
+    .footer-container {
+        margin-top: 12px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .right-footer {
+        text-align: center;
+        font-size: 12px;
+    }
+    .ua-flag {
+        width: 12px;
+        height: auto;
+    }
+    .left-footer {
+        text-align: center;
+    }
+    footer {
+        padding-inline: 3%;
+    }
+    .nav-link, .dropdown-item {
+        margin: 0px 0px 8px 0px;
+    }
+}
+
+#navbarToggler {
+    padding-inline: 10px;
+}
+
+#hamburgerMenu {
+    filter: invert(1);
+    vertical-align: middle;
+}
+
+.drop-item {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.4s;
+    padding-block: 7px;
+    padding-inline: 12px;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+
+    img {
+        vertical-align: middle;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+.animated.fadeIn {
+	animation-name: fadeIn;
+	animation-duration: 0.5s;
+}
+
+.drop-item:hover {
+    border-radius: 0px;
+    border: none;
+    color: white;
+    background: none;
+    box-shadow: 0px -5px 5px -5px #000000, 0px 5px 5px -5px #000000;
+    text-shadow: none;
+}
+
+.dropdown-item:hover {
+    cursor: pointer;
+}
+
+.dropdown-item span {
+    text-align: left;
+    left: 0;
+    transition: 0.4s;
+}
+
+#betaLink {
+    color: #545454;
+}
+
+#betaLink:hover {
+    text-shadow: none;
+}
+
+footer {
+    background-color: #1f202370;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding-block: 18px;
+    border-top: 0.8px solid rgba(66, 66, 66, 0.632);
+    box-shadow: 0px 2px 3px #000000;
+
+    a:hover {
+        text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5);
+        color: white;
+    }
+
+    a {
+        transition: 0.4s;
+        text-decoration-color: #545454;
+        -moz-text-decoration-color: #545454;
+        font-family: 'Lexend', 'sans-serif';
+        color: white;
+    }
+}
+.footer-p {
+    text-align: center;
+    color: white;
+}
+
+.footer-container p {
+    font-family: 'Lexend', 'sans-serif';
+    color: white;
+}
+.footer-container small {
+    font-family: 'Lexend', 'sans-serif';
+    color: white;
+}
+

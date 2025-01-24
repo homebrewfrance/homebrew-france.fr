@@ -1,0 +1,133 @@
+<!-- Original code by Nadia Holmquist Pedersen https://github.com/nadiaholmquist | Originally made for DS(i) Mode Hacking!
+ Translated and adapted to our graphic chart by Dhalian -->
+
+<!DOCTYPE html>
+<html lang="fr" data-website-id="HBFWEB-V3-LWS">
+	<head>
+		<title>La racine de la carte SD</title>
+		<meta charset="UTF-8">
+		<link rel="icon" type="image/x-icon" href="https://homebrewfrance.github.io/IMAGES/fav.ico">
+        <link rel="stylesheet" href="../style/stylesheets/navbar__f.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap&family=Space+Grotesk:wght@300..700&display=swap");
+
+            .main {
+				background-color: rgba(31, 32, 35, 0.631372549);
+				border-radius: 25px;
+				border: 1px solid #333;
+				z-index: 99;
+            }
+			body {
+				width: 100%;
+				background: radial-gradient(circle, rgba(138, 43, 226, 0.4), rgba(75, 0, 130, 0.15), transparent 70%), #121316;
+				scroll-behavior: smooth;
+				background-attachment: fixed;
+				font-family: "Poppins", sans-serif;
+				color: #FFF;
+			  	/*font-family: 'Sora', cursive;*/
+				text-align: center;
+				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+				font-size: 14pt;
+			}
+			body > div {
+				background-color: #494949;
+				display: inline-block;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 4em;
+				padding: 30px;
+			}
+			p, h1, h3 {
+				padding-top: 0px;
+				padding-bottom: 0px;
+			}
+			p, h1, h3, .mainpic {
+				margin-top: 10px;
+				margin-bottom: 0px;
+			}
+			p {
+				font-weight: 300;
+			}
+			h1 {
+				margin-top: 0px;
+			}
+			h3 {
+				margin-top: 5px;
+				margin-bottom: 15px;
+			}
+			.not {
+				color: #FF0000;
+			}
+			.mainpic {
+				border: 4px solid yellow;
+				border-radius: 4px;
+			}
+			.folder {
+				display: inline-block;
+				padding-left: 5px;
+				padding-right: 5px;
+			}
+			.folder img {
+				vertical-align: middle;
+			}
+			.lite {
+				font-family: 'Unbounded', sans-serif;
+			}
+			.btn {
+				background: rgba(0, 0, 0, 0.5);
+				border: 1px solid #75418d;
+				box-shadow: 0 0 10px rgba(222, 150, 255, 0.5);
+				margin-block: 15px;
+				font-family: "Space Grotesk", sans-serif;
+				border-radius: 50px;
+				font-weight: 400;
+				padding-inline: 18px;
+				padding-block: 4px;
+				color: white;
+				margin-right: 8px;
+				transition: 0.3s;
+			}
+
+			.btn:hover {
+				background: rgba(66, 66, 66, 0.8);
+			}
+		</style>
+	</head>
+	<body data-page-id="SDROOT">
+		<div class="main">
+			<h1>La racine d'une carte SD :</h1>
+			<p>La racine signifie "dans aucun dossier".</p>
+			<img src="theroot.png" width="470" height="374" class="mainpic" />
+			<h3 style="color: yellow;">Ceci est la racine de votre carte SD.</h3>
+			<p>
+				<div class="folder">
+					Ce n'est <span class="not">pas</span> ici:
+					<img src="nintendo3ds.png" />
+				</div>
+				<div class="folder">
+					Ce n'est pas <span class="not">pas</span> ici:
+					<img src="private.png" />
+				</div>
+			</p>
+			<p>
+				<div class="folder">
+					<span class="not">Pas</span> là:
+					<img src="nds.png" />
+				</div>
+				<div class="folder">
+					<span class="not">Pas</span> là:
+					<img src="3ds.png" />
+				</div>
+				<div class="folder">
+					Et <span class="not">pas</span> 
+					ici:
+					<img src="root.png" />
+				</div>
+				<br>
+			</p>
+			<center><a href="https://homebrew-france.fr/"><button class="btn"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Retour à l'accueil</button></a></center>
+		</div>
+        <script src="../scripts/maintenance_Toggler.js"></script>
+	</body>
+</html>

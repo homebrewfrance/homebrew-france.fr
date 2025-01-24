@@ -1,0 +1,79 @@
+{
+    "dropdownsItems": [
+        {
+            "name": "Nintendo Switch",
+            "url": "https://homebrew-france.fr/docs/switch",
+            "id": "switch-doc",
+            "dropdownId": "docsDrop",
+            "iconLink": "https://cdn.homebrew-france.site/docs/icons/nintendoswitch_icon.png"
+        },
+        {
+            "name": "Nintendo DSi",
+            "url": "https://homebrew-france.fr/docs/dsi",
+            "id": "dsi-doc",
+            "dropdownId": "docsDrop",
+            "iconLink": "https://cdn.homebrew-france.site/docs/icons/dsi_icon.png"
+        },
+        {
+            "name": "Nintendo 3DS",
+            "url": "https://homebrew-france.fr/docs/3ds/",
+            "id": "pretendo-doc",
+            "dropdownId": "docsDrop",
+            "iconLink": "https://cdn.homebrew-france.site/docs/icons/3ds_icon.png"
+        },
+        {
+            "name": "PlayStation Vita",
+            "url": "https://homebrew-france.fr/docs/psvita",
+            "id": "psvita-doc",
+            "dropdownId": "docsDrop",
+            "iconLink": "https://cdn.homebrew-france.site/docs/icons/psvita_icon.png"
+        },
+        {
+            "name": "PlayStation 2",
+            "url": "https://homebrew-france.fr/docs/ps2",
+            "id": "ps2-doc",
+            "dropdownId": "docsDrop",
+            "iconLink": "https://cdn.homebrew-france.site/docs/icons/ps2_icon.png"
+        },
+        {
+            "name": "PlayStation 4",
+            "url": "https://homebrew-france.fr/docs/ps4",
+            "id": "ps4-doc",
+            "dropdownId": "docsDrop",
+            "iconLink": "https://cdn.homebrew-france.site/docs/icons/ps4_icon.png"
+        },
+        {
+            "name": "YouTube ReVanced",
+            "url": "https://homebrew-france.fr/docs/revanced",
+            "id": "revanced-doc",
+            "dropdownId": "docsDrop",
+            "iconLink": "https://cdn.homebrew-france.site/docs/icons/revanced_icon.png"
+        },
+        {
+            "name": "Sideloading",
+            "url": "https://homebrew-france.fr/docs/sideloading-ios",
+            "id": "pretendo-doc",
+            "dropdownId": "docsDrop",
+            "iconLink": "https://cdn.homebrew-france.site/docs/icons/apple_icon.png"
+        },
+        {
+            "name": "Xbox",
+            "url": "https://homebrew-france.fr/docs/xbox",
+            "id": "xbox-doc",
+            "dropdownId": "docsDrop",
+            "iconLink": "https://cdn.homebrew-france.site/docs/icons/xbox_icon.png"
+        },
+        {
+            "name": "Nintendo Switch",
+            "url": "https://homebrew-france.fr/multi-checker/switch",
+            "id": "switch-checker",
+            "dropdownId": "multicheckerDrop"            
+        },
+        {
+            "name": "PlayStation 3",
+            "url": "https://homebrew-france.fr/multi-checker/ps3",
+            "id": "ps3-checker",
+            "dropdownId": "multicheckerDrop"            
+        }
+    ]
+}

@@ -1,0 +1,136 @@
+<!--    
+	Homebrew France Web V3
+    Copyright (C) 2025  Homebrew France
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" data-website-id="HBFWEB-V3-LWS">
+	<head>
+        <title>Contester un bannissement</title>
+
+        <!-- Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charset="utf-8" />
+		<meta content="Débannissement • Homebrew France" property="og:title"/>
+		<meta content="Sanction injuste à vos yeux ? Vous pouvez la contester en remplissant ce formulaire." property="og:description"/>
+		<meta content="https://homebrew-france.fr/deban" property="og:url"/>
+		<meta content="https://cdn.homebrew-france.site/meta-imgs/recrutements.png" property="og:image"/>
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="apple-mobile-web-app-capable" content="YES"/>
+        <meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@HomebrewFrance" />
+		<meta name="twitter:title" content="Homebrew France - La communauté n°1 pour le jailbreak de consoles" />
+		<meta name="twitter:description" content="Rejoignez Homebrew France, la communauté dédiée au jailbreak de consoles avec support et guides en ligne." />
+		<meta name="twitter:image" content="https://cdn.homebrew-france.site/generic/website-icon.png" />
+		
+        <!-- Link -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="../style/stylesheets/style.css" />
+		<link rel="stylesheet" href="../style/stylesheets/navbar__f.css" />
+        <link rel="stylesheet" href="../style/stylesheets/form.css" />
+        <link rel="icon" type="image/x-icon" href="https://cdn.homebrew-france.site/generic/fav.ico" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        
+        <!-- Scripts -->
+        <script async src="../scripts/analyticsServices_manager.js"></script>
+	</head>
+	<body data-page-id="RECRUTEMENTS">
+        <div id="navSpace"></div>
+		<div class="page">
+            <div class="indicator-container">
+                <div class="indicator">Débannissement</div>
+                <div class="indicator-desc">Faites une demande de débannissement pour ré-accéder à nos servicess.</div>
+            </div>
+            <hr id="indicatorSeparator">
+			<pre></pre>
+            <h3 class="titles" style="font-size: 29px;">Formulaire de débannissement :</h3>
+            <p>Vous pouvez contester un bannissement en remplissant avec soin le formulaire ci-dessous. Votre demande sera étudiée sous 3 jours maximum.</p>
+            <form action="https://formspree.io/f/xpzvvndr" method="POST" class="formHelper">
+                <h4><strong>Nom d'utilisateur</strong> Discord : <span class="required-fields">*</span></h4>
+                <input placeholder="@" name="Pseudo" id="pseudo" oninput="preventRemoval()" required><br>
+                <script>
+                    function preventRemoval() {
+                      var input = document.getElementById("pseudo");
+                      if (!input.value.startsWith("@")) {
+                        input.value = "@" + input.value;
+                      }
+                    }
+                </script>
+                <br>
+                <h4>Adresse <strong>e-mail</strong>  : <span class="required-fields">*</span></h4>
+                <input type="email" id="email" name="Adresse-mail" pattern=".+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" size="20" required />
+                <pre></pre>
+                <h4>Décrivez la situation qui a conduit à votre bannissement : <span class="required-fields">*</span></h4>
+                <textarea name="Situation" style="width: 100%; height: 150px; margin-bottom: 15px;" id="motivation" required></textarea>
+                </br>
+                <pre></pre>
+                <h4>Donnez quelques raisons pour lesquelles nous devrions annuler la sanction : <span class="required-fields">*</span></h4>
+                <textarea name="Raisons de déban" style="width: 100%; height: 150px; margin-bottom: 15px;" id="motivation" required></textarea>
+                </br>
+                <pre></pre>
+                <h4>Avez-vous enfreint le règlement ? <span class="required-fields">*</span></h4>
+                <div>
+                    <input type="radio" id="enfreint-oui" name="Reglement enfreint?" value="Oui" class="formulaire-helper" required>
+                    <label for="enfreint-oui">Oui</label>
+                    <br>
+                    <input type="radio" id="enfreint-non" name="Reglement enfreint?" value="Non" class="formulaire-helper" required>
+                    <label for="enfreint-non">Non</label>
+                </div>
+                <h4>Si oui, regrettez-vous ?</h4>
+                <div>
+                    <input type="radio" id="regret-oui" name="Regret?" value="Oui" class="formulaire-helper">
+                    <label for="regret-oui">Oui</label>
+                    <br>
+                    <input type="radio" id="regret-non" name="Regret?" value="Non" class="formulaire-helper">
+                    <label for="regret-non">Non</label>
+                </div>                
+                <h4>Date approximative de votre bannissement :</h4>
+                <input id="date-bannissement" type="date" name="Date de bannissement" style="margin-bottom: 25px;"></input>
+                <center>
+                    <div class="cf-turnstile" data-sitekey="0x4AAAAAAA1T5qLXEv3MgOP-"></div>
+                </center>
+                <button type="submit" class="default-button" style="margin-left: 0; width: 100%; padding: 10px; font-size: 24px;">Envoyer</button>
+            </form>
+            <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+            <script>
+                document.querySelector('.formHelper').addEventListener('submit', function(event) {
+                    const turnstileToken = document.querySelector('[name="cf-turnstile-response"]');
+                    
+                    if (turnstileToken) {
+                        turnstileToken.remove();
+                    }
+            
+                    if (!turnstileToken || !turnstileToken.value) {
+                        alert("Veuillez compléter le Captcha avant de soumettre.");
+                        event.preventDefault(); 
+                    }
+                });
+            </script>
+            <pre></pre>
+            <small><i><span class="required-fields">*</span> Champs obligatoires</i></small>
+        </div>
+
+        <!-- Scripts -->
+        <script src="../scripts/maintenance_Toggler.js"></script>
+        <script src="../scripts/navigationBar_creation.js"></script>
+        <script src="../scripts/footer_creation.js"></script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9864634157908409" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

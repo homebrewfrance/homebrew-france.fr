@@ -1,0 +1,276 @@
+<!--    
+	Homebrew France Web V3
+    Copyright (C) 2025  Homebrew France
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html lang="fr" data-website-id="HBFWEB-V3-LWS">
+	<head>
+        <title>PlayStation 2 | Docs</title>
+
+        <!-- Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charset="utf-8" />
+		<meta content="PlayStation 2 | Docs" property="og:title"/>
+		<meta content="Documentation complète sur la PlayStation 2." property="og:description"/>
+		<meta content="https://docs.homebrew-france.fr/ps2" property="og:url"/>
+		<meta content="https://cdn.homebrew-france.site/docs/ps2_docs.png" property="og:image"/>
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="apple-mobile-web-app-capable" content="YES"/>
+        <meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@HomebrewFrance" />
+		<meta name="twitter:title" content="Homebrew France - La communauté n°1 pour le jailbreak de consoles" />
+		<meta name="twitter:description" content="Rejoignez Homebrew France, la communauté dédiée au jailbreak de consoles avec support et guides en ligne." />
+		<meta name="twitter:image" content="https://cdn.homebrew-france.site/generic/website-icon.png"/>
+        
+        <!-- Link -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="../../style/stylesheets/guide.css" />
+        <link rel="stylesheet" href="../../style/stylesheets/navbar__f.css" />
+        <link rel="icon" type="image/png" href="https://cdn.homebrew-france.site/generic/lumia-guides.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+                        
+        <!-- Scripts -->
+        <script async src="../../scripts/analyticsServices_manager.js"></script>
+	</head>
+    <body data-page-id="DOC-PS2">
+        <a class="top-page-button" href="#"><div href="#" class="top-page-button" title="Remonter en haut de la page">
+            <center>&#9650;</center>
+        </div></a>
+        <div id="navSpace"></div>
+		<div class="docu-container">
+			<div class="nav-menu-horiz" style="overflow: scroll;">
+				<h class="subtitles">Navigation :</h><br>
+                <div class="nav-elements-horiz"></div>
+                <div class="nav-bottom">
+                    <h4 style="font-family: 'Sora', sans-serif; font-size: 18px;"><span style="font-weight: 300;">Homebrew</span><strong>France</strong> Docs</h4>
+                    <p style="font-size: 15px; color: rgb(210, 210, 210);">&copy; 2025 - Homebrew France</p>
+                </div>
+			</div>
+			<div class="nav-menu-vert">
+				<h class="subtitles">Navigation :</h><br>
+                <div class="nav-elements-vert"></div>
+			</div>
+            <div class="page-docu">
+				<h1 class="top">PlayStation 2 - <span style="font-family: 'Sora'"><span style="font-weight: 300;">Homebrew</span><strong>France Docs</strong></span></h1>
+				<div class="indic">
+					<p class="indic-text">Rejoignez <a href="https://discord.homebrew-france.fr/">Homebrew France</a> pour obtenir de l'assistance ou nous aider à développer le guide.</p>
+				</div>
+				<p>Ce guide vous permettra le jailbreak de votre PlayStation 2 via FreeDVDBoot.</p>
+				<h2 class="titles" id="premier-hack" style="margin-bottom: 15px;">I. Vérifier la compatibilité de votre console</h2>
+				<p>Dans un premier temps, nous allons vérifier si votre console est compatible ou non avec la faille FreeDVDBoot en vérifiant le numéro de modèle puis la version du lecteur DVD.</br>Pour les modèles "FAT", il se trouve à l'arrière de la console (Photo 1). Pour les modèles "Slim", il se trouve sous la console (Photo 2).</p>
+				<div class="ps2-check-container">
+					<center><img src="https://cdn.homebrew-france.site/docs/ps2/fat_check.png" width="414" height="342" class="img-border" id="fat-check" />
+					<img src="https://cdn.homebrew-france.site/docs/ps2/slim_check.png" width="470" height="342" class="img-border" id="slim-check" /></center>
+				</div>
+				<p>Après avoir vérifié le numéro de modèle, gardez-le à portée de main. Nous allons à présent vérifier la version du lecteur DVD de votre console.</p>
+				<ul style="list-style-type: decimal;">
+					<li>Allumez votre console.</li>
+					<li>Appuyez sur<img src="https://cdn.homebrew-france.site/docs/buttons/ps_triangle.png" class="console-buttons"/>, un menu contenant plusieurs informations s'affiche.</li>
+					<li>Le numéro de version de votre lecteur DVD figure en bas de l'écran.</li>
+				</ul>
+				<img class="img-border" src="https://cdn.homebrew-france.site/docs/ps2/dvd_check.png" width="620" height="342" />
+				<p>A partir de là, vous avez les informations nécessaires pour savoir si votre console est compatible ou non avec la faille FreeDVDBoot.</p>
+                <div class="table-container">
+                    <table border="1px" style="overflow: scroll;">
+                        <tr>
+                            <th colspan="3">Informations système</th>
+                            <th colspan="4">Informations version</th>
+                            <th rowspan="2">ISO</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Numéro modèle</td>
+                            <td>Révision</td>
+                            <td>Design</td>
+                            <td>Navigateur</td>
+                            <td>Lecteur CD</td>
+                            <td>Pilote PlayStation</td>
+                            <td>Lecteur DVD</td>
+                        </tr>
+
+                        <tr class="total-comp">
+                            <td>SPCH-700xx</td>
+                            <td>v12/v13</td>
+                            <td>Slim</td>
+                            <td>1.40</td>
+                            <td>2.00</td>
+                            <td>1.11</td>
+                            <td>3.10[A][C][D][E][G](J)[M][U]</td>
+                            <td><a href="https://github.com/CTurt/FreeDVDBoot/raw/master/PREBUILT%20ISOs/All%20PS2%20Slims%20-%20English%20language.iso">Unifié</a>&nbsp;<i class="fa fa-download" aria-hidden="true"></i></td>
+                        </tr>
+
+                        <tr class="total-comp">
+                            <td>SPCH-750xx</td>
+                            <td>v14</td>
+                            <td>Slim</td>
+                            <td>1.40</td>
+                            <td>2.00</td>
+                            <td>2.00</td>
+                            <td>3.11[A][C][D][E][G](J)[M][U]</td>
+                            <td><a href="https://github.com/CTurt/FreeDVDBoot/raw/master/PREBUILT%20ISOs/All%20PS2%20Slims%20-%20English%20language.iso">Unifié</a>&nbsp;<i class="fa fa-download" aria-hidden="true"></i></td>
+                        </tr>
+
+                        <tr class="total-comp">
+                            <td>SPCH-770xx</td>
+                            <td>v15</td>
+                            <td>Slim</td>
+                            <td>1.40</td>
+                            <td>2.00</td>
+                            <td>2.00</td>
+                            <td>3.11[A][C][D][E][G](J)[M][U]</td>
+                            <td><a href="https://github.com/CTurt/FreeDVDBoot/raw/master/PREBUILT%20ISOs/All%20PS2%20Slims%20-%20English%20language.iso">Unifié</a>&nbsp;<i class="fa fa-download" aria-hidden="true"></i></td>
+                            
+                        </tr>
+                        <tr class="total-comp">
+                            <td>SPCH-790xx</td>
+                            <td>v16</td>
+                            <td>Slim</td>
+                            <td>1.40</td>
+                            <td>2.00</td>
+                            <td>2.00</td>
+                            <td>3.11[A][C][D][E][G](J)[M][U]</td>
+                            <td><a href="https://github.com/CTurt/FreeDVDBoot/raw/master/PREBUILT%20ISOs/All%20PS2%20Slims%20-%20English%20language.iso">Unifié</a>&nbsp;<i class="fa fa-download" aria-hidden="true"></i></td>
+                        </tr>
+
+                        <tr class="total-comp">
+                            <td>SPCH-900xx</td>
+                            <td>v17/v18</td>
+                            <td>Slim</td>
+                            <td>1.40</td>
+                            <td>2.00</td>
+                            <td>2.00</td>
+                            <td>3.11[A][C][D][E][G](J)[M][U]</td>
+                            <td><a href="https://github.com/CTurt/FreeDVDBoot/raw/master/PREBUILT%20ISOs/All%20PS2%20Slims%20-%20English%20language.iso">Unifié</a>&nbsp;<i class="fa fa-download" aria-hidden="true"></i></td>
+                        </tr>
+
+                        <tr class="total-comp">
+                            <td>KDL22PX300</td>
+                            <td>Probablement v18</td>
+                            <td>Hybride TV</td>
+                            <td>1.40</td>
+                            <td>2.00</td>
+                            <td>2.00</td>
+                            <td>3.11<strong>E</strong></td>
+                            <td><a href="https://github.com/CTurt/FreeDVDBoot/raw/master/PREBUILT%20ISOs/All%20PS2%20Slims%20-%20English%20language.iso">Unifié</a>&nbsp;<i class="fa fa-download" aria-hidden="true"></i></td>
+                        </tr>
+
+                        <tr class="partial-comp">
+                            <td>SPCH-300xx</td>
+                            <td>v1/v2/v3/v4/v5/v6</td>
+                            <td>FAT</td>
+                            <td>1.20</td>
+                            <td>1.20</td>
+                            <td>1.01</br>1.10</td>
+                            <td>1.20E</br>1.30U</br>2.10[E](J)[U]</td>
+                            <td><a href="https://github.com/CTurt/FreeDVDBoot/raw/master/PREBUILT%20ISOs/Some%202.10%20models%20and%20all%202.12.iso">2.10 & 2.12</a>&nbsp;<i class="fa fa-download" aria-hidden="true"></i></td>
+                        </tr>
+
+                        <tr class="pending-comp">
+                            <td>SPCH-500xx</td>
+                            <td>v9/v10/v11</td>
+                            <td>FAT</td>
+                            <td>1.40</td>
+                            <td>2.00</td>
+                            <td>1.11</td>
+                            <td>3.00[A][E][U]</br>3.02[A][E][U]</br>3.03E</br>3.04M</td>
+                            <td><a href="https://github.com/CTurt/FreeDVDBoot/raw/master/PREBUILT%20ISOs/3.04%20only%20-%20M%2Bmaybe%20other%20regions%20except%20J%20-%20English%20language.iso">3.04</a>&nbsp;<i class="fa fa-download" aria-hidden="true"></i></td>
+                        </tr>
+
+                        <tr class="partial-comp">
+                            <td>SPCH-390xx</td>
+                            <td>v7/v8</td>
+                            <td>FAT</td>
+                            <td>1.20</td>
+                            <td>1.20</td>
+                            <td>1.10</td>
+                            <td>2.12U</br>2.13E</br>2.15K</td>
+                            <td><a href="https://github.com/CTurt/FreeDVDBoot/raw/master/PREBUILT%20ISOs/Some%202.10%20models%20and%20all%202.12.iso">2.10 & 2.12</a>&nbsp;<i class="fa fa-download" aria-hidden="true"></i></td>
+                        </tr>
+                    </table>
+                </div>
+				<p>Si un ISO existe pour le numéro de version de votre lecteur DVD alors votre console est compatible avec FreeDVDBoot.</p>
+				<h2 class="titles" id="prepa-usb" style="margin-bottom: 15px;">II. Préparation de la clé USB</h2>
+                <div class="prerequis">
+                    <h3>PRÉREQUIS :</h3>
+                    <ul>
+                        <li>L'ISO de la dernière version de FreeDVDBoot</br><i>Note: choisissez l'ISO en fonction de votre modèle et votre version du lecteur DVD dans le tableau précédent.</i></li>
+                        <li><a href="https://download.imgburn.com/SetupImgBurn_2.5.8.0.exe">La dernière version du logiciel ImgBurn</a>&nbsp;<i class="fa fa-download" aria-hidden="true"></i></li>
+                        <li><a href="https://github.com/israpps/FreeMcBoot-Installer/releases/download/latest/FMCB-1966.7z">La dernière version de l'installateur FreeMCBoot</a>&nbsp;<i class="fa fa-download" aria-hidden="true"></i></li>
+                        <li>Une clé USB</li>
+                        <li>Une carte mémoire PlayStation 2</br><i>Note: il est recommandé d'utiliser une carte officielle, elle devrait contenir la mention "MagicGate"</i></li>
+                        <li>Un DVD-R</br><i>Note: il est recommandé d'utiliser un DVD-R de marque Verbatim</i></li>
+                    </ul>
+                </div>
+				<ul style="list-style-type: decimal;">
+					<li>Insérez la clé USB dans votre PC.</li>
+					<li>Formatez votre clé USB en FAT32.</li>
+					<li>Ouvrez l'archive <code>FMCB-1966.7z</code>, ouvrez ensuite le dossier <code>FMCBinst-1966-[2023-02-17]</code>.</li>
+					<li>Copiez les dossiers <code>INSTALL</code> et <code>LANG</code> à la <a href="https://homebrew-france.fr/sdroot/">racine</a> de la clé USB.</li>
+				</ul>
+				<h2 class="titles" id="graver-dvd" style="margin-bottom: 15px;">III. Graver le DVD</h2>
+				<ul style="list-style-type: decimal;">
+					<li>Exécutez le fichier "Setup" d'ImgBurn téléchargé précédemment.</li>
+					<li style="margin-bottom: 15px;">Une fois le logiciel installé, lancez-le.</li>
+					<img src="https://cdn.homebrew-france.site/docs/ps2/imgburn.png" class="img-border" />
+					<li style="margin-bottom: 15px;">Sélectionnez "Write image file to disc"</li>
+					<img src="https://cdn.homebrew-france.site/docs/ps2/imgb_write.png" class="img-border" />
+					<li>Cliquez sur l'icône de dossier sous source <img src="https://cdn.homebrew-france.site/docs/ps2/imgb_folder.png" /></li>
+					<li>Sélectionnez l'ISO téléchargé précédemment.</li>
+					<li>Sélectionnez votre graveur de CD/DVD.</li>
+					<li>Ajoutez la vitesse la plus basse possible de votre graveur.</li>
+					<li style="margin-bottom: 15px;">Sélectionnez l'option "Write" en bas à gauche de la fenêtre.</li>
+					<img src="https://cdn.homebrew-france.site/docs/ps2/imgb_write2.png" />
+					<li>Attendre la fin du processus de gravure.</li>
+				</ul>
+				<h2 class="titles" id="install-fmcb" style="margin-bottom: 15px;">IV. Installation de FreeMCBoot (FMCB)</h2>
+				<p>Nous allons maintenant procéder à l'installation de FreeMCBoot sur votre carte mémoire.</p>
+				<ul style="list-style-type: decimal;">
+					<li>Insérez votre carte mémoire dans la fente 1 de votre PlayStation 2 ainsi que votre clé USB.</li>
+					<li>Insérez le DVD-R que vous avez précédemment gravé dans le lecteur DVD de votre PlayStation 2.</li>
+					<li>Autorisez la console à démarrer sur le DVD.</br><i>Note: votre console devrait lancer le logiciel "uLaunchELF".</i></li>
+					<li style="margin-bottom: 15px;">A partir de là, sélectionnez "FileBrowser" en appuyant sur<img src="https://cdn.homebrew-france.site/docs/buttons/ps_circle.png" class="console-buttons"/></li>
+					<img src="https://cdn.homebrew-france.site/docs/ps2/ule-filebrowser.png" class="img-border" />
+					<li style="margin-bottom: 15px;">Sélectionnez <code>mass:/</code> en appuyant sur<img src="https://cdn.homebrew-france.site/docs/buttons/ps_circle.png" class="console-buttons"/></li>
+					<img src="https://cdn.homebrew-france.site/docs/ps2/ule-mass.png" />
+					<li>Sélectionnez le fichier <code>fmcbinstaller.elf</code></br><i>Note: le programme d'installation de FreeMCBoot devrait démarrer.</i></li>
+					<li>Utilisez <img src="https://cdn.homebrew-france.site/docs/buttons/ps_r1.png" class="console-buttons"/> et <img src="https://cdn.homebrew-france.site/docs/buttons/ps_l1.png" class="console-buttons"/> pour naviguer jusqu'à "Utilitaire carte mémoire".</li>
+					<div class="disclaimer">
+						<p class="indic-text"><strong>Attention :</strong>&nbsp;la prochaine étape va supprimer tout le contenu de votre carte mémoire. Pensez à faire une copie de vos données au préalable.</p>
+					</div>
+					<li style="margin-bottom: 15px;">Cliquez sur "Formater" avec le bouton<img src="https://cdn.homebrew-france.site/docs/buttons/ps_cross.png" class="console-buttons"/></li>
+					<img src="https://cdn.homebrew-france.site/docs/ps2/fmcb-format.png" class="img-border" />
+					<li style="margin-bottom: 15px;">Utilisez <img src="https://cdn.homebrew-france.site/docs/buttons/ps_r1.png" class="console-buttons"/> et <img src="https://cdn.homebrew-france.site/docs/buttons/ps_l1.png" class="console-buttons"/> pour naviguer jusqu'au menu "Confirmation" puis sélectionnez "Normale".</li>
+					<img src="https://cdn.homebrew-france.site/docs/ps2/fmcb-install.png" class="img-border" />
+					<li>Autorisez maintenant l'installation à se poursuivre.</li>
+				</ul>
+				<p>L'installation de FreeMCBoot via FreeDVDBoot est à présent terminée.</p>
+			</div>
+		</div>
+
+        <!-- Scripts -->
+        <script src="../../scripts/navItemsHighlights_docs.js"></script>
+        <script src="../../scripts/maintenance_Toggler.js"></script>
+        <script src="../../scripts/navigationBar_creation.js"></script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9864634157908409" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+</html>
+    
+
