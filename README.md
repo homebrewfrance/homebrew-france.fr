@@ -71,8 +71,8 @@ Homebrew France n'est pas responsable des transactions et ne perçoit aucun reve
 
 # Copyrights
 Le contenu de ce site est soumis à des droits d'auteur.\
-© 2021 - 2024 - Homebrew France\
-© 2024 - FIXurPHONE
+© 2021 - 2025 - Homebrew France\
+© 2025 - FIXurPHONE
 
 # Légal
 L'intégralité du contenu de ce site respecte la loi française et le Code de la Propriété Intelectuelle.
@@ -81,7 +81,7 @@ L'intégralité du contenu de ce site respecte la loi française et le Code de l
 <p float="left">
   <a href="https://discord.gg/sighya-454099185416011776"><img src="https://cdn.homebrew-france.site/partner/sighya.png" width="120" /></a>
   <a href="https://fixurphone.fr/"><img src="https://cdn.homebrew-france.site/partner/fixurphone.png" width="120" /></a>
-  <a href="https://guardian-app.com/"><img src="https://cdn.homebrew-france.site/partner/vibes.png" width="120" /></a>
+  <a href="https://hacktuality.com/"><img src="https://cdn.homebrew-france.site/partner/hacktuality.png" width="120" /></a>
   <a href="https://neochronix.fr/"><img src="https://cdn.homebrew-france.site/partner/neochronix.png" width="120" /></a>
 </p>
 
