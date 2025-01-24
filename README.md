@@ -85,3 +85,10 @@ L'intégralité du contenu de ce site respecte la loi française et le Code de l
   <a href="https://luminix.app/site/"><img src="https://cdn.homebrew-france.site/partner/neochronix.png" width="120" /></a>
 </p>
 
+# Transparence
+Ces fonctionnalités ont été réalisés avec l'aide de l'intelligence artificielle :
+- Gestion de la surbrillance des onglets de navigation dans les docs. 
+- Récupération du lien de téléchargement direct du AtmoPack via l'API CodeBerg.
+- Configuration du htaccess.
+
+Le reste du code source a été réalisé dans son intégralité par Homebrew France et est soumis aux conditions de réutilisation de la GPLv3. 
