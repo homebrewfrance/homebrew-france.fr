@@ -1,7 +1,7 @@
 [![Discord](https://img.shields.io/discord/883623179979984896?logo=discord&label=Le%20Homebrew%20France)](https://discord.gg/le-homebrew-france-883623179979984896) ![GitHub Repo stars](https://img.shields.io/github/stars/homebrewfrance/homebrew-france.fr) ![License](https://img.shields.io/github/license/homebrewfrance/homebrew-france.fr)
 
 
-![HBF-Web](https://cdn.homebrew-france.site/github/hbf-web.png)
+![HBF-Web](https://cdn.homebrew-france.fun/github/hbf-web.png)
 
 # Homebrew France - Web Service
 Un site internet pour la communauté francophone "Homebrew France".
@@ -10,26 +10,26 @@ Un site internet pour la communauté francophone "Homebrew France".
 Il s'agit d'un site minimaliste pour la communauté francophone "Homebrew France" spécialisée dans le domaine du jailbreak et de la modification de console.
 
 ## Navigation
-- [Accueil](https://homebrew-france.fr)
-- [Téléchargements](https://homebrew-france.fr/telechargements/)
+- [Accueil](https://homebrewfrance.fr)
+- [Téléchargements](https://homebrewfrance.fr/telechargements/)
   
 *Docs*
-> - [Nintendo Switch](https://docs.homebrew-france.fr/switch/)
-> - [Nintendo DSi](https://docs.homebrew-france.fr/dsi/)
-> - [Nintendo 3DS](https://homebrew-france.fr/3ds/)
-> - [PlayStation Vita](https://docs.homebrew-france.fr/psvita)
-> - [PlayStation 2](https://docs.homebrew-france.fr/ps2/)
-> - [PlayStation 4](https://homebrew-france.fr/docs/ps4/)
-> - [YouTube ReVanced](https://homebrew-france.fr/docs/revanced/)
-> - [Sideloading iOS](https://homebrew-france.fr/docs/sideloading-ios/)
-> - [Xbox](https://homebrew-france.fr/docs/xbox/)
+> - [Nintendo Switch](https://homebrewfrance.fr/docs/switch/)
+> - [Nintendo DSi](https://homebrewfrance.fr/docs/dsi/)
+> - [Nintendo 3DS](https://homebrewfrance.fr/docs/3ds/)
+> - [PlayStation Vita](https://homebrewfrance.fr/docs/psvita)
+> - [PlayStation 2](https://homebrewfrance.fr/docs/ps2/)
+> - [PlayStation 4](https://homebrewfrance.fr/docs/ps4/)
+> - [YouTube ReVanced](https://homebrewfrance.fr/docs/revanced/)
+> - [Sideloading iOS](https://homebrewfrance.fr/docs/sideloading-ios/)
+> - [Xbox](https://homebrewfrance.fr/docs/xbox/)
   
 *Multi-Checker*
-> - [Nintendo Switch](https://homebrew-france.fr/multi-checker/switch/)
-> - [PlayStation 3](https://homebrew-france.fr/multi-checker/ps3/)
+> - [Nintendo Switch](https://homebrewfrance.fr/multi-checker/switch/)
+> - [PlayStation 3](https://homebrewfrance.fr/multi-checker/ps3/)
 
-- [Recrutements](https://homebrew-france.fr/devenir-helper/)
-- [A propos](https://homebrew-france.fr/a-propos/)
+- [Recrutements](https://homebrewfrance.fr/devenir-helper/)
+- [A propos](https://homebrewfrance.fr/a-propos/)
 
 # Crédits 
 ### Général : 
@@ -63,7 +63,7 @@ Il s'agit d'un site minimaliste pour la communauté francophone "Homebrew France
 - [Dhalian](https://github.com/Dhalian) : Développement du Multi-Checker.
 
 # Règles de confidentialité 
-Elles sont trouvables sur [cette page](https://homebrew-france.fr/confidentialite)
+Elles sont trouvables sur [cette page](https://homebrewfrance.fr/confidentialite)
 
 # Contenu de la boutique FIXurPHONE
 L'intégralité du contenu de la boutique est proposé par l'entreprise FIXurPHONE, au même titre que les prestations de réparation de consoles.\
@@ -79,10 +79,10 @@ L'intégralité du contenu de ce site respecte la loi française et le Code de l
 
 # Nos partenaires
 <p float="left">
-  <a href="https://discord.gg/sighya-454099185416011776"><img src="https://cdn.homebrew-france.site/partner/sighya.png" width="120" /></a>
-  <a href="https://fixurphone.fr/"><img src="https://cdn.homebrew-france.site/partner/fixurphone.png" width="120" /></a>
-  <a href="https://hacktuality.com/"><img src="https://cdn.homebrew-france.site/partner/hacktuality.png" width="120" /></a>
-  <a href="https://luminix.app/site/"><img src="https://cdn.homebrew-france.site/partner/neochronix.png" width="120" /></a>
+  <a href="https://discord.gg/sighya-454099185416011776"><img src="https://cdn.homebrew-france.fun/partner/sighya.png" width="120" /></a>
+  <a href="https://fixurphone.fr/"><img src="https://cdn.homebrew-france.fun/partner/fixurphone.png" width="120" /></a>
+  <a href="https://hacktuality.com/"><img src="https://cdn.homebrew-france.fun/partner/hacktuality.png" width="120" /></a>
+  <a href="https://luminix.app/site/"><img src="https://cdn.homebrew-france.fun/partner/neochronix.png" width="120" /></a>
 </p>
 
 # Transparence
